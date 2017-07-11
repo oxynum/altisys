@@ -1,0 +1,48 @@
+﻿		<!-- sidebar of the page -->
+<aside class="sidebar">
+    <!-- aside box -->
+    <div class="aside-box">
+        <h2>Filtres généraux</h2>
+        <form ng-controller="portefeuillefiltercontroller">
+            <div class="field-row">
+                <label for="rel1">Société</label>
+                <div class="field">
+                    <span class="fake-select">
+                        <select id="Societe" ng-model="Filter.SelectedSociete" ng-options="key for (key , value) in Filter.Societes"></select>
+                    </span>
+                </div>
+            </div>
+            <div class="field-row">
+                <label for="rel1">Gestionnaire</label>
+                <div class="field">
+                    <span class="fake-select">
+                        <select id="Gestionnaires" ng-model="Filter.SelectedGestionnaire" ng-options="key for (key , value) in Filter.Gestionnaires"></select>
+                    </span>
+                </div>
+            </div>
+            <div class="field-row">
+                <label for="rel3">Commercial</label>
+                <div class="field">
+                    <span class="fake-select">
+                        <select id="Commercial" ng-model="Filter.SelectedCommercial" ng-options="key for (key , value) in Filter.Commercials"></select>
+                    </span>
+                </div>
+            </div>
+            <div class="field-row">
+                <label for="rel3">Age</label>
+                <div class="field">
+                    <span class="fake-select">
+                        <select id="Age" ng-model="Filter.SelectedAge" ng-options="value for (key , value) in Filter.Ages"></select>
+                    </span>
+                </div>
+            </div>
+            <div class="field-row">
+                <label for="rel3">Client</label>
+                <div class="field">
+                    <input type="search" ng-model="Filter.Client" placeholder="">
+                </div>
+            </div>
+            <button type="button" ng-click="portefeuilleFilterClick()" class="btn btn-submit"></button>
+        </form>
+    </div>
+</aside>

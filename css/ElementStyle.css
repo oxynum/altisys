@@ -1,0 +1,371 @@
+﻿.formContent
+{
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    text-align: center;
+}
+
+.formContent .line
+{
+    width: 80%;
+    min-height: 30px;
+    padding: 3px 5px 3px 5px;
+}
+
+.formPopin .line
+{
+    min-width: 200px;
+    min-height: 30px;
+    margin: 10px 10px 10px 10px;
+    padding: 3px 5px 3px 5px;
+}
+
+.formPopin .line .col1,
+.formPopin .line .col2
+.formPopin .line .col4 {
+    float: left;
+    height: auto;
+    min-height: 24px;
+    padding: 3px;
+}
+.formPopin .line .col1,
+{
+    min-width: 80%;
+}
+
+.formPopin .line .col2
+{
+    width: 40%;
+}
+
+
+.formPopin .line .col4
+{
+    width: 20%;
+}
+
+.formLabel
+{
+    text-align: right;
+}
+
+.formInput
+{
+    text-align: left;
+}
+
+.formButton
+{
+    float: right;
+
+    padding-right: 10px;
+
+    text-align: right;
+}
+
+/*********************************************
+    UI GRID LOADER
+**********************************************/
+.grid
+{
+    width: 100%;
+    height: 450px;
+}
+.gridSmall {
+  width: 100%;
+  height: 250px;
+}
+.gridMedium {
+  width: 100%;
+  height: 350px;
+}
+.gridHigh {
+  width: 100%;
+  height: 900px;
+}
+
+.grid-msg-overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    background: rgba(0, 148, 255, .05);
+}
+
+.grid-msg-overlay .msg
+{
+    font-size: 16px;
+
+    position: absolute;
+    top: 40%;
+    left: 25%;
+
+    display: table;
+
+    width: 50%;
+    height: 20%;
+
+    text-align: center;
+
+    opacity: .7;
+    color: #111;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+.grid-msg-overlay .msg span
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.grid-emptydata
+{
+    background: #fff;
+}
+.grid-emptydata .msg
+{
+    color: #333;
+}
+/***************************************************/
+
+
+
+.nestedGrid
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+.typeahead-group-header
+{
+    font-weight: bold;
+    padding: 3px 20px;
+    border-bottom: 1px solid black;
+}
+
+/******************** Modal *******************************/
+.modal
+{
+    padding: 0!important;
+    text-align: center;
+}
+
+.modal:before
+{
+    display: inline-block;
+    height: 100%;
+    margin-right: -4px;
+    content: '';
+    vertical-align: middle;
+}
+
+.modal-dialog
+{
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+/***************************************************/
+
+.my-drop-zone
+{
+    height: 100px;
+    border: dotted 3px lightgray;
+}
+
+.nv-file-over
+{
+    border: dotted 3px red;
+}
+/* Default class applied to drop zones on over */
+.another-file-over-class
+{
+    border: dotted 3px green;
+}
+
+
+
+/* Ligne 5 */
+.btn-group-xs > .btn,
+.btn-xs
+{
+    font-size: 12px;
+    line-height: 1.5;
+    padding-top: 1px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+/* Ligne 5 */
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus
+{
+    outline-offset: -2px;
+}
+
+/* Ligne 5 */
+.btn.focus,
+.btn:focus,
+.btn:hover
+{
+    color: #333;
+
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+
+/* Ligne 5 */
+.btn.focus,
+.btn:focus,
+.btn:hover
+{
+    color: #333;
+
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+
+/* Ligne 5 */
+.btn-success.focus,
+.btn-success:focus
+{
+    color: #fff;
+    border-top-color: #255625;
+    border-right-color: #255625;
+    border-bottom-color: #255625;
+    border-left-color: #255625;
+    background-color: #449d44;
+}
+
+/* Ligne 5 */
+.btn-success:hover
+{
+    color: #fff;
+    border-top-color: #398439;
+    border-right-color: #398439;
+    border-bottom-color: #398439;
+    border-left-color: #398439;
+    background-color: #449d44;
+}
+
+.tooltip .tooltiptext
+{
+    bottom: 100%;
+    left: 50%;
+
+    width: 120px;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+.app-modal-large .modal-dialog
+{
+    width: 800px;
+}
+
+.app-modal-xl .modal-dialog
+{
+    width: 1000px;
+}
+
+.app-modal-xxl .modal-dialog
+{
+    width: 1200px;
+}
+
+
+/* update 6 fevrier */
+
+/*hover slide button*/
+.boxes-wrap .box button.create
+{
+    display: none;
+}
+
+.boxes-wrap .box.action button.create
+{
+    display: inline;
+}
+
+.boxes-wrap .box.action
+{
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.boxes-wrap .box.action .price
+{
+    -webkit-transition: transform .3s;
+            transition: transform .3s;
+    transform: translate3d(0, 0, 0);
+}
+
+.boxes-wrap .box.action:hover .price
+{
+    -webkit-transition: transform .3s; /* Safari */
+            transition: transform .3s;
+    transform: translate3d(-300px, 0, 0);
+}
+
+.boxes-wrap .box.action button.create
+{
+    margin-top: -100px;
+
+    -webkit-transition: transform .3s; /* Safari */
+            transition: transform .3s;
+    transform: translate3d(300px, 0, 0);
+}
+
+.boxes-wrap .box.action:hover button.create
+{
+    -webkit-transition: transform .3s; /* Safari */
+            transition: transform .3s;
+    transform: translate3d(0, 0, 0);
+}
+
+/*iframe*/
+
+.iframe-wrapper
+{
+    position: fixed;
+    z-index: 4;
+    top: 20px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    overflow: auto;
+
+    width: 100%;
+}
+
+
+
+.report-wrapper 
+{
+    position: fixed;
+    z-index: 4;
+    top: 130px;
+    right: 0;
+    bottom: 0;
+    left: 280px;
+    overflow-x: overlay;
+    overflow-y: auto;
+    width: 870px;
+}

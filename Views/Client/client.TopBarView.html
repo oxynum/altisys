@@ -1,0 +1,15 @@
+﻿<!-- topbar of the page -->
+
+    <div class="container" ng-controller="clientSuivantController">
+        <h1>{{Raisonsociale}}</h1>&nbsp;&nbsp;{{societe}} {{numcomptable}}
+        <!-- additional links -->
+        <ul class="add-links">
+            <!--<li class="link-icon"><a href="#">&nbsp;</a></li>--> <!--LOT2-->
+            <li><a href="" ng-click="switchFavorites()"><span ng-class= "(inFavorite==1) ? 'icon-star-full' : 'icon-star'" style="color:orange;font-size: 2.5em;"></span></a></li>
+            <!--<li class="report-print"><a href="#">&nbsp;</a></li>--> <!--LOT2-->
+        </ul>
+        <div class="right">
+            <span class="text">Client suivant</span>
+            <a href="" class="btn-next" ng-click="ClientSuivant()"><span class="icon-arrow-r"> </span></a>
+        </div>
+    </div>

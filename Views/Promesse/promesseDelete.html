@@ -1,0 +1,20 @@
+﻿<fieldset>
+    <legend>Supprimer une promesse</legend>
+    <div>
+        <form role="form" ng-submit="promesseDelete()" ng-controller="promesseDeleteController">
+            <div class="formPopin">
+                <div class="row">
+                    <div class="col-md-10 formLabel">
+                        <label>Etes-vous sur de vouloir supprimer cette promesse?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 formButton">
+                        <button type="button" class="btn btn-default" ng-click="$dismiss()">Non</button>
+                        <input type="submit" class="btn btn-primary" value="Oui" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</fieldset>

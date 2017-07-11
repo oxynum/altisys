@@ -1,0 +1,23 @@
+﻿
+    <!-- main container of all the page elements -->
+    <div id="wrapper-simple" class="agenda container" >
+        <header-bar></header-bar>
+  
+            <div ui-view="agendaTopBarView" class="topbar"></div>
+            <!-- contain main informative part of the site -->
+            <main id="main">
+                <!-- sidebar of the page -->
+                <aside class="sidebar-agenda">
+                    <div ui-view="agendaAsideRaiseBox"></div>
+                    <div ui-view="agendaAsideRaiseForm"></div>
+                </aside>
+                <!-- content of the page -->
+                <div class="content">
+                    <!-- info content -->
+                    <section class="info-content main-block active">
+                        <div ui-view="agendaDataGridView"></div>
+                    </section>
+                </div>
+            </main>
+
+    </div>

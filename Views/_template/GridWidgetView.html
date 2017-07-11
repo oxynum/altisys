@@ -1,0 +1,37 @@
+﻿<div ui-grid="gridOptions" ui-grid-pinning ui-grid-pagination style="height:250px;" class="grid">
+    <div class="grid-msg-overlay" ng-hide="!loadingIndicator">
+        <div class="msg">
+            <span>
+                Loading Data...
+                <i class="fa fa-spinner fa-spin"></i>
+            </span>
+        </div>
+    </div>
+    <div class="grid-msg-overlay  grid-emptydata" ng-hide="loadingIndicator || gridOptions.data.length">
+        <div class="msg">
+            <span>No Data</span>
+        </div>
+    </div>
+    <div>
+        <!--<table>
+            <tr>
+                <td >
+                    <div class="row">
+                        <div class="col-md-6 formLabel">
+                            <a href="" ng-click="gridApi.pagination.seek(1)" title="First Page" class="t-button rgActionButton rgPageFirst"><span class="t-font-icon rgIcon"></span></a>
+                            <a href="" ng-click="gridApi.pagination.previousPage()" title="Previous Page" class="t-button rgActionButton rgPagePrev"><span class="t-font-icon rgIcon"></span></a>
+                            <a href="" ng-click="gridApi.pagination.nextPage()" title="Next Page" class="t-button rgActionButton rgPageNext"><span class="t-font-icon rgIcon"></span></a>
+                            <a href="" title="Last Page" ng-click="gridApi.pagination.seek(gridOptions.getTotalPages())" class="rgActionButton rgPageLast"><span class="t-button t-font-icon rgIcon"></span></a>
+                        </div>
+                        <div class="col-md-2 select-style">
+                            <select id="pageSize" ng-model="gridOptions.paginationPageSize"><option ng-value="p" ng-repeat="p in gridOptions.paginationPageSizes"  ng-selected="p == gridOptions.paginationPageSize">{{p}}</option></select>
+                        </div>
+                        <div class="col-md-4 formLabel">
+                            Page: <strong>{{ gridApi.pagination.getPage() }}</strong>/<strong>{{ gridOptions.getTotalPages() }}</strong>  Objets: <strong>{{gridApi.core.getVisibleRows().length}}</strong>/<strong>{{gridOptions.totalItems}}</strong>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>-->
+    </div>
+</div>

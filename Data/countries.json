@@ -1,0 +1,1449 @@
+﻿[{
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 1,
+	"Country_Name": "China",
+	"PopulationinMillions": 1341,
+	"InternetUsersinMillions": 538,
+	"InternetusersinPercent": 40.1
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 2,
+	"Country_Name": "UnitedStates",
+	"PopulationinMillions": 313.96,
+	"InternetUsersinMillions": 245.20,
+	"InternetusersinPercent": 78.10
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 3,
+	"Country_Name": "India",
+	"PopulationinMillions": 1201,
+	"InternetUsersinMillions": 137,
+	"InternetusersinPercent": 11.4
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 4,
+	"Country_Name": "Russia",
+	"PopulationinMillions": 146.39,
+	"InternetUsersinMillions": 121.50,
+	"InternetusersinPercent": 83
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 5,
+	"Country_Name": "Japan",
+	"PopulationinMillions": 127.33,
+	"InternetUsersinMillions": 101.23,
+	"InternetusersinPercent": 79.5
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 6,
+	"Country_Name": "Brazil",
+	"PopulationinMillions": 194.00,
+	"InternetUsersinMillions": 87.3,
+	"InternetusersinPercent": 45
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 7,
+	"Country_Name": "Germany",
+	"PopulationinMillions": 81.33,
+	"InternetUsersinMillions": 67.5,
+	"InternetusersinPercent": 83
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 8,
+	"Country_Name": "Indonesia",
+	"PopulationinMillions": 248.87,
+	"InternetUsersinMillions": 55,
+	"InternetusersinPercent": 22.1
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 9,
+	"Country_Name": "UnitedKingdom",
+	"PopulationinMillions": 62.34,
+	"InternetUsersinMillions": 52.99,
+	"InternetusersinPercent": 85
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 10,
+	"Country_Name": "France",
+	"PopulationinMillions": 65.62,
+	"InternetUsersinMillions": 52.23,
+	"InternetusersinPercent": 79.6
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 11,
+	"Country_Name": "Nigeria",
+	"PopulationinMillions": 170.32,
+	"InternetUsersinMillions": 48.37,
+	"InternetusersinPercent": 28.4
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 12,
+	"Country_Name": "SouthKorea",
+	"PopulationinMillions": 48.64,
+	"InternetUsersinMillions": 40.71,
+	"InternetusersinPercent": 83.7
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 13,
+	"Country_Name": "Mexico",
+	"PopulationinMillions": 112.48,
+	"InternetUsersinMillions": 34.87,
+	"InternetusersinPercent": 31
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 14,
+	"Country_Name": "Italy",
+	"PopulationinMillions": 60.75,
+	"InternetUsersinMillions": 32.61,
+	"InternetusersinPercent": 53.68
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 15,
+	"Country_Name": "Turkey",
+	"PopulationinMillions": 77.80,
+	"InternetUsersinMillions": 30.98,
+	"InternetusersinPercent": 39.82
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 16,
+	"Country_Name": "Pakistan",
+	"PopulationinMillions": 184.39,
+	"InternetUsersinMillions": 30.94,
+	"InternetusersinPercent": 16.78
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 17,
+	"Country_Name": "Spain",
+	"PopulationinMillions": 46.51,
+	"InternetUsersinMillions": 30.94,
+	"InternetusersinPercent": 66.53
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 18,
+	"Country_Name": "Canada",
+	"PopulationinMillions": 33.76,
+	"InternetUsersinMillions": 27.55,
+	"InternetusersinPercent": 81.6
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 19,
+	"Country_Name": "Philippines",
+	"PopulationinMillions": 99.92,
+	"InternetUsersinMillions": 24.98,
+	"InternetusersinPercent": 25
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 20,
+	"Country_Name": "Vietnam",
+	"PopulationinMillions": 89.59,
+	"InternetUsersinMillions": 24.69,
+	"InternetusersinPercent": 27.56
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 21,
+	"Country_Name": "Poland",
+	"PopulationinMillions": 38.46,
+	"InternetUsersinMillions": 23.97,
+	"InternetusersinPercent": 62.32
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 22,
+	"Country_Name": "Egypt",
+	"PopulationinMillions": 80.48,
+	"InternetUsersinMillions": 21.52,
+	"InternetusersinPercent": 26.74
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 23,
+	"Country_Name": "Taiwan",
+	"PopulationinMillions": 23.02,
+	"InternetUsersinMillions": 16.46,
+	"InternetusersinPercent": 71.5
+}, {
+	"ContinentID": 1,
+	"Continent_Name": "Australia",
+	"CountryID": 24,
+	"Country_Name": "Australia",
+	"PopulationinMillions": 21.51,
+	"InternetUsersinMillions": 16.35,
+	"InternetusersinPercent": 76
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 25,
+	"Country_Name": "Colombia",
+	"PopulationinMillions": 44.22,
+	"InternetUsersinMillions": 16.14,
+	"InternetusersinPercent": 36.5
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 26,
+	"Country_Name": "Malaysia",
+	"PopulationinMillions": 28.28,
+	"InternetUsersinMillions": 15.64,
+	"InternetusersinPercent": 55.3
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 27,
+	"Country_Name": "Morocco",
+	"PopulationinMillions": 31.63,
+	"InternetUsersinMillions": 15.5,
+	"InternetusersinPercent": 49
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 28,
+	"Country_Name": "Netherlands",
+	"PopulationinMillions": 16.58,
+	"InternetUsersinMillions": 15.04,
+	"InternetusersinPercent": 90.72
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 29,
+	"Country_Name": "Ukraine",
+	"PopulationinMillions": 45.03,
+	"InternetUsersinMillions": 15.01,
+	"InternetusersinPercent": 33.33
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 30,
+	"Country_Name": "Argentina",
+	"PopulationinMillions": 41.36,
+	"InternetUsersinMillions": 14.89,
+	"InternetusersinPercent": 36
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 31,
+	"Country_Name": "Thailand",
+	"PopulationinMillions": 66.32,
+	"InternetUsersinMillions": 14.06,
+	"InternetusersinPercent": 21.2
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 32,
+	"Country_Name": "SaudiArabia",
+	"PopulationinMillions": 25.73,
+	"InternetUsersinMillions": 10.55,
+	"InternetusersinPercent": 41
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 33,
+	"Country_Name": "Kazakhstan",
+	"PopulationinMillions": 17.02,
+	"InternetUsersinMillions": 10.01,
+	"InternetusersinPercent": 58.82
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 34,
+	"Country_Name": "Iran",
+	"PopulationinMillions": 76.92,
+	"InternetUsersinMillions": 10,
+	"InternetusersinPercent": 13
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 35,
+	"Country_Name": "Peru",
+	"PopulationinMillions": 28.95,
+	"InternetUsersinMillions": 9.93,
+	"InternetusersinPercent": 34.3
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 36,
+	"Country_Name": "Venezuela",
+	"PopulationinMillions": 27.22,
+	"InternetUsersinMillions": 9.7,
+	"InternetusersinPercent": 35.63
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 37,
+	"Country_Name": "Romania",
+	"PopulationinMillions": 21.96,
+	"InternetUsersinMillions": 8.77,
+	"InternetusersinPercent": 39.93
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 38,
+	"Country_Name": "Kenya",
+	"PopulationinMillions": 40.85,
+	"InternetUsersinMillions": 8.57,
+	"InternetusersinPercent": 20.98
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 39,
+	"Country_Name": "Belgium",
+	"PopulationinMillions": 10.42,
+	"InternetUsersinMillions": 8.26,
+	"InternetusersinPercent": 79.26
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 40,
+	"Country_Name": "Sweden",
+	"PopulationinMillions": 9.08,
+	"InternetUsersinMillions": 8.17,
+	"InternetusersinPercent": 90
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 41,
+	"Country_Name": "Chile",
+	"PopulationinMillions": 16.76,
+	"InternetUsersinMillions": 7.54,
+	"InternetusersinPercent": 45
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 42,
+	"Country_Name": "CzechRepublic",
+	"PopulationinMillions": 10.20,
+	"InternetUsersinMillions": 7.02,
+	"InternetusersinPercent": 68.82
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 43,
+	"Country_Name": "Hungary",
+	"PopulationinMillions": 9.99,
+	"InternetUsersinMillions": 6.52,
+	"InternetusersinPercent": 65.27
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 44,
+	"Country_Name": "Switzerland",
+	"PopulationinMillions": 7.63,
+	"InternetUsersinMillions": 6.4,
+	"InternetusersinPercent": 83.9
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 45,
+	"Country_Name": "SouthAfrica",
+	"PopulationinMillions": 49.19,
+	"InternetUsersinMillions": 6.05,
+	"InternetusersinPercent": 12.3
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 46,
+	"Country_Name": "Austria",
+	"PopulationinMillions": 8.21,
+	"InternetUsersinMillions": 5.97,
+	"InternetusersinPercent": 72.7
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 47,
+	"Country_Name": "Bangladesh",
+	"PopulationinMillions": 156.22,
+	"InternetUsersinMillions": 5.78,
+	"InternetusersinPercent": 3.7
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 48,
+	"Country_Name": "Uzbekistan",
+	"PopulationinMillions": 27.85,
+	"InternetUsersinMillions": 5.57,
+	"InternetusersinPercent": 20
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 49,
+	"Country_Name": "Portugal",
+	"PopulationinMillions": 10.74,
+	"InternetUsersinMillions": 5.49,
+	"InternetusersinPercent": 51.1
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 50,
+	"Country_Name": "Israel",
+	"PopulationinMillions": 7.35,
+	"InternetUsersinMillions": 4.94,
+	"InternetusersinPercent": 67.2
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 51,
+	"Country_Name": "Hong Kong",
+	"PopulationinMillions": 7.09,
+	"InternetUsersinMillions": 4.92,
+	"InternetusersinPercent": 69.4
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 52,
+	"Country_Name": "Denmark",
+	"PopulationinMillions": 5.51,
+	"InternetUsersinMillions": 4.89,
+	"InternetusersinPercent": 88.72
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 53,
+	"Country_Name": "Greece",
+	"PopulationinMillions": 10.74,
+	"InternetUsersinMillions": 4.77,
+	"InternetusersinPercent": 44.4
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 54,
+	"Country_Name": "Tanzania",
+	"PopulationinMillions": 41.82,
+	"InternetUsersinMillions": 4.6,
+	"InternetusersinPercent": 11
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 55,
+	"Country_Name": "Syria",
+	"PopulationinMillions": 22.17,
+	"InternetUsersinMillions": 4.59,
+	"InternetusersinPercent": 20.7
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 56,
+	"Country_Name": "Finland",
+	"PopulationinMillions": 5.26,
+	"InternetUsersinMillions": 4.57,
+	"InternetusersinPercent": 86.89
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 57,
+	"Country_Name": "Norway",
+	"PopulationinMillions": 4.68,
+	"InternetUsersinMillions": 4.37,
+	"InternetusersinPercent": 93.39
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 58,
+	"Country_Name": "Slovakia",
+	"PopulationinMillions": 5.48,
+	"InternetUsersinMillions": 4.35,
+	"InternetusersinPercent": 79.42
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 59,
+	"Country_Name": "Algeria",
+	"PopulationinMillions": 34.56,
+	"InternetUsersinMillions": 4.32,
+	"InternetusersinPercent": 12.5
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 60,
+	"Country_Name": "Uganda",
+	"PopulationinMillions": 33.44,
+	"InternetUsersinMillions": 4.18,
+	"InternetusersinPercent": 12.5
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 61,
+	"Country_Name": "DominicanRepublic",
+	"PopulationinMillions": 9.82,
+	"InternetUsersinMillions": 3.88,
+	"InternetusersinPercent": 39.53
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 62,
+	"Country_Name": "UAE",
+	"PopulationinMillions": 4.97,
+	"InternetUsersinMillions": 3.88,
+	"InternetusersinPercent": 78
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 63,
+	"Country_Name": "Tunisia",
+	"PopulationinMillions": 10.52,
+	"InternetUsersinMillions": 3.87,
+	"InternetusersinPercent": 36.8
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 64,
+	"Country_Name": "Singapore",
+	"PopulationinMillions": 5.13,
+	"InternetUsersinMillions": 3.59,
+	"InternetusersinPercent": 70
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 65,
+	"Country_Name": "Ecuador",
+	"PopulationinMillions": 14.75,
+	"InternetUsersinMillions": 3.54,
+	"InternetusersinPercent": 24
+}, {
+	"ContinentID": 1,
+	"Continent_Name": "Australia",
+	"CountryID": 66,
+	"Country_Name": "NewZeland",
+	"PopulationinMillions": 4.25,
+	"InternetUsersinMillions": 3.53,
+	"InternetusersinPercent": 83
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 67,
+	"Country_Name": "Azerbaijan",
+	"PopulationinMillions": 9.31,
+	"InternetUsersinMillions": 3.35,
+	"InternetusersinPercent": 35.99
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 68,
+	"Country_Name": "Bulgaria",
+	"PopulationinMillions": 7.16,
+	"InternetUsersinMillions": 3.31,
+	"InternetusersinPercent": 46.23
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 69,
+	"Country_Name": "Ireland2",
+	"PopulationinMillions": 4.62,
+	"InternetUsersinMillions": 3.23,
+	"InternetusersinPercent": 69.85
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 70,
+	"Country_Name": "Belarus",
+	"PopulationinMillions": 8.25,
+	"InternetUsersinMillions": 3.3,
+	"InternetusersinPercent": 40
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 71,
+	"Country_Name": "Serbia",
+	"PopulationinMillions": 7.36,
+	"InternetUsersinMillions": 3.01,
+	"InternetusersinPercent": 40.9
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 72,
+	"Country_Name": "Croatia",
+	"PopulationinMillions": 4.49,
+	"InternetUsersinMillions": 2.71,
+	"InternetusersinPercent": 60.32
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 73,
+	"Country_Name": "Yemen",
+	"PopulationinMillions": 23.50,
+	"InternetUsersinMillions": 2.55,
+	"InternetusersinPercent": 10.85
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 74,
+	"Country_Name": "Sri Lanka",
+	"PopulationinMillions": 21.08,
+	"InternetUsersinMillions": 2.53,
+	"InternetusersinPercent": 12
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 75,
+	"Country_Name": "Jordan",
+	"PopulationinMillions": 6.39,
+	"InternetUsersinMillions": 2.43,
+	"InternetusersinPercent": 38
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 76,
+	"Country_Name": "BosniaAndHerzegovina",
+	"PopulationinMillions": 4.62,
+	"InternetUsersinMillions": 2.4,
+	"InternetusersinPercent": 52
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 77,
+	"Country_Name": "Lithuania",
+	"PopulationinMillions": 3.54,
+	"InternetUsersinMillions": 2.2,
+	"InternetusersinPercent": 62.12
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 78,
+	"Country_Name": "Ghana",
+	"PopulationinMillions": 24.56,
+	"InternetUsersinMillions": 2.1,
+	"InternetusersinPercent": 8.55
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 79,
+	"Country_Name": "Bolivia",
+	"PopulationinMillions": 9.95,
+	"InternetUsersinMillions": 1.99,
+	"InternetusersinPercent": 20
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 80,
+	"Country_Name": "Senegal",
+	"PopulationinMillions": 12.31,
+	"InternetUsersinMillions": 1.97,
+	"InternetusersinPercent": 16
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 81,
+	"Country_Name": "Nepal",
+	"PopulationinMillions": 28.91,
+	"InternetUsersinMillions": 1.96,
+	"InternetusersinPercent": 6.78
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 82,
+	"Country_Name": "Oman",
+	"PopulationinMillions": 2.97,
+	"InternetUsersinMillions": 1.86,
+	"InternetusersinPercent": 62.6
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 83,
+	"Country_Name": "Puerto-Rico",
+	"PopulationinMillions": 3.97,
+	"InternetUsersinMillions": 1.8,
+	"InternetusersinPercent": 45.3
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 84,
+	"Country_Name": "Angola",
+	"PopulationinMillions": 17.00,
+	"InternetUsersinMillions": 1.7,
+	"InternetusersinPercent": 10
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 85,
+	"Country_Name": "Cuba",
+	"PopulationinMillions": 11.11,
+	"InternetUsersinMillions": 1.68,
+	"InternetusersinPercent": 15.12
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 86,
+	"Country_Name": "Iraq",
+	"PopulationinMillions": 29.64,
+	"InternetUsersinMillions": 1.66,
+	"InternetusersinPercent": 5.6
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 87,
+	"Country_Name": "CostaRica",
+	"PopulationinMillions": 4.52,
+	"InternetUsersinMillions": 1.65,
+	"InternetusersinPercent": 36.5
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 88,
+	"Country_Name": "Latvia",
+	"PopulationinMillions": 2.22,
+	"InternetUsersinMillions": 1.52,
+	"InternetusersinPercent": 68.42
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 89,
+	"Country_Name": "Paraguay",
+	"PopulationinMillions": 6.40,
+	"InternetUsersinMillions": 1.51,
+	"InternetusersinPercent": 23.6
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 90,
+	"Country_Name": "Moldavia",
+	"PopulationinMillions": 3.73,
+	"InternetUsersinMillions": 1.49,
+	"InternetusersinPercent": 40
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 91,
+	"Country_Name": "Panama",
+	"PopulationinMillions": 3.42,
+	"InternetUsersinMillions": 1.46,
+	"InternetusersinPercent": 42.75
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 92,
+	"Country_Name": "Uruguay",
+	"PopulationinMillions": 3.30,
+	"InternetUsersinMillions": 1.43,
+	"InternetusersinPercent": 43.35
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 93,
+	"Country_Name": "Guatemala",
+	"PopulationinMillions": 13.52,
+	"InternetUsersinMillions": 1.42,
+	"InternetusersinPercent": 10.5
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 94,
+	"Country_Name": "Slovenia",
+	"PopulationinMillions": 2.00,
+	"InternetUsersinMillions": 1.4,
+	"InternetusersinPercent": 70
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 95,
+	"Country_Name": "Albania",
+	"PopulationinMillions": 2.98,
+	"InternetUsersinMillions": 1.34,
+	"InternetusersinPercent": 45
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 96,
+	"Country_Name": "Zimbabwe",
+	"PopulationinMillions": 11.57,
+	"InternetUsersinMillions": 1.33,
+	"InternetusersinPercent": 11.5
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 97,
+	"Country_Name": "Lebanon",
+	"PopulationinMillions": 4.13,
+	"InternetUsersinMillions": 1.28,
+	"InternetusersinPercent": 31
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 98,
+	"Country_Name": "Georgia",
+	"PopulationinMillions": 4.59,
+	"InternetUsersinMillions": 1.24,
+	"InternetusersinPercent": 27
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 99,
+	"Country_Name": "Qatar",
+	"PopulationinMillions": 1.72,
+	"InternetUsersinMillions": 1.19,
+	"InternetusersinPercent": 69
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 100,
+	"Country_Name": "Afghanistan",
+	"PopulationinMillions": 29.00,
+	"InternetUsersinMillions": 1.16,
+	"InternetusersinPercent": 4
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 101,
+	"Country_Name": "Kyrgyzstan",
+	"PopulationinMillions": 5.50,
+	"InternetUsersinMillions": 1.1,
+	"InternetusersinPercent": 20
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 102,
+	"Country_Name": "Armenia",
+	"PopulationinMillions": 2.95,
+	"InternetUsersinMillions": 1.09,
+	"InternetusersinPercent": 37
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 103,
+	"Country_Name": "Macedonia",
+	"PopulationinMillions": 2.06,
+	"InternetUsersinMillions": 1.07,
+	"InternetusersinPercent": 51.9
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 104,
+	"Country_Name": "Greenland",
+	"PopulationinMillions": 0.056,
+	"InternetUsersinMillions": 0.037,
+	"InternetusersinPercent": 67.4
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 105,
+	"Country_Name": "Belize",
+	"PopulationinMillions": 0.375,
+	"InternetUsersinMillions": 0.165,
+	"InternetusersinPercent": 45
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 106,
+	"Country_Name": "ElSalvador",
+	"PopulationinMillions": 6.52,
+	"InternetUsersinMillions": 2.352,
+	"InternetusersinPercent": 38.3
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 107,
+	"Country_Name": "Honduras",
+	"PopulationinMillions": 8.72,
+	"InternetUsersinMillions": 1.757,
+	"InternetusersinPercent": 21.5
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 108,
+	"Country_Name": "Nicaragua",
+	"PopulationinMillions": 6.26,
+	"InternetUsersinMillions": 1.194,
+	"InternetusersinPercent": 19.4
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 109,
+	"Country_Name": "Jamaica",
+	"PopulationinMillions": 2.72,
+	"InternetUsersinMillions": 1.216,
+	"InternetusersinPercent": 43.4
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 110,
+	"Country_Name": "Bahamas",
+	"PopulationinMillions": 0.378,
+	"InternetUsersinMillions": 0.333,
+	"InternetusersinPercent": 84.8
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 111,
+	"Country_Name": "Haiti",
+	"PopulationinMillions": 11.078,
+	"InternetUsersinMillions": 1.308,
+	"InternetusersinPercent": 12.1
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 112,
+	"Country_Name": "Guyana",
+	"PopulationinMillions": 0.746,
+	"InternetUsersinMillions": 0.305,
+	"InternetusersinPercent": 39.6
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 113,
+	"Country_Name": "Suriname",
+	"PopulationinMillions": 0.541,
+	"InternetUsersinMillions": 0.231,
+	"InternetusersinPercent": 42.3
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 114,
+	"Country_Name": "FrenchGuiana",
+	"PopulationinMillions": 0.254,
+	"InternetUsersinMillions": 0,
+	"InternetusersinPercent": 0
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 115,
+	"Country_Name": "FalklandIslands",
+	"PopulationinMillions": 0.0025,
+	"InternetUsersinMillions": 0,
+	"InternetusersinPercent": 0
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 116,
+	"Country_Name": "Iceland1",
+	"PopulationinMillions": 0.336,
+	"InternetUsersinMillions": 0.331,
+	"InternetusersinPercent": 98
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 117,
+	"Country_Name": "Estonia",
+	"PopulationinMillions": 1.315,
+	"InternetUsersinMillions": 1.196,
+	"InternetusersinPercent": 91.4
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 118,
+	"Country_Name": "Moldova",
+	"PopulationinMillions": 3.553,
+	"InternetUsersinMillions": 1.946,
+	"InternetusersinPercent": 47.7
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 119,
+	"Country_Name": "Macadonia",
+	"PopulationinMillions": 2.071,
+	"InternetUsersinMillions": 1.439,
+	"InternetusersinPercent": 69.2
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 120,
+	"Country_Name": "Kosovo",
+	"PopulationinMillions": 1.836,
+	"InternetUsersinMillions": 0,
+	"InternetusersinPercent": 0
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 121,
+	"Country_Name": "Montenegro",
+	"PopulationinMillions": 0.621,
+	"InternetUsersinMillions": 0.388,
+	"InternetusersinPercent": 62
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 122,
+	"Country_Name": "UnitedArabEmirates",
+	"PopulationinMillions": 9.856,
+	"InternetUsersinMillions": 8.515,
+	"InternetusersinPercent": 91.9
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 123,
+	"Country_Name": "Quatar",
+	"PopulationinMillions": 2.326,
+	"InternetUsersinMillions": 2.108,
+	"InternetusersinPercent": 92
+}, {
+	"ContinentID": 5,
+	"Continent_Name": "Europe",
+	"CountryID": 124,
+	"Country_Name": "Cyprus",
+	"PopulationinMillions": 0.847,
+	"InternetUsersinMillions": 0.609,
+	"InternetusersinPercent": 72
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 125,
+	"Country_Name": "Kuwait",
+	"PopulationinMillions": 4.183,
+	"InternetUsersinMillions": 3.202,
+	"InternetusersinPercent": 79.9
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 126,
+	"Country_Name": "Ejypt",
+	"PopulationinMillions": 91.493,
+	"InternetUsersinMillions": 30.835,
+	"InternetusersinPercent": 35
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 127,
+	"Country_Name": "Libya",
+	"PopulationinMillions": 6.385,
+	"InternetUsersinMillions": 1.335,
+	"InternetusersinPercent": 22
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 128,
+	"Country_Name": "WesternSahara",
+	"PopulationinMillions": 0.584,
+	"InternetUsersinMillions": 0,
+	"InternetusersinPercent": 0
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 129,
+	"Country_Name": "Turkmenistan",
+	"PopulationinMillions": 4.751,
+	"InternetUsersinMillions": 0.789,
+	"InternetusersinPercent": 14.5
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 130,
+	"Country_Name": "Tajikistan",
+	"PopulationinMillions": 8.551,
+	"InternetUsersinMillions": 1.622,
+	"InternetusersinPercent": 18.7
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 131,
+	"Country_Name": "Mongolia",
+	"PopulationinMillions": 3.102,
+	"InternetUsersinMillions": 1.069,
+	"InternetusersinPercent": 35.6
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 132,
+	"Country_Name": "Bhutan",
+	"PopulationinMillions": 0.777,
+	"InternetUsersinMillions": 0.289,
+	"InternetusersinPercent": 36.9
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 133,
+	"Country_Name": "Burma",
+	"PopulationinMillions": 54.363,
+	"InternetUsersinMillions": 1.353,
+	"InternetusersinPercent": 2.8
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 134,
+	"Country_Name": "Laos",
+	"PopulationinMillions": 6.492,
+	"InternetUsersinMillions": 1.087,
+	"InternetusersinPercent": 15.9
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 135,
+	"Country_Name": "Cambodia",
+	"PopulationinMillions": 15.626,
+	"InternetUsersinMillions": 1.756,
+	"InternetusersinPercent": 11.1
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 136,
+	"Country_Name": "SriLanka",
+	"PopulationinMillions": 20.966,
+	"InternetUsersinMillions": 6.087,
+	"InternetusersinPercent": 29.7
+}, {
+	"ContinentID": 1,
+	"Continent_Name": "Australia",
+	"CountryID": 137,
+	"Country_Name": "PapuaNewGuinea",
+	"PopulationinMillions": 8.083,
+	"InternetUsersinMillions": 0.906,
+	"InternetusersinPercent": 11.1
+}, {
+	"ContinentID": 1,
+	"Continent_Name": "Australia",
+	"CountryID": 138,
+	"Country_Name": "Samoa",
+	"PopulationinMillions": 0.057,
+	"InternetUsersinMillions": 0.016,
+	"InternetusersinPercent": 29
+}, {
+	"ContinentID": 1,
+	"Continent_Name": "Australia",
+	"CountryID": 139,
+	"Country_Name": "Vanuatu",
+	"PopulationinMillions": 0.277,
+	"InternetUsersinMillions": 0.082,
+	"InternetusersinPercent": 30.6
+}, {
+	"ContinentID": 1,
+	"Continent_Name": "Australia",
+	"CountryID": 140,
+	"Country_Name": "SolomonIslands",
+	"PopulationinMillions": 0.642,
+	"InternetUsersinMillions": 0.0584,
+	"InternetusersinPercent": 9.8
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 141,
+	"Country_Name": "Madagascar",
+	"PopulationinMillions": 22.434,
+	"InternetUsersinMillions": 1.066,
+	"InternetusersinPercent": 4.3
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 142,
+	"Country_Name": "Mauritania",
+	"PopulationinMillions": 3.718,
+	"InternetUsersinMillions": 0.714,
+	"InternetusersinPercent": 17.1
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 143,
+	"Country_Name": "Mali",
+	"PopulationinMillions": 18.341,
+	"InternetUsersinMillions": 2.212,
+	"InternetusersinPercent": 12
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 144,
+	"Country_Name": "BurkinaFaso",
+	"PopulationinMillions": 19.034,
+	"InternetUsersinMillions": 1.894,
+	"InternetusersinPercent": 9.8
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 145,
+	"Country_Name": "IvoryCoast",
+	"PopulationinMillions": 22.671,
+	"InternetUsersinMillions": 0,
+	"InternetusersinPercent": 0
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 146,
+	"Country_Name": "Liberia",
+	"PopulationinMillions": 4.076,
+	"InternetUsersinMillions": 0.395,
+	"InternetusersinPercent": 8.6
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 147,
+	"Country_Name": "SierraLeone",
+	"PopulationinMillions": 7.075,
+	"InternetUsersinMillions": 0.16,
+	"InternetusersinPercent": 2.4
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 148,
+	"Country_Name": "Guinea",
+	"PopulationinMillions": 12.947,
+	"InternetUsersinMillions": 0.236,
+	"InternetusersinPercent": 1.8
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 149,
+	"Country_Name": "GuineaBissau",
+	"PopulationinMillions": 1.547,
+	"InternetUsersinMillions": 0,
+	"InternetusersinPercent": 0
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 150,
+	"Country_Name": "Gambia",
+	"PopulationinMillions": 1.882,
+	"InternetUsersinMillions": 0.346,
+	"InternetusersinPercent": 18.6
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 151,
+	"Country_Name": "Togo",
+	"PopulationinMillions": 7.143,
+	"InternetUsersinMillions": 0.545,
+	"InternetusersinPercent": 7.3
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 152,
+	"Country_Name": "Benin",
+	"PopulationinMillions": 10.653,
+	"InternetUsersinMillions": 0.628,
+	"InternetusersinPercent": 5.6
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 153,
+	"Country_Name": "Chad",
+	"PopulationinMillions": 14.497,
+	"InternetUsersinMillions": 0.387,
+	"InternetusersinPercent": 2.3
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 154,
+	"Country_Name": "Sudan",
+	"PopulationinMillions": 41.176,
+	"InternetUsersinMillions": 10.886,
+	"InternetusersinPercent": 26.4
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 155,
+	"Country_Name": "Eritrea",
+	"PopulationinMillions": 5.352,
+	"InternetUsersinMillions": 0.056,
+	"InternetusersinPercent": 1.1
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 156,
+	"Country_Name": "Djibouti",
+	"PopulationinMillions": 0.9,
+	"InternetUsersinMillions": 0.105,
+	"InternetusersinPercent": 11.7
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 157,
+	"Country_Name": "Niger",
+	"PopulationinMillions": 20.715,
+	"InternetUsersinMillions": 0.439,
+	"InternetusersinPercent": 2.1
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 158,
+	"Country_Name": "Cameroon",
+	"PopulationinMillions": 22.709,
+	"InternetUsersinMillions": 4.311,
+	"InternetusersinPercent": 18
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 159,
+	"Country_Name": "EquatorialGuinea",
+	"PopulationinMillions": 1.222,
+	"InternetUsersinMillions": 0.181,
+	"InternetusersinPercent": 20.9
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 160,
+	"Country_Name": "Gabon",
+	"PopulationinMillions": 1.802,
+	"InternetUsersinMillions": 0.182,
+	"InternetusersinPercent": 9.9
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 161,
+	"Country_Name": "CentralAfricanRepublic",
+	"PopulationinMillions": 4.998,
+	"InternetUsersinMillions": 0.224,
+	"InternetusersinPercent": 4.5
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 162,
+	"Country_Name": "SouthSudan",
+	"PopulationinMillions": 12.131,
+	"InternetUsersinMillions": 2.179,
+	"InternetusersinPercent": 17.1
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 163,
+	"Country_Name": "Ethiopia",
+	"PopulationinMillions": 92.206,
+	"InternetUsersinMillions": 4.288,
+	"InternetusersinPercent": 4.2
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 164,
+	"Country_Name": "Somalia",
+	"PopulationinMillions": 11.079,
+	"InternetUsersinMillions": 0.192,
+	"InternetusersinPercent": 1.7
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 165,
+	"Country_Name": "RepublicOfTheCongo",
+	"PopulationinMillions": 4.741,
+	"InternetUsersinMillions": 0,
+	"InternetusersinPercent": 0
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 166,
+	"Country_Name": "DemocraticRepublicOfTheCongo",
+	"PopulationinMillions": 82.310,
+	"InternetUsersinMillions": 0,
+	"InternetusersinPercent": 0
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 167,
+	"Country_Name": "Burundi",
+	"PopulationinMillions": 10.114,
+	"InternetUsersinMillions": 0.167,
+	"InternetusersinPercent": 1.5
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 168,
+	"Country_Name": "Rwanda",
+	"PopulationinMillions": 11.553,
+	"InternetUsersinMillions": 1.478,
+	"InternetusersinPercent": 12.4
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 169,
+	"Country_Name": "Malawi",
+	"PopulationinMillions": 16.832,
+	"InternetUsersinMillions": 1.160,
+	"InternetusersinPercent": 6.7
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 170,
+	"Country_Name": "Zambia",
+	"PopulationinMillions": 15.933,
+	"InternetUsersinMillions": 3.167,
+	"InternetusersinPercent": 19
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 171,
+	"Country_Name": "Namibia",
+	"PopulationinMillions": 2.324,
+	"InternetUsersinMillions": 0.392,
+	"InternetusersinPercent": 15.6
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 172,
+	"Country_Name": "Botswana",
+	"PopulationinMillions": 2.230,
+	"InternetUsersinMillions": 0.492,
+	"InternetusersinPercent": 21.9
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 173,
+	"Country_Name": "Lesotho",
+	"PopulationinMillions": 1.916,
+	"InternetUsersinMillions": 0.444,
+	"InternetusersinPercent": 20.6
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 175,
+	"Country_Name": "Mozambique",
+	"PopulationinMillions": 26.423,
+	"InternetUsersinMillions": 1.834,
+	"InternetusersinPercent": 6.4
+}, {
+	"ContinentID": 4,
+	"Continent_Name": "Africa",
+	"CountryID": 176,
+	"Country_Name": "Swaziland",
+	"PopulationinMillions": 1.132,
+	"InternetUsersinMillions": 0.362,
+	"InternetusersinPercent": 27.8
+}, {
+	"ContinentID": 1,
+	"Continent_Name": "Australia",
+	"CountryID": 177,
+	"Country_Name": "EastTimor",
+	"PopulationinMillions": 1.167,
+	"InternetUsersinMillions": 0,
+	"InternetusersinPercent": 0
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 178,
+	"Country_Name": "TrinidadandTobago",
+	"PopulationinMillions": 1.349,
+	"InternetUsersinMillions": 0.942,
+	"InternetusersinPercent": 69.1
+}, {
+	"ContinentID": 2,
+	"Continent_Name": "Asia",
+	"CountryID": 179,
+	"Country_Name": "Brunei",
+	"PopulationinMillions": 0.411,
+	"InternetUsersinMillions": 0.310,
+	"InternetusersinPercent": 72.3
+}, {
+	"ContinentID": 1,
+	"Continent_Name": "Australia",
+	"CountryID": 180,
+	"Country_Name": "Fiji",
+	"PopulationinMillions": 0.867,
+	"InternetUsersinMillions": 0.419,
+	"InternetusersinPercent": 46.8
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 181,
+	"Country_Name": "Barbados",
+	"PopulationinMillions": 0.285,
+	"InternetUsersinMillions": 0.228,
+	"InternetusersinPercent": 80
+}, {
+	"ContinentID": 3,
+	"Continent_Name": "America",
+	"CountryID": 182,
+	"Country_Name": "AntiguaAndBarbuda",
+	"PopulationinMillions": 0.086,
+	"InternetUsersinMillions": 0.060,
+	"InternetusersinPercent": 65
+}]

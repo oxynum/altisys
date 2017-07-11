@@ -1,0 +1,27 @@
+﻿<div class="table-holder" >
+    <table>
+        <colgroup>
+            <col style="width:272px">
+            <col style="width:257px">
+            <col style="width:224px">
+        </colgroup>
+        <thead>
+            <tr>
+                <th><a href="#">Relance</a></th>
+                <th><a href="#">Nombre</a></th>
+                <th><a href="#"></a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="relance in Relances">
+                <td>{{relance.Relance}}</td>
+                <td>{{relance.Nombre}}</td>
+                <td><button ng-click="redirect(relance.Nom)" class="btn btn-primary">Demarrer</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- footer of block -->
+<footer class="foot">
+    <a href="#/agenda" class="link">Voir mon agenda complet...</a>
+</footer>

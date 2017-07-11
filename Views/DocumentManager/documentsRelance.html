@@ -1,0 +1,12 @@
+﻿<div>
+    <form role="form" ng-controller="documentsRelanceController">
+        <div class="formPopin">
+            <div class="row">
+                <object ng-show="content" data="{{content}}" type="application/pdf" style="width: 100%; height: 670px;"></object>
+                <div class="col-md-4 formButton">
+                    <button type="button" class="btn btn-primary" ng-click="$dismiss()">Ok</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

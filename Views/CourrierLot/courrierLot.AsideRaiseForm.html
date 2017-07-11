@@ -1,0 +1,64 @@
+﻿<div class="raise-form" ng-controller="courrierLotFilterController">
+    <div class="raise-box">
+        <strong class="heading">Type de relances</strong>
+        <ul class="circle-list add">
+            <li>
+                <button type="button" ng-click="MailClick()" ng-class="Cpt0ClassRatio"><span class="icon-at"> </span> </button>
+                <strong class="title">{{Cpt[0]}}</strong>
+            </li>
+            <li>
+                <button type="button" ng-click="LettreClick()" ng-class="Cpt1ClassRatio"><span class="icon-mail"> </span> </button>
+                <strong class="title">{{Cpt[1]}}</strong>
+            </li>
+        </ul>
+        <ul class="circle-list add">
+            <li>
+                <button type="button" ng-click="SMSClick()" ng-class="Cpt2ClassRatio"><span class="icon-textsms"> </span> </button>
+                <strong class="title">{{Cpt[2]}}</strong>
+            </li>
+            <li>
+                <button type="button" ng-click="FaxClick()" ng-class="Cpt3ClassRatio"><span class="icon-fax"> </span> </button>
+                <strong class="title">{{Cpt[3]}}</strong>
+            </li>
+        </ul>
+    </div>
+    <strong class="heading">Critères de relances</strong>
+    <div>
+        <div class="field-row">
+            <label for="rel1">Société</label>
+            <div class="field">
+                <span class="fake-select">
+                    <select ng-model="Filter.SelectedSociete" ng-options="key for (key , value) in Filter.Societes"></select>
+                </span>
+            </div>
+
+        </div>
+        <div class="field-row">
+            <label for="rel3">Scénario</label>
+            <div class="field">
+                <span class="fake-select">
+                    <select ng-model="Filter.SelectedScenario" ng-options="value for (key , value) in Filter.Scenarios"></select>
+
+                </span>
+            </div>
+            <a class="btn-cross" href="#"><span class="icon-cross"> </span></a>
+        </div>
+        <div class="field-row">
+            <label for="rel4">Niveau</label>
+            <div class="field">
+                <span class="fake-select">
+                    <select ng-model="Filter.SelectedNiveau" ng-options="value for (key , value) in Filter.Niveaux"></select>
+
+                </span>
+            </div>
+            <a class="btn-cross" href="#"><span class="icon-cross"> </span></a>
+        </div>
+        <div class="field-row">
+            <label for="rel5">Multi recherche</label>
+            <div class="field">
+                <input type="search" ng-model="Filter.Multisearch" placeholder="">
+            </div>
+        </div>
+        <button type="button" ng-click="CourrierLotFilterClick()" class="btn-submit"></button>
+    </div>
+</div>

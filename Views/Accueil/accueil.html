@@ -1,0 +1,58 @@
+﻿
+        
+        <!-- contain main informative part of the site -->
+        <div id="wrapper-simple" class="container">
+            <header-bar></header-bar>
+            <!-- topbar of the page -->
+            <div ui-view="accueilTopBarView"></div>
+            <!-- contain main informative part of the site -->
+            <div class="accueil">
+                <main id="main">
+                    <div class="carousel"> 
+                        <div class="pagination">
+                            <!-- pagination generated here -->
+                        </div>
+                        <div class="prev">
+                            <span class="txt">THEME PAGE PREC</span>
+                            <a href="" ng-click="clickPrevious()" class="btn-prev">&nbsp;</a>
+                        </div>
+                        <div class="next">
+                            <span class="txt">THEME PAGE SUIV</span>
+                            <a href="" ng-click="clickNext()" class="btn-next">&nbsp;</a>
+                        </div>
+                        <div class="mask">
+                            <div class="slideset">
+                                <!-- carousel slide -->
+                                <div class="carousel-slide">
+                                    <!-- row -->
+                                    <div class="row" gridster="gridsterOptions" context-menu="menuContextWidgets">
+                                        <ul>
+                                            <li gridster-item="widget" ng-repeat="widget in dashboard.widgets">
+                                                <div class="box">
+                                                    <div class="box-header">
+                                                        <h3>{{ widget.label }}</h3>
+                                                        <div class="box-header-btns pull-right">
+                                                            <a title="settings" ng-click="openSettings(widget)"><i class="glyphicon glyphicon-cog"></i></a>
+                                                            <a title="Remove widget" ng-click="remove(widget)"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-content">
+                                                        <div load-directive="altisys-widget" controller="{{widget.controller}}" template="{{widget.templateUrl}}"></div>
+
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <!-- carousel slide -->
+
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+

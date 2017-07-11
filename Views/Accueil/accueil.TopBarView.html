@@ -1,0 +1,13 @@
+﻿<!-- topbar of the page -->
+<div class="topbar" ng-controller="accueilTopBarController">
+    <div class="container">
+        <h1>{{titrePage}}</h1>
+        <!-- dropdown -->
+        <div class="personal-drop dropdown">
+            <a class="link" href="#">Personnaliser</a>
+            <ul class="drop">
+                <li ng-repeat="widget in widgets"><a href="" ng-click="addWidget(widget)">{{widget.label}}</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

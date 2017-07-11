@@ -1,0 +1,51 @@
+﻿<!-- content of the page -->
+<div class="content" ng-controller="managerDataGridController">
+    <!-- info content -->
+    <section class="info-content">
+        <form action="#">
+            <!-- header of content -->
+            <header class="head">
+                <div class="line">
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <!-- icons nav -->
+                            <ul class="icons-nav">
+                                <li class="chart"><a href="">&nbsp;</a></li>
+                                <li class="users">
+                                    <a href=""  class=""
+                                                modal-trigger
+                                                size="'lg'"
+                                                title="Réaffectation" 
+                                                ui-sref="reaffectation({url:scopurl})">                                    
+                                    </a>
+                                </li>
+                                <li class="excel">
+                                    <a href="" class=""
+                                       modal-trigger
+                                       size="'lg'"
+                                       title="excel"
+                                       ng-click="excel()">
+                                    </a>
+                                </li>
+                                <li class="print"><a href="">&nbsp;</a></li>
+                                <li class="email"><a href="">&nbsp;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- table holder -->
+            <div class="table-holder">
+                <div class="animate-switch-container" ng-switch on="gridMode">
+                    <div class="animate-switch" ng-switch-when="ALL"><custom-grid-manager grid-mode="ALL"></custom-grid-manager></div>
+                    <div class="animate-switch" ng-switch-when="NQ"><custom-grid-manager grid-mode="NQ"></custom-grid-manager></div>
+                    <div class="animate-switch" ng-switch-when="PROMESSE"><custom-grid-manager grid-mode="PROMESSE"></custom-grid-manager></div>
+                    <div class="animate-switch" ng-switch-when="LITIGE"><custom-grid-manager grid-mode="LITIGE"></custom-grid-manager></div>
+                    <div class="animate-switch" ng-switch-when="ECHEANCIER"><custom-grid-manager grid-mode="ECHEANCIER"></custom-grid-manager></div>
+                    <div class="animate-switch" ng-switch-default><custom-grid-manager grid-mode="ALL"></custom-grid-manager></div>
+                </div>
+            </div>
+           
+        </form>
+    </section>
+</div>

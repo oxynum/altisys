@@ -1,0 +1,82 @@
+﻿<div class="raise-form" ng-controller="agendafiltercontroller">
+    <div class="raise-box">
+        <strong class="heading">Type de relances</strong>
+        <ul class="circle-list add">
+            <li>
+                <button type="button" ng-click="TelClick()" ng-class="Cpt0ClassRatio"><span class="icon-tel"> </span> </button>
+                <strong class="title">{{Cpt[0]}}</strong>
+            </li>
+            <li>
+                <button type="button" ng-click="MailClick()" ng-class="Cpt1ClassRatio"><span class="icon-at"> </span> </button>
+                <strong class="title">{{Cpt[1]}}</strong>
+            </li>
+            <li>
+                <button type="button" ng-click="LettreClick()" ng-class="Cpt2ClassRatio"><span class="icon-mail"> </span> </button>
+                <strong class="title">{{Cpt[2]}}</strong>
+            </li>
+        </ul>
+    </div>
+    <strong class="heading">Critères de relances</strong>
+    <div>
+        <div class="field-row">
+            <label for="rel1">Gestionnaire</label>
+            <div class="field">
+                <span class="fake-select">
+                    <select id="Gestionnaires" ng-model="Filter.SelectedGestionnaire" ng-options="key for (key , value) in Filter.Gestionnaires"></select>
+                </span>
+            </div>
+
+        </div>
+        <!--<div class="field-row">
+            <label for="rel2">Type de débiteur</label>
+            <div class="field">
+                <span class="fake-select">
+                    <select id="typedebiteur" ng-model="Filter.SelectedTypeDebiteur" ng-options="value for (key , value) in Filter.TypeDebiteurs"></select>
+                    <a href="#" class="btn-cross disable"><span class="icon-cross"> </span></a>
+                </span>
+            </div>
+            <a class="btn-cross visible" href="#"><span class="icon-cross"> </span></a>
+        </div>-->
+        <div class="field-row">
+            <label for="rel3">Age</label>
+            <div class="field">
+                <span class="fake-select">
+                    <select id="Age" ng-model="Filter.SelectedAge" ng-options="value for (key , value) in Filter.Ages"></select>
+
+                </span>
+            </div>
+            <a class="btn-cross" href="#"><span class="icon-cross"> </span></a>
+        </div>
+        <div class="field-row">
+            <label for="rel4">Qualification</label>
+            <div class="field">
+                <span class="fake-select">
+                    <select id="Qualification" ng-model="Filter.SelectedQualification" ng-options="value for (key , value) in Filter.Qualifications"></select>
+
+                </span>
+            </div>
+            <a class="btn-cross" href="#"><span class="icon-cross"> </span></a>
+        </div>
+        <!--<div class="field-row">
+            <label for="rel5">Type</label>
+            <div class="field">
+                <span class="fake-select">
+                    <select id="Type" ng-model="Filter.SelectedType" ng-options="value for (key , value) in Filter.Types"></select>
+                    <a href="#" class="btn-cross disable"><span class="icon-cross"> </span></a>
+                </span>
+            </div>
+            <a class="btn-cross" href="#"><span class="icon-cross"> </span></a>
+        </div>-->
+        <div class="field-row">
+            <label for="rel5">Multi recherche</label>
+            <div class="field">
+                <input type="search" ng-model="Filter.Multisearch" placeholder="">
+            </div>
+        </div>
+        <div class="check-row">
+            <input type="checkbox" ng-model="Filter.Dispo" id="rel6">
+            <label for="rel6">Contact disponible</label>
+        </div>
+        <button type="button" ng-click="AgendaFilterClick()" class="btn-submit"></button>
+    </div>
+</div>

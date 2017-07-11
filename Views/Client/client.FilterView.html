@@ -1,0 +1,29 @@
+﻿<!-- form search -->
+<form class="form-search" ng-controller="clientFilterController">
+        <div class="field-row">
+            <input type="search" ng-model="Filter.NPiece" placeholder="N° de la facture">
+        </div>
+        <div class="field-row">
+            <span class="fake-select">
+                <select id="Qualification" ng-model="Filter.SelectedCritere" ng-options="value for (key , value) in Filter.Criteres"></select>
+            </span>
+        </div>
+        <div class="field-row">
+            <label for="rel-1">De</label>
+            <input type="search" ng-model="Filter.De" placeholder="Montant mini">
+        </div>
+        <div class="field-row">
+            <label for="rel-2">A</label>
+            <input type="search" ng-model="Filter.A" placeholder="Montant maxi">
+        </div>
+        <div class="field-row">
+            <button type="button" ng-click="ClientFilterClick()" class="btn-submit"></button>
+        </div>
+        <!--<div>
+            <a class="btn-burger" ui-sref="courrier({societe:scopsociete,numcomptable:scopnumcomptable})"><span>&nbsp;</span></a>
+        </div>-->
+        <div>
+            <a class="btn-burger" ui-sref="courrierV2({societe:scopsociete,numcomptable:scopnumcomptable})"><span>&nbsp;</span></a>
+        </div>
+</form>
+

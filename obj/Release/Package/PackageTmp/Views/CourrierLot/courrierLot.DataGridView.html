@@ -1,0 +1,21 @@
+﻿<form ng-controller="courrierLotDataGrid">
+    <!-- header of block -->
+    <header class="head">
+        <button type="button" class="btn btn-default disable">1- Sélectionner les relances</button>
+        <!--<a href="" class="btn btn-default"
+           modal-trigger
+           size="'lg'"
+           title="Voir" ui-sref="afficheRelances()">
+            2- Voir le courrier
+        </a>-->
+        <button type="button" class="btn btn-default" ng-click="Valid()">2- Traiter la relance</button>
+        <a class="btn-burger" href=""><span>&nbsp;</span></a>
+    </header>
+    <!-- slide of block -->
+    <div class="slide">
+        <!-- header of content -->
+        <section class="list-table">
+            <div ng-include src="'./Views/_template/GridSimpleViewSelectEnableHigh.html'"></div>
+        </section>
+    </div>
+</form>

@@ -1,0 +1,65 @@
+﻿
+<header id="header">
+    <div class="container">
+        <!-- header left -->
+        <div class="head-left">
+            <!-- page logo -->
+            <strong class="logo">
+                <a href="#"><img src="images/logo.png" height="28" width="79" alt="Altisys"></a>
+            </strong>
+            <!-- header links -->
+            <ul>
+                <li class="home"><a href='#/accueil/1' title="Accueil"><span>&nbsp;</span></a></li>
+                <li class="agenda"><a href="#/agenda" title="Agenda"><span>&nbsp;</span></a></li>
+                <li class="credit"><a href="#/courrierlot" title="Crédit"><span>&nbsp;</span></a></li>
+                <li class="litigation"><a href="#/campagnelot" title="Contentieux"><span>&nbsp;</span></a></li>
+                <li class="steering"><a href="#/portefeuille" title="Pilotage"><span>&nbsp;</span></a></li>
+            </ul>
+        </div>
+        <!-- header right -->
+        <div class="head-right">
+            <!-- header links -->
+            <ul class="icon-set">
+                <li class="history"><a href="" context-menu="menuHistoOptions"  title="Historique" context-menu-on="click"><span class="icon-forme"></span></a></li>
+                <li class="favorite"><a href="" context-menu="menuFavoriteOptions"  title="Favoris" context-menu-on="click" ><span class="icon-star"></span><div ng-if="favoriteNumber>0"><span class="bubble">{{favoriteNumber}}</span></div></a></li>
+                <li class="notification"><a href="" context-menu="menuMessageOptions" title="Rappel" context-menu-on="click"><span class="icon-bell"></span> <span class="bubble">{{messageNumber}}</span></a></li>
+                <li class="reports"><a href="" ng-click="Report()" title="Reporting"><span class="icon-reports"></span></a></li>
+                <!--<li class="reports"><a href="#/reportDesigner" title="Designer"><span class="icon-reports"></span></a></li>-->
+            </ul>
+            <!-- search form -->
+            <div class="search-form">
+                <!--<a href="#" class="btn-burger"><span>&nbsp;</span></a>-->
+                <input type="search" ng-model="selected" typeahead-min-length="2" 
+                       uib-typeahead="item as item.Label for item in getTextCompletion($viewValue)" 
+                       typeahead-loading="loadingLocations" 
+                       typeahead-no-results="noResults" 
+                       typeahead-template-url="./Views/_template/autoCompleteGrrouping.html"
+                       typeahead-on-select="Search()"
+                       class="form-control" placeholder="Rechercher un client" />
+                <button class="btn-search"><span class="icon-search"> </span></button>
+                <!--<i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+                <div ng-show="noResults">
+                    <i class="glyphicon glyphicon-remove"></i> No Results Found
+                </div>-->
+
+            </div>
+            <a href="" class="link-advance"
+               modal-trigger
+               size="'lg'"
+               title="AdvanceSearch" ui-sref="advanceSearch()">
+                <span class="icon-search"> </span> 
+                Avancée
+            </a>
+            <!-- header links -->
+            <ul class="icon-set">
+                <!--<li class="faq"><a href="" title="Aide"><span class="icon-question"></span></a></li>-->
+                <!--<li class="param"><a href="#/admin" title="Administration V2"><span class="icon-question"></span></a></li>-->
+                <li class="param"><a href="#/admin" title="Administration V2"><span class="icon-settings"></span></a></li>
+                <!--<li class="param"><a href="" ng-click="Admin()" title="Administration"><span class="icon-settings"></span></a></li>-->
+                <!--<li class="user"><a href="" ng-click="User()" title="Préférences"><span class="icon-user"></span></a></li>-->
+                <li class="reports"><a href="#/reportViewer" title="Report V2"><span class="icon-reports"></span></a></li>
+            </ul>
+            <a href="" ng-click="Disconnect()" title="Déconnexion" class="btn-login"></a>
+        </div>
+    </div>
+</header>

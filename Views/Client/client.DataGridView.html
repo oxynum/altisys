@@ -1,0 +1,18 @@
+﻿
+        <div>
+            <section ng-class="{'list-table pan-red':gridMode=='LITIGE','list-table pan-blue':gridMode=='PROMESSE','list-table pan-orange':gridMode=='ECHEANCIER','list-table':gridMode=='ALL','list-table':gridMode=='NQ'}">
+                <h2><span>{{gridMode}}</span></h2>
+
+                <div class="animate-switch-container" ng-switch on="gridMode">
+                    <div class="animate-switch" ng-switch-when="ALL"><custom-grid-client grid-mode="ALL" column-command="ALL"></custom-grid-client></div>
+                    <div class="animate-switch" ng-switch-when="NQ"><custom-grid-client grid-mode="NQ" column-command="NQ"></custom-grid-client></div>
+                    <div class="animate-switch" ng-switch-when="PROMESSE"><custom-grid-client grid-mode="PROMESSE" column-command="PROMESSE"></custom-grid-client></div>
+                    <div class="animate-switch" ng-switch-when="LITIGE"><custom-grid-client grid-mode="LITIGE" column-command="LITIGE"></custom-grid-client></div>
+                    <div class="animate-switch" ng-switch-when="ECHEANCIER"><custom-grid-client grid-mode="ECHEANCIER" column-command="ECHEANCIER"></custom-grid-client></div>
+                    <div class="animate-switch" ng-switch-default><custom-grid-client grid-mode="ALL" column-command="ALL"></custom-grid-client></div>
+
+                </div>
+
+            </section>
+
+        </div>

@@ -1,0 +1,50 @@
+﻿<fieldset>
+    <legend>Ajout d'un rappel</legend>
+    <!-- main container of all the page elements -->
+    <div>
+        <form role="form" ng-submit="AddRappel()" ng-controller="clientRappelController">
+            <div class="line">
+                <div class="col1">
+                    <div class="row formInput clearfix">
+                        <div class="col-md-4 formLabel">
+                            <label></label>
+                        </div>
+                        <div class="col-md-8 formInput">
+                            <label>{{Rappel.Raisonsociale}} - {{Rappel.Societe}} {{Rappel.Numcomptable}}</label>
+                        </div>
+                    </div>
+                    <div class="row formInput clearfix">
+                        <div class="col-md-4 formLabel">
+                            <label>Commentaire</label>
+                        </div>
+                        <div class="col-md-8 formInput">
+                            <textarea name="Notes" style="width:400px; height:120px" ng-model="Rappel.Message" />
+                        </div>
+                    </div>
+                    <div class="row formInput clearfix">
+                        <div class="col-md-4 formLabel">
+                            <label>Rappel</label>
+                        </div>
+                        <div class="col-md-3 formInput">
+                            <input type="text" class="form-control date-control-input" ng-model="Rappel.RecallDate" uib-datepicker-popup="{{format}}" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Fermer" alt-input-formats="altInputFormats" />
+                            <span class="input-group-btn calendar-input">
+                                <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                            </span>
+                        </div>
+                        <div class="col-md-2 formInput">
+                            <input type="time" class="form-control" name="input" ng-model="Rappel.RecallHour"
+                   placeholder="HH:mm" min="07:00" max="20:00" ng-model-options="{allowInvalid: true}"/>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="col1">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" ng-click="$dismiss()">Annuler</button>
+                                <input type="submit" class="btn btn-primary" value="Ok" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+</fieldset>

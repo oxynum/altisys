@@ -1,0 +1,22 @@
+<header-bar></header-bar>
+<!-- topbar of the page -->
+<div ng-controller="viewerController">
+    <div class="topbar">
+        <div class="container">
+            <h1>Reporting</h1>
+                <span class="fake-select" style="top:-2px">
+                    <select name="repeatSelect" id="repeatSelect" ng-model="reports.model" ng-change="reportChange()">
+                        <option ng-repeat="option in reports.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                    </select>
+                </span>
+            </div>
+
+    </div>
+    <div id="wrapper-report" class="container" >
+        <div id="report">
+            <div id="viewer">
+                Stimulsoft Reports.JS Viewer.
+            </div>
+        </div>
+    </div>
+</div>
