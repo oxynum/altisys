@@ -1,11 +1,11 @@
 ﻿
     <!-- main container of all the page elements -->
-    <div id="wrapper" class="slide-panel container" ng-class="{'active': !isCollapsed}" ng-controller="clientcontroller">
+    <div id="wrapper" class="slide-panel container wrapper-client-custom" ng-class="{'active': !isCollapsed}" ng-controller="clientcontroller">
     <header-bar></header-bar>
 
     <div ui-view="clientTopBarView" class="topbar"></div>
-    <section class="slide-bar" ng-controller="clientScenarioInfoController">
-        <header class="head">
+    <section class="slide-bar slide-bar-custom" ng-controller="clientScenarioInfoController">
+        <header class="head head-client-custom">
             <div class="container">
                 <a href="" class="opener" ng-click="toggleCollapsedAction()">&nbsp;</a>
                 <h2>Scénario &amp; actions</h2>

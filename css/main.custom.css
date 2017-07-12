@@ -13,3 +13,22 @@
 // © Altisys2017. All right reserved
 // 
 //////////////////////////////////////////////////////////////////////////////////////*/
+
+/* * * * * * * * *
+	HEADER
+* * * * * * * * */
+.slide-bar-custom{
+	position: initial;
+}
+#wrapper.wrapper-client-custom{
+	padding: 248px 0 20px
+}
+#wrapper.wrapper-client-custom.active {
+    padding: 208px 0 20px;
+}
+.head-client-custom{
+	position: fixed;
+	top: 120px;
+	width: 100%;
+	z-index: 10
+}
