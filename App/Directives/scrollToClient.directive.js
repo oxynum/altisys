@@ -6,14 +6,15 @@ app.directive("scrollToClient", ['$window', '$document', function ($window, $doc
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {
-            console.log("Je suis la");
             angular.element($window).bind("scroll", function() {
-                if ($window.pageYOffset >= $document[0].getElementById('main').offsetTop-208) {
+                if ($window.pageYOffset > 500 && scope.boolChangeClass === false) {
                     scope.boolChangeClass = true;
-                    console.log('Yo');
-                } else {
+                } 
+                else if ($window.pageYOffset > 0 && scope.boolChangeClass === true){
+                    scope.boolChangeClass = true;
+                }
+                else {
                     scope.boolChangeClass = false;
-                    console.log('Plus yo');
                 }
                 scope.$apply();
             });

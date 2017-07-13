@@ -1,6 +1,7 @@
 ﻿
     <!-- main container of all the page elements -->
-    <div id="wrapper" class="slide-panel container wrapper-client-custom" ng-class="{'active': !isCollapsed}" ng-controller="clientcontroller">
+
+    <div id="wrapper" class="slide-panel container wrapper-client-custom" ng-class="{'active': !isCollapsed}" ng-controller="clientcontroller" scroll-to-client>
     <header-bar></header-bar>
 
     <div ui-view="clientTopBarView" class="topbar"></div>
@@ -101,12 +102,12 @@
                 <!--<li class="ico2"><a href="#">&nbsp;</a></li>-->
             </ul>
         </nav>
-        <div class="main-holder" scroll-to-client>
-            <section class="billing-block">
+        <div class="main-holder">
+            <section class="billing-block" ng-class="{'fix-on-scroll': boolChangeClass}">
                 <div class="col">
                     <div ui-view="clientBillingView" ng-controller="billingViewController"></div>
                     <!-- progress block -->
-                    <div class="progress-block balsmall" ng-controller="balanceAgeeController">
+                    <div class="progress-block balsmall" ng-controller="balanceAgeeController" ng-class="{'hide-on-scroll': boolChangeClass}">
                         <h3>Balance âgée</h3>
                         <div class="holder">
                             <div class="wrap">
@@ -142,9 +143,9 @@
                         </div>
                     </div>
                 </div>
-                <div ui-view="clientFilterView" class="col"></div>
+                <div ui-view="clientFilterView" class="col" ng-class="{'hide-on-scroll': boolChangeClass}"></div>
             </section>
-            <section class="list-table client" ui-view="clientDataGridView"></section>
+            <section class="list-table client" ui-view="clientDataGridView" ng-class="{'margin-top-on-scroll': boolChangeClass}"></section>
         </div>
     </main>
 </div>
