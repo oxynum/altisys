@@ -33,6 +33,40 @@
 	z-index: 10;
 }
 
+
+/* * * * * * * * *
+	SCROLL
+* * * * * * * * */
+
+@keyframes fade_out {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@-webkit-keyframes fade_out {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@keyframes fade_in {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+@-webkit-keyframes fade_in {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+.ng-leave {
+  animation: fade_out 0.5s linear;
+  -webkit-animation: fade_out 0.5s linear;
+}
+.ng-enter {
+  animation: fade_in 0.5s linear;
+  -webkit-animation: fade_in 0.5s linear;
+}
+
 .hide-on-scroll{
 	display: none;
 }
@@ -76,7 +110,7 @@
 }
 
 .billing-block.height-on-scroll{
-	height: 400px;
+	height: 450px;
 }
 .no-margin-padding-on-scroll{
 	margin: 0;
@@ -85,4 +119,41 @@
 .field-row.no-margin-padding-on-scroll{
 	margin: 0;
 	padding-left: 32px;
+}
+.form-search{
+	text-align: center;
+}
+.form-search > a{
+	cursor: pointer;
+}
+#client-filter-view{
+	position: relative;
+}
+#client-filter-view > form.btn-clicked{
+	position: absolute;
+	background-color: #eef0f3;
+	top: -75px;
+	padding-left: 5px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+.form-search .button-on-scroll{
+	display: block;
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+.form-search .button-on-scroll button{
+	border-radius: 0 5px 5px 0;
+}
+.echap-form{
+	position: absolute;
+	top: 10px;
+    left: 10px;
+    color: #9d9d9d
+}
+.echap-form:hover{
+	text-decoration: none;
+}
+.echap-form:before{
+	content: "\002716"
 }

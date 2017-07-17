@@ -1,6 +1,6 @@
 ﻿
     <!-- main container of all the page elements -->
-    <div id="wrapper" class="slide-panel container wrapper-client-custom" ng-class="{'active': !isCollapsed}" ng-controller="clientcontroller" scroll-to-client>
+    <div id="wrapper" class="slide-panel container wrapper-client-custom" ng-class="{'active': !isCollapsed}" ng-controller="clientcontroller">
     <header-bar></header-bar>
 
     <div ui-view="clientTopBarView" class="topbar"></div>
@@ -102,7 +102,7 @@
             </ul>
         </nav>
         <div class="main-holder">
-            <section class="billing-block" ng-class="{'height-on-scroll': boolChangeClass}">
+            <section class="billing-block" ng-class="{'height-on-scroll': boolChangeClass}" scroll-to-client>
                 <div ng-class="{'fix-on-scroll': boolChangeClass}">
                     <div class="col">
                         <div ui-view="clientBillingView" ng-controller="billingViewController"></div>
@@ -143,7 +143,7 @@
                             </div>
                         </div>
                     </div>
-                    <div ui-view="clientFilterView" class="col"></div>
+                    <div ui-view="clientFilterView" class="col" id="client-filter-view"></div>
                 </div>
             </section>
             <section class="list-table client" ui-view="clientDataGridView" ng-class="{'margin-top-on-scroll': boolChangeClass}"></section>

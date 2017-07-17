@@ -8,10 +8,27 @@ app.directive("scrollToClient", ['$window', '$document', function ($window, $doc
         link: function(scope, element, attrs) {
             angular.element($window).bind("scroll", function() {
                 if ($window.pageYOffset > 500) {
-                    scope.boolChangeClass = true;
+
+                    if (!scope.boolChangeClass) {
+                        scope.boolChangeClass = true;
+                    }
+                    if (!scope.boolClientFilter && !scope.btnClicked) {
+                        scope.boolClientFilter = true;
+                    }  
+
                 } 
                 else {
-                    scope.boolChangeClass = false;
+
+                    if (scope.boolChangeClass) {
+                        scope.boolChangeClass = false;
+                    }
+                    if (scope.boolClientFilter) {
+                        scope.boolClientFilter = false;
+                    }
+                    if (scope.btnClicked) {
+                        scope.btnClicked = false;
+                    }    
+
                 }
                 scope.$apply();
             });
