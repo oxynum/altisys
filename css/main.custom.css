@@ -41,7 +41,7 @@
 	display: none;
 }
 
-.fix-on-scroll{
+.billing-block .fix-on-scroll{
 	position: fixed;
 	top: 208px;
 	left: 0;
@@ -50,7 +50,7 @@
 	background-color: #eef0f3;
 	margin: 0;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -73,4 +73,16 @@
 }
 .margin-top-on-scroll{
 	margin-top: 100px;
+}
+
+.billing-block.height-on-scroll{
+	height: 400px;
+}
+.no-margin-padding-on-scroll{
+	margin: 0;
+	padding: 0
+}
+.field-row.no-margin-padding-on-scroll{
+	margin: 0;
+	padding-left: 32px;
 }

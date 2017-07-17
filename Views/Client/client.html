@@ -1,6 +1,5 @@
 ﻿
     <!-- main container of all the page elements -->
-
     <div id="wrapper" class="slide-panel container wrapper-client-custom" ng-class="{'active': !isCollapsed}" ng-controller="clientcontroller" scroll-to-client>
     <header-bar></header-bar>
 
@@ -103,47 +102,49 @@
             </ul>
         </nav>
         <div class="main-holder">
-            <section class="billing-block" ng-class="{'fix-on-scroll': boolChangeClass}">
-                <div class="col">
-                    <div ui-view="clientBillingView" ng-controller="billingViewController"></div>
-                    <!-- progress block -->
-                    <div class="progress-block balsmall" ng-controller="balanceAgeeController" ng-class="{'hide-on-scroll': boolChangeClass}">
-                        <h3>Balance âgée</h3>
-                        <div class="holder">
-                            <div class="wrap">
-                                <span class="txt">{{balanceAgeePromesse.Montant | number:2}}</span>
-                                <div class="progress-bar">
-                                    <div class="progress blue" ng-style="{ 'width' : progressPromesse+'%' }"></div>
+            <section class="billing-block" ng-class="{'height-on-scroll': boolChangeClass}">
+                <div ng-class="{'fix-on-scroll': boolChangeClass}">
+                    <div class="col">
+                        <div ui-view="clientBillingView" ng-controller="billingViewController"></div>
+                        <!-- progress block -->
+                        <div class="progress-block balsmall" ng-controller="balanceAgeeController" ng-class="{'hide-on-scroll': boolChangeClass}">
+                            <h3>Balance âgée</h3>
+                            <div class="holder">
+                                <div class="wrap">
+                                    <span class="txt">{{balanceAgeePromesse.Montant | number:2}}</span>
+                                    <div class="progress-bar">
+                                        <div class="progress blue" ng-style="{ 'width' : progressPromesse+'%' }"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="wrap">
-                                <span class="txt">{{balanceAgeeLitige.Montant | number:2}}</span>
-                                <div class="progress-bar">
-                                    <div class="progress red" ng-style="{ 'width' : progressLitige+'%' }"></div>
+                                <div class="wrap">
+                                    <span class="txt">{{balanceAgeeLitige.Montant | number:2}}</span>
+                                    <div class="progress-bar">
+                                        <div class="progress red" ng-style="{ 'width' : progressLitige+'%' }"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="wrap">
-                                <span class="txt">{{balanceAgeeEcheancier.Montant | number:2}}</span>
-                                <div class="progress-bar">
-                                    <div class="progress orange" ng-style="{ 'width' : progressEcheancier+'%' }"></div>
+                                <div class="wrap">
+                                    <span class="txt">{{balanceAgeeEcheancier.Montant | number:2}}</span>
+                                    <div class="progress-bar">
+                                        <div class="progress orange" ng-style="{ 'width' : progressEcheancier+'%' }"></div>
+                                    </div>
                                 </div>
+                                <ul class="points">
+                                    <li>0</li>
+                                    <li>30j</li>
+                                    <li>60j</li>
+                                    <li>90j</li>
+                                </ul>
+                                <a href="" class="link"
+                                   modal-trigger
+                                   size="'lg'"
+                                   title="balanceAgeeDetaillee" ui-sref="balanceAgeeDetaillee({societe:scopsociete,numcomptable:scopnumcomptable})">
+                                    Voir balance âgée
+                                </a>
                             </div>
-                            <ul class="points">
-                                <li>0</li>
-                                <li>30j</li>
-                                <li>60j</li>
-                                <li>90j</li>
-                            </ul>
-                            <a href="" class="link"
-                               modal-trigger
-                               size="'lg'"
-                               title="balanceAgeeDetaillee" ui-sref="balanceAgeeDetaillee({societe:scopsociete,numcomptable:scopnumcomptable})">
-                                Voir balance âgée
-                            </a>
                         </div>
                     </div>
+                    <div ui-view="clientFilterView" class="col"></div>
                 </div>
-                <div ui-view="clientFilterView" class="col" ng-class="{'hide-on-scroll': boolChangeClass}"></div>
             </section>
             <section class="list-table client" ui-view="clientDataGridView" ng-class="{'margin-top-on-scroll': boolChangeClass}"></section>
         </div>

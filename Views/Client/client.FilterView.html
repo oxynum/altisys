@@ -1,29 +1,31 @@
 ﻿<!-- form search -->
-<form class="form-search" ng-controller="clientFilterController">
-        <div class="field-row">
+<form class="form-search" ng-controller="clientFilterController" ng-class="{'no-margin-padding-on-scroll': boolChangeClass}">
+        <div class="field-row" ng-class="{'no-margin-padding-on-scroll': boolChangeClass}">
             <input type="search" ng-model="Filter.NPiece" placeholder="N° de la facture">
         </div>
-        <div class="field-row">
+        <div class="field-row" ng-class="{'hide-on-scroll': boolChangeClass}">
             <span class="fake-select">
                 <select id="Qualification" ng-model="Filter.SelectedCritere" ng-options="value for (key , value) in Filter.Criteres"></select>
             </span>
         </div>
-        <div class="field-row">
+        <div class="field-row" ng-class="{'hide-on-scroll': boolChangeClass}">
             <label for="rel-1">De</label>
             <input type="search" ng-model="Filter.De" placeholder="Montant mini">
         </div>
-        <div class="field-row">
+        <div class="field-row" ng-class="{'hide-on-scroll': boolChangeClass}">
             <label for="rel-2">A</label>
             <input type="search" ng-model="Filter.A" placeholder="Montant maxi">
         </div>
-        <div class="field-row">
+        <div class="field-row" ng-class="{'hide-on-scroll': boolChangeClass}">
             <button type="button" ng-click="ClientFilterClick()" class="btn-submit"></button>
         </div>
         <!--<div>
             <a class="btn-burger" ui-sref="courrier({societe:scopsociete,numcomptable:scopnumcomptable})"><span>&nbsp;</span></a>
         </div>-->
-        <div>
+        <div ng-class="{'hide-on-scroll': boolChangeClass}">
             <a class="btn-burger" ui-sref="courrierV2({societe:scopsociete,numcomptable:scopnumcomptable})"><span>&nbsp;</span></a>
         </div>
+
+        <a ng-if="boolChangeClass">Voir plus de critères</a>
 </form>
 

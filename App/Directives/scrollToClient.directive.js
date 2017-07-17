@@ -7,12 +7,9 @@ app.directive("scrollToClient", ['$window', '$document', function ($window, $doc
         restrict: 'A',
         link: function(scope, element, attrs) {
             angular.element($window).bind("scroll", function() {
-                if ($window.pageYOffset > 500 && scope.boolChangeClass === false) {
+                if ($window.pageYOffset > 500) {
                     scope.boolChangeClass = true;
                 } 
-                else if ($window.pageYOffset > 0 && scope.boolChangeClass === true){
-                    scope.boolChangeClass = true;
-                }
                 else {
                     scope.boolChangeClass = false;
                 }
