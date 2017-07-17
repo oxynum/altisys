@@ -21,7 +21,7 @@
 	position: initial;
 }
 #wrapper.wrapper-client-custom{
-	padding: 248px 0 20px
+	padding: 248px 0 20px;
 }
 #wrapper.wrapper-client-custom.active {
     padding: 208px 0 20px;
@@ -30,5 +30,126 @@
 	position: fixed;
 	top: 120px;
 	width: 100%;
-	z-index: 10
+	z-index: 10;
+}
+
+
+/* * * * * * * * *
+	SCROLL
+* * * * * * * * */
+
+@keyframes fade_out {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@-webkit-keyframes fade_out {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@keyframes fade_in {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+@-webkit-keyframes fade_in {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+.fade-scroll.ng-leave {
+  animation: fade_out 0.5s ease;
+  -webkit-animation: fade_out 0.5s ease;
+}
+.fade-scroll.ng-enter {
+  animation: fade_in 0.5s ease;
+  -webkit-animation: fade_in 0.5s ease;
+}
+
+.billing-block .fix-on-scroll{
+	position: fixed;
+	top: 208px;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	background-color: #eef0f3;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+}
+
+.billing-block > div {
+	transition: height 0.4s linear;
+	width: 100%;
+	height: 100%
+}
+
+.billing-block .no-margin-on-scroll{
+	margin: 0;
+	padding: 10px 0;
+}
+
+.billing-block .boxes-wrap .box-on-scroll{
+	height: 130px;
+}
+
+#wrapper.wrapper-on-scroll{
+	padding: 500px 0 20px;
+}
+
+.boxes-wrap.min-height-on-scroll{
+	min-height: 0;
+	overflow: hidden;
+}
+
+.billing-block.height-on-scroll{
+	height: 450px;
+}
+.no-margin-padding-on-scroll{
+	margin: 0;
+	padding: 0
+}
+.field-row.no-margin-padding-on-scroll{
+	margin: 0;
+	padding-left: 32px;
+}
+.form-search{
+	text-align: center;
+}
+.form-search > a{
+	cursor: pointer;
+}
+#client-filter-view{
+	position: relative;
+}
+#client-filter-view > form.btn-clicked{
+	position: absolute;
+	background-color: #eef0f3;
+	top: -75px;
+	padding-left: 5px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+.form-search .button-on-scroll{
+	display: block;
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+.form-search .button-on-scroll button{
+	border-radius: 0 5px 5px 0;
+}
+.echap-form{
+	position: absolute;
+	top: 10px;
+    left: 10px;
+    color: #9d9d9d
+}
+.echap-form:hover{
+	text-decoration: none;
+}
+.echap-form:before{
+	content: "\002716"
 }
