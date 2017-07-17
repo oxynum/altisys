@@ -35,3 +35,14 @@
 .page-content {
     /* custom content class */
 }
+
+/* [SIDEBAR] */
+.raise-form .field-row.full-field {
+    padding: 0px;
+}
+.raise-form .check-row.full-checkbox {
+    padding: 0px;
+}
+.field input[type="search"].full-searchbar {
+    width: 100%;
+}
