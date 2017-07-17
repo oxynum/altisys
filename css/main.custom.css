@@ -58,21 +58,13 @@
   to { opacity:1; }
 }
 
-.ng-leave {
-  animation: fade_out 0.5s linear;
-  -webkit-animation: fade_out 0.5s linear;
+.fade-scroll.ng-leave {
+  animation: fade_out 0.5s ease;
+  -webkit-animation: fade_out 0.5s ease;
 }
-.ng-enter {
-  animation: fade_in 0.5s linear;
-  -webkit-animation: fade_in 0.5s linear;
-}
-
-.hide-on-scroll{
-	display: none;
-}
-
-.billing-block .hide-on-scroll{
-	display: none;
+.fade-scroll.ng-enter {
+  animation: fade_in 0.5s ease;
+  -webkit-animation: fade_in 0.5s ease;
 }
 
 .billing-block .fix-on-scroll{
@@ -86,6 +78,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 150px;
+}
+
+.billing-block > div {
+	transition: height 0.4s linear;
+	width: 100%;
+	height: 100%
 }
 
 .billing-block .no-margin-on-scroll{
@@ -104,9 +103,6 @@
 .boxes-wrap.min-height-on-scroll{
 	min-height: 0;
 	overflow: hidden;
-}
-.margin-top-on-scroll{
-	margin-top: 100px;
 }
 
 .billing-block.height-on-scroll{

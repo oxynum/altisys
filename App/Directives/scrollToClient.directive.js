@@ -7,7 +7,7 @@ app.directive("scrollToClient", ['$window', '$document', function ($window, $doc
         restrict: 'A',
         link: function(scope, element, attrs) {
             angular.element($window).bind("scroll", function() {
-                if ($window.pageYOffset > 500) {
+                if ($window.pageYOffset > $document[0].getElementById('main').offsetTop - 100) {
 
                     if (!scope.boolChangeClass) {
                         scope.boolChangeClass = true;
