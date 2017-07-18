@@ -46,3 +46,23 @@
 .field input[type="search"].full-searchbar {
     width: 100%;
 }
+
+/* [HEADER] */
+@media (max-width: 992px) {
+    .head-left ul li.home.reduce-md-down {
+        margin-right: 12px;
+    }
+    .logo {
+        margin-right:10px;
+    }
+}
+
+.head-right .icon-set li:first-child {
+    margin-left: 0px;
+} 
+.head-right .icon-set li:last-child  {
+    margin-right:0px;
+}
+.head-right {
+    width:auto;
+}
