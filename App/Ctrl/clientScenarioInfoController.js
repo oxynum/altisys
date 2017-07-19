@@ -45,7 +45,28 @@
             if ($scope.ClientScenario.niv_relance == niveau && etape == 0)
                 return true;
             return false;
-        }
+        };
+
+        $scope.addEtape = false;
+        $scope.showAddEtape = function(){
+            $scope.addEtape = !$scope.addEtape;
+            console.log('yo');
+        };
+
+        $scope.deplacement = 0;
+        $scope.nextStep = function(){
+            if ($scope.deplacement > -63*($scope.etapes.count-9) && $scope.etapes.count>=10) {
+                $scope.deplacement -= 63;
+            }
+            console.log($scope.deplacement);
+        };
+        $scope.prevStep = function(){
+            if ($scope.deplacement < 0 && $scope.etapes.count>=10) {
+                $scope.deplacement += 63;
+            }
+            console.log($scope.deplacement);
+        };
+
     }]);
     
     

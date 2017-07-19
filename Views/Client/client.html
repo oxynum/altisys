@@ -14,18 +14,21 @@
                         <div ng-switch="etapes.count">
                             <div ng-switch-when="0">
                                 <div class="row">
+                                <!--
                                     <a href="" class="link"
                                        modal-trigger
                                        size="'lg'"
                                        title="AddRappel" ui-sref="clientRappel({societe:scopsociete,numcomptable:scopnumcomptable})">
                                         Ajouter un rappel
                                     </a>
+                                -->
                                 </div>
                                 <div class="col-md-8 formLabel">
                                     Aucun scénario d'affecté.
                                 </div>
                             </div>
                             <div ng-switch-default>
+                            <!--
                                 <div class="row">
                                     <a href="" class="link"
                                        modal-trigger
@@ -42,9 +45,10 @@
                                         Ajouter une étape
                                     </a>
                                 </div>
+                            -->
                                 <div class="mask">
                                     <div class="slideset">
-                                        <div class="sm-slide" ng-repeat="etape in etapes">
+                                        <div class="sm-slide" ng-repeat="etape in etapes" ng-style="{'left': deplacement+'px'}">
                                             <div ng-class="{'circle':true, 'etape':etape.Etape > 0,'niveau':etape.Etape == 0, 'gray':ClientScenario.Niv_relance > etape.sNiveau, 'green':ClientScenario.Niv_relance == etape.sNiveau && etape.Etape == 0 }" ng-show="etape.CodeAction == 'L'"><span class="icon-mail2"></span><em class="num"></em></div>
                                             <div ng-class="{'circle':true, 'etape':etape.Etape > 0,'niveau':etape.Etape == 0, 'gray':ClientScenario.Niv_relance > etape.sNiveau, 'green':ClientScenario.Niv_relance == etape.sNiveau && etape.Etape == 0 }" ng-show="etape.CodeAction == 'M'"><span class="icon-at2"></span><em class="num"></em></div>
                                             <div ng-class="{'circle':true, 'etape':etape.Etape > 0,'niveau':etape.Etape == 0, 'gray':ClientScenario.Niv_relance > etape.sNiveau, 'green':ClientScenario.Niv_relance == etape.sNiveau && etape.Etape == 0 }" ng-show="etape.CodeAction == 'F'"><span class="icon-fax"></span><em class="num"></em></div>
@@ -54,18 +58,36 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mask-info-complement">
-                                    Scénario:{{ClientScenario.Scenario}} - Niveau:{{ClientScenario.Niv_relance}} - Traitement:{{ClientScenario.Codetraitement}}
-                                </div>
-                                <a ng-class="{'btn-prev':true, 'disable':etapes.count<10}" href=""><span class="icon-arrow-l"></span></a>
-                                <a ng-class="{'btn-next':true, 'disable':etapes.count<10}" href=""><span class="icon-arrow-r"></span></a>
+
+                                <a ng-class="{'btn-prev':true, 'disable':etapes.count<10}" href=""><span class="icon-arrow-l" ng-click="prevStep()"></span></a>
+                                <a ng-class="{'btn-next':true, 'disable':etapes.count<10}" href=""><span class="icon-arrow-r" ng-click="nextStep()"></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div id="btn-add-step" ng-click="showAddEtape()">+
+                    <div ng-if="addEtape">
+                        <a href="" class="link"
+                                    modal-trigger
+                                   size="'lg'"
+                                   title="AddRappel" ui-sref="clientRappel({societe:scopsociete,numcomptable:scopnumcomptable})">
+                                        Ajouter un rappel
+                        </a>
+                        <hr>
+                        <a href="" class="link2"
+                                       modal-trigger
+                                       size="'lg'"
+                                       title="AddEtape" ui-sref="clientEtape({societe:scopsociete,numcomptable:scopnumcomptable})">
+                                        Ajouter une étape
+                        </a>
+                    </div>
+                </div> 
+                <div class="mask-info-complement">
+                    <p>Scénario:{{ClientScenario.Scenario}}</p>
+                    <p>Niveau:{{ClientScenario.Niv_relance}}</p>
+                    <p>Traitement:{{ClientScenario.Codetraitement}}</p>
+                </div>
                 <div class="right">
-                    <span class="text">Action attendue</span>
-                    <span class="text">Aujourd’hui</span>
                     <a href="" class="action-btn"
                        modal-trigger
                        size="'lg'"
@@ -103,7 +125,7 @@
         </nav>
         <div class="main-holder">
             <section class="billing-block" ng-class="{'height-on-scroll': boolChangeClass}" scroll-to-client>
-                <div ng-class="{'fix-on-scroll': boolChangeClass}">
+                <div ng-class="{'fix-on-scroll': boolChangeClass, 'active': isCollapsed}">
                     <div class="col">
                         <div ui-view="clientBillingView" ng-controller="billingViewController"></div>
                         <!-- progress block -->

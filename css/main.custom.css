@@ -20,17 +20,17 @@
 .slide-bar-custom{
 	position: initial;
 }
-#wrapper.wrapper-client-custom{
-	padding: 248px 0 20px;
+#wrapper.wrapper-client-custom {
+    padding: 218px 0 20px;
 }
 #wrapper.wrapper-client-custom.active {
-    padding: 208px 0 20px;
+    padding: 176px 0 20px;
 }
 .head-client-custom{
 	position: fixed;
 	top: 120px;
 	width: 100%;
-	z-index: 10;
+	z-index: 11;
 }
 
 
@@ -69,7 +69,7 @@
 
 .billing-block .fix-on-scroll{
 	position: fixed;
-	top: 208px;
+	top: 176px;
 	left: 0;
 	z-index: 10;
 	width: 100%;
@@ -79,6 +79,10 @@
 	justify-content: center;
 	align-items: center;
 	height: 150px;
+}
+
+.billing-block .fix-on-scroll.active{
+	top: 200px;
 }
 
 .billing-block > div {
@@ -152,4 +156,95 @@
 }
 .echap-form:before{
 	content: "\002716"
+}
+
+
+/* * * * * * * * * *
+	TIMELINE
+* * * * * * * * * */
+
+.slide-bar .head .container {
+    padding: 18px 46px;
+}
+
+#wrapper.active .slide-bar .head .container {
+	padding: 6px 46px;
+}
+
+.head-client-custom > .container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide-bar .head h2{
+	font-size: 15px
+}
+
+#wrapper.active .slide-bar .text {
+    font-size: 15px;
+}
+
+.head-client-custom .row{
+	margin-left: 0
+}
+
+.mask-info-complement{
+	margin: 0 0 0 12px;
+	padding-left: 3px;
+	border-left: 1px solid rgba(0,0,0,0.35)
+}
+
+.mask-info-complement > p{
+	margin: 1px 0
+}
+
+#btn-add-step{
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 28px;
+    border-radius: 100%;
+    background-color: #ff9948;
+    margin: 0 0px 0 10px;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    position: relative;
+}
+
+#btn-add-step > div{
+	width: 200px;
+    padding: 5px 10px;
+    position: absolute;
+    left: -80px;
+    background: white;
+    border-radius: 5px;
+}
+
+#btn-add-step a {
+	font-size: 14px
+}
+
+#btn-add-step hr {
+	margin: 5px 0
+}
+
+#wrapper.active .slide-bar .right {
+    padding: 0;
+}
+
+.sm-carousel .sm-slide{
+    transition: left 0.5s linear;
+}
+
+.sm-carousel .btn-prev, .sm-carousel .btn-next{
+	z-index: 2;
+}
+
+.slide-bar .action-btn {
+    top: 3px;
 }
