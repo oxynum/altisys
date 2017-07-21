@@ -52,7 +52,7 @@
 	position: fixed;
 	top: 87px;
 	width: 100%;
-	z-index: 11;
+	z-index: 2;
 }
 #header{
 	padding: 3px 0 3px;
@@ -180,7 +180,7 @@
 	position: fixed;
 	top: 143px;
 	left: 0;
-	z-index: 10;
+	z-index: 2;
 	width: 100%;
 	background-color: #eef0f3;
 	margin: 0;
