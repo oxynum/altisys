@@ -14,6 +14,28 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////////*/
 
+/* [REINIT CLASSES] */
+.full-container {
+    width: 100%;
+}
+
+.left-sidebar {
+    /* Duplicata of .sidebar-agenda without fixed width*/
+    position: relative;
+    margin: 0 0;
+    padding: 35px 20px 0;
+    background: rgba(255, 255, 255, .5);
+    float:left;
+}
+
+#main.main-view {
+    width: auto;
+}
+
+.page-content {
+    /* custom content class */
+}
+
 /* * * * * * * * *
 	HEADER
 * * * * * * * * */
@@ -44,9 +66,81 @@
     padding: 6px 24px 6px 80px;
 }
 
+.head-right .icon-set li:first-child {
+    margin-left: 0px;
+} 
+.head-right .icon-set li:last-child  {
+    margin-right:0px;
+}
+.head-right {
+    width:auto;
+}
+
+@media (max-width: 992px) {
+    .head-left ul li.home.reduce-md-down {
+        margin-right: 12px;
+    }
+    .logo {
+        margin-right:10px;
+    }
+}
+
+/* [SEARCHBAR WRAPPER] */
+.search-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4em;
+    line-height: 36px;
+    margin: 0 10px;
+}
+.search-link:hover, .search-link:focus, .search-link:active, .search-link:visited {
+    text-decoration: none;
+}
+.search-link:hover .icon-search {
+    text-shadow: 0 0 7px rgba(0,0,0,0.6);
+}
+
+.head-right .search-block {
+    display: inline-block;
+}
+
+@media (max-width:992px) {
+    .head-right .search-block {
+        position: absolute;
+        background: #dde2e7;
+        padding: 20px 10px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+    }
+    .head-right .search-block.wrapped {
+        display: none;
+    }
+    .head-right .search-block.unwrapped {
+        display: block;
+    }
+}
+
+
 /* * * * * * * * *
-	SCROLL
+  SIDEBAR PAGES
 * * * * * * * * */
+
+/* [SIDEBAR] */
+.raise-form .field-row.full-field {
+    padding: 0px;
+}
+.raise-form .check-row.full-checkbox {
+    padding: 0px;
+}
+.field input[type="search"].full-searchbar {
+    width: 100%;
+}
+
+/* * * * * * * * *
+  CLIENT PAGE
+* * * * * * * * */
+
+/* [SCROLL] */
 
 @keyframes fade_out {
   from { opacity:1; }
@@ -171,19 +265,13 @@
 }
 
 
-/* * * * * * * * * * * * * * * * 
-	BUTTON IN BILLING VIEW
-* * * * * * * * * * * * * * * * */
-
+/* [BUTTON BILLING VIEW] */
 .boxes-wrap .box.action button.create.btn-custom:focus{
 	color: white;
 }
 
 
-/* * * * * * * * * *
-	TIMELINE
-* * * * * * * * * */
-
+/* [TIMELINE] */
 .slide-bar .head .container {
     padding: 8px 46px;
 }
@@ -287,42 +375,4 @@
     width: 21px;
     height: 19px;
     top: 3px;
-}
-
-/* * * * * * * * * *
- SEARCHBAR WRAPPER
-* * * * * * * * * */
-
-.search-link {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 1.4em;
-    line-height: 36px;
-    margin: 0 10px;
-}
-.search-link:hover, .search-link:focus, .search-link:active, .search-link:visited {
-    text-decoration: none;
-}
-.search-link:hover .icon-search {
-    text-shadow: 0 0 7px rgba(0,0,0,0.6);
-}
-
-.head-right .search-block {
-    display: inline-block;
-}
-
-@media (max-width:992px) {
-    .head-right .search-block {
-        position: absolute;
-        background: #dde2e7;
-        padding: 20px 10px;
-        border: 1px solid transparent;
-        border-radius: 10px;
-    }
-    .head-right .search-block.wrapped {
-        display: none;
-    }
-    .head-right .search-block.unwrapped {
-        display: block;
-    }
 }
