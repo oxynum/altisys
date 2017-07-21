@@ -74,13 +74,18 @@
             }
         };
 
-        $(window).on('resize', function(){
+        function hideTextValidButton() {
             if (window.innerWidth <= 1065) {
                 $('.slide-bar .action-btn').html("");
             }
             else{
                 $('.slide-bar .action-btn').html("Valider l'action");
             }
+        }
+
+        hideTextValidButton();
+        $(window).on('resize', function(){
+            hideTextValidButton();
         });
 
     }]);
