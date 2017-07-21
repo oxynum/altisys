@@ -250,7 +250,7 @@
                    */
                   function hideSearchOnTablet() {
                       var searchBlock = $(".search-block");
-                      if ($(window).width() <= 992){
+                      if ($(window).width() <= 1055){
                           searchBlock.addClass("wrapped");
                       }
                       else {
