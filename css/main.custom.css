@@ -171,6 +171,15 @@
 }
 
 
+/* * * * * * * * * * * * * * * * 
+	BUTTON IN BILLING VIEW
+* * * * * * * * * * * * * * * * */
+
+.boxes-wrap .box.action button.create.btn-custom:focus{
+	color: white;
+}
+
+
 /* * * * * * * * * *
 	TIMELINE
 * * * * * * * * * */
