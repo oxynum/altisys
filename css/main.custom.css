@@ -286,4 +286,43 @@
     left: 7px;
     width: 21px;
     height: 19px;
+    top: 3px;
+}
+
+/* * * * * * * * * *
+ SEARCHBAR WRAPPER
+* * * * * * * * * */
+
+.search-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4em;
+    line-height: 36px;
+    margin: 0 10px;
+}
+.search-link:hover, .search-link:focus, .search-link:active, .search-link:visited {
+    text-decoration: none;
+}
+.search-link:hover .icon-search {
+    text-shadow: 0 0 7px rgba(0,0,0,0.6);
+}
+
+.head-right .search-block {
+    display: inline-block;
+}
+
+@media (max-width:992px) {
+    .head-right .search-block {
+        position: absolute;
+        background: #dde2e7;
+        padding: 20px 10px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+    }
+    .head-right .search-block.wrapped {
+        display: none;
+    }
+    .head-right .search-block.unwrapped {
+        display: block;
+    }
 }

@@ -234,7 +234,39 @@
                     getterSetter: true
                 };
 
-                
+
+                //[SEARCHBAR WRAPPING : begin]
+                  /**
+                   * Function to show searchbar in header if it is hidden, and hide it if it is shown
+                   */
+                  $scope.toggleSearchbar = function(){
+                      var searchBlock = $(".search-block");
+                      searchBlock.toggleClass("wrapped");
+                      searchBlock.toggleClass("unwrapped");
+                  }
+  
+                  /**
+                   * Function to hide searchbar on tablet, based on the window's width
+                   */
+                  function hideSearchOnTablet() {
+                      var searchBlock = $(".search-block");
+                      if ($(window).width() <= 992){
+                          searchBlock.addClass("wrapped");
+                      }
+                      else {
+                          searchBlock.removeClass("wrapped");
+                          searchBlock.removeClass("unwrapped");
+                      }
+                  }
+  
+                  // Call function by default to hide it if we are on tablet
+                  hideSearchOnTablet()
+                  
+                  // Call function each time window is resized (on desktop)
+                  $(window).on('resize', function(event){
+                      hideSearchOnTablet();
+                  });
+                //[SEARCHBAR WRAPPING : end]
             }]
         }
     }

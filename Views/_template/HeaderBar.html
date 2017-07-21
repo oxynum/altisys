@@ -27,29 +27,32 @@
                 <!--<li class="reports"><a href="#/reportDesigner" title="Designer"><span class="icon-reports"></span></a></li>-->
             </ul>
             <!-- search form -->
-            <div class="search-form">
-                <!--<a href="#" class="btn-burger"><span>&nbsp;</span></a>-->
-                <input type="search" ng-model="selected" typeahead-min-length="2" 
-                       uib-typeahead="item as item.Label for item in getTextCompletion($viewValue)" 
-                       typeahead-loading="loadingLocations" 
-                       typeahead-no-results="noResults" 
-                       typeahead-template-url="./Views/_template/autoCompleteGrrouping.html"
-                       typeahead-on-select="Search()"
-                       class="form-control" placeholder="Rechercher un client" />
-                <button class="btn-search"><span class="icon-search"> </span></button>
-                <!--<i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
-                <div ng-show="noResults">
-                    <i class="glyphicon glyphicon-remove"></i> No Results Found
-                </div>-->
+            <a href="" ng-click="toggleSearchbar()" title="Recherche" class="search-link hidden-md hidden-lg hidden-xl"><span class="icon-search"></span></a>
+            <div class="search-block">
+                <div class="search-form">
+                    <!--<a href="#" class="btn-burger"><span>&nbsp;</span></a>-->
+                    <input type="search" ng-model="selected" typeahead-min-length="2" 
+                        uib-typeahead="item as item.Label for item in getTextCompletion($viewValue)" 
+                        typeahead-loading="loadingLocations" 
+                        typeahead-no-results="noResults" 
+                        typeahead-template-url="./Views/_template/autoCompleteGrrouping.html"
+                        typeahead-on-select="Search()"
+                        class="form-control" placeholder="Rechercher un client" />
+                    <button class="btn-search"><span class="icon-search"> </span></button>
+                    <!--<i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+                    <div ng-show="noResults">
+                        <i class="glyphicon glyphicon-remove"></i> No Results Found
+                    </div>-->
 
+                </div>
+                <a href="" class="link-advance"
+                modal-trigger
+                size="'lg'"
+                title="Recherche Avancée" ui-sref="advanceSearch()">
+                    <span class="icon-search"> </span> 
+                    Avancée
+                </a>
             </div>
-            <a href="" class="link-advance"
-               modal-trigger
-               size="'lg'"
-               title="AdvanceSearch" ui-sref="advanceSearch()">
-                <span class="icon-search"> </span> 
-                Avancée
-            </a>
             <!-- header links -->
             <ul class="icon-set">
                 <!--<li class="faq"><a href="" title="Aide"><span class="icon-question"></span></a></li>-->
