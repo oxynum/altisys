@@ -61,9 +61,7 @@
 .topbar{
 	top: 45px;
 	height: 42px;
-}
-.topbar .container {
-    padding: 6px 24px 6px 80px;
+    padding: 6px;
 }
 
 .head-right .icon-set li:first-child {
