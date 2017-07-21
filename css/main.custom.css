@@ -365,7 +365,7 @@
 }
 
 .slide-bar .action-btn {
-    top: 4px;
+    top: 2px;
     right: 48px;
     width: 96px;
     height: 50px;
@@ -374,9 +374,27 @@
 }
 
 .slide-bar .action-btn:before {
-    top: 17px;
+    top: 16px;
     left: 7px;
     width: 21px;
     height: 19px;
-    top: 3px;
+}
+
+@media all and (max-width: 1200px){
+    .sm-carousel{
+        width: 427px;
+    }
+}
+
+@media all and (max-width: 1065px){
+    .sm-carousel{
+        width: 240px;
+    }
+    .slide-bar .head h2 {
+    font-size: 13px;
+    }
+    .slide-bar .action-btn{
+        width: 35px;
+        padding: 0;
+    }
 }
