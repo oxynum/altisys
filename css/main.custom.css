@@ -277,18 +277,16 @@
 
 
 /* [TIMELINE] */
-.slide-bar .head .container {
-    padding: 8px 46px;
+
+.actions-title {
+    display: inline-block;
 }
 
-#wrapper.active .slide-bar .head .container {
-	padding: 6px 46px;
-}
-
-.head-client-custom > .container{
+.head.head-client-custom{
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
+    padding: 6px 46px;
 }
 
 .slide-bar .head h2{
