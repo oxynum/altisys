@@ -6,9 +6,11 @@
     <div ui-view="clientTopBarView" class="topbar"></div>
     <section class="slide-bar slide-bar-custom" ng-controller="clientScenarioInfoController">
         <header class="head head-client-custom">
-            <div class="container">
+            <div class="actions-title">
                 <a href="" class="opener" ng-click="toggleCollapsedAction()">&nbsp;</a>
                 <h2>Scénario &amp; actions</h2>
+            </div>
+            <div class="actions-timeline">
                 <div class="sm-carousel">
                     <div class="row">
                         <div ng-switch="etapes.count">
@@ -81,28 +83,28 @@
                                         Ajouter une étape
                         </a>
                     </div>
-                </div> 
-                <div class="mask-info-complement">
-                    <p>Scénario:{{ClientScenario.Scenario}}</p>
-                    <p>Niveau:{{ClientScenario.Niv_relance}}</p>
-                    <p>Traitement:{{ClientScenario.Codetraitement}}</p>
-                </div>
-                <div class="right">
-                    <a href="" class="action-btn"
-                       modal-trigger
-                       size="'lg'"
-                       title="Valider" ui-sref="validate({societe:scopsociete,numcomptable:scopnumcomptable})">
-                        Valider l’action
-                    </a>
                 </div>
             </div>
+            <div class="mask-info-complement">
+                <p>Scénario:{{ClientScenario.Scenario}}</p>
+                <p>Niveau:{{ClientScenario.Niv_relance}}</p>
+                <p>Traitement:{{ClientScenario.Codetraitement}}</p>
+            </div>
+            <div class="right">
+                <a href="" class="action-btn"
+                   modal-trigger
+                   size="'lg'"
+                   title="Valider" ui-sref="validate({societe:scopsociete,numcomptable:scopnumcomptable})">
+                    Valider l’action
+                </a>
+            </div>
         </header>
-        <div class="slide" uib-collapse="isCollapsed">
-            <div class="container" ui-view="clientActionHistoView"></div>
+        <div class="row slide padding-left-custom" uib-collapse="isCollapsed">
+            <div class="col-md-12" ui-view="clientActionHistoView"></div>
         </div>
     </section>
 
-    <main id="main">
+    <main id="main" class="main-view" >
         <!-- tools nav -->
         <nav class="tools-nav">
             <ul>
@@ -123,10 +125,10 @@
                 <!--<li class="ico2"><a href="#">&nbsp;</a></li>-->
             </ul>
         </nav>
-        <div class="main-holder">
-            <section class="billing-block" ng-class="{'height-on-scroll': boolChangeClass}" scroll-to-client>
-                <div ng-class="{'fix-on-scroll': boolChangeClass, 'active': isCollapsed}">
-                    <div class="col">
+        <div class="main-holder full-container">
+            <section class="billing-block row" ng-class="{'height-on-scroll': boolChangeClass}" scroll-to-client>
+                <div ng-class="{'fix-on-scroll': boolChangeClass, 'active': isCollapsed}" class="col-md-12 padding-left-custom">
+                    <div class="col-md-9">
                         <div ui-view="clientBillingView" ng-controller="billingViewController"></div>
                         <!-- progress block -->
                         <div class="progress-block balsmall fade-scroll" ng-controller="balanceAgeeController" ng-if="!boolChangeClass">
@@ -165,10 +167,10 @@
                             </div>
                         </div>
                     </div>
-                    <div ui-view="clientFilterView" class="col" id="client-filter-view"></div>
+                    <div ui-view="clientFilterView" class="col-md-3" id="client-filter-view"></div>
                 </div>
             </section>
-            <section class="list-table client" ui-view="clientDataGridView"></section>
+            <section class="list-table client list-table-custom" ui-view="clientDataGridView"></section>
         </div>
     </main>
 </div>

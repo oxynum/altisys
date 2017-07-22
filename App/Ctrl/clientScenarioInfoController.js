@@ -2,7 +2,7 @@
     'use strict';
  
     var app = angular.module('appRouteClient');
-    app.controller('clientScenarioInfoController', ['$rootScope', '$scope', '$http', '$stateParams', 'config', function ($rootScope, $scope, $http, $stateParams,config) {
+    app.controller('clientScenarioInfoController', ['$rootScope', '$scope', '$http', '$stateParams', 'config', '$window', function ($rootScope, $scope, $http, $stateParams,config, $window) {
 
         $scope.switch = function () {
             $scope.isCollapsed = !$scope.isCollapsed;
@@ -54,7 +54,17 @@
 
         $scope.deplacement = 0;
         $scope.nextStep = function(){
-            if ($scope.deplacement > -63*($scope.etapes.count-9) && $scope.etapes.count>=10) {
+            var width = $window.innerWidth;
+            if(width <= 1065){
+                var nbClicAllowed = $scope.etapes.count-3;
+            }
+            else if (width <= 1200) {
+                var nbClicAllowed = $scope.etapes.count-6;
+            }
+            else{
+                var nbClicAllowed = $scope.etapes.count-9;
+            }
+            if ($scope.deplacement > -63*nbClicAllowed && $scope.etapes.count>=10) {
                 $scope.deplacement -= 63;
             }
         };
@@ -63,6 +73,20 @@
                 $scope.deplacement += 63;
             }
         };
+
+        function hideTextValidButton() {
+            if (window.innerWidth <= 1065) {
+                $('.slide-bar .action-btn').html("");
+            }
+            else{
+                $('.slide-bar .action-btn').html("Valider l'action");
+            }
+        }
+
+        hideTextValidButton();
+        $(window).on('resize', function(){
+            hideTextValidButton();
+        });
 
     }]);
     
