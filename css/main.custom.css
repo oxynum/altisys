@@ -102,7 +102,7 @@
     display: inline-block;
 }
 
-@media (max-width:1055px) {
+@media (max-width:1065px) {
     .search-link { 
         display: inline-block;
     }
