@@ -457,3 +457,9 @@
         border-bottom: none;
     }
 }
+
+.list-table-custom{
+    width: 85%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
