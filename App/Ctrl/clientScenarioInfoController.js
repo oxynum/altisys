@@ -47,6 +47,8 @@
             return false;
         };
 
+
+        $scope.widthIndicator = $window.innerWidth > 1200 ? 1 : $window.innerWidth <= 1065 ? -1 : 0;
         $scope.addEtape = false;
         $scope.showAddEtape = function(){
             $scope.addEtape = !$scope.addEtape;
@@ -64,12 +66,12 @@
             else{
                 var nbClicAllowed = $scope.etapes.count-9;
             }
-            if ($scope.deplacement > -63*nbClicAllowed && $scope.etapes.count>=10) {
+            if ($scope.deplacement > -63*nbClicAllowed) {
                 $scope.deplacement -= 63;
             }
         };
         $scope.prevStep = function(){
-            if ($scope.deplacement < 0 && $scope.etapes.count>=10) {
+            if ($scope.deplacement < 0) {
                 $scope.deplacement += 63;
             }
         };
@@ -85,6 +87,7 @@
 
         hideTextValidButton();
         $(window).on('resize', function(){
+            $scope.widthIndicator = $window.innerWidth > 1200 ? 1 : $window.innerWidth <= 1065 ? -1 : 0;
             hideTextValidButton();
         });
 

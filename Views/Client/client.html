@@ -61,8 +61,8 @@
                                     </div>
                                 </div>
 
-                                <a ng-class="{'btn-prev':true, 'disable':etapes.count<10}" href="" ng-click="prevStep()"><span class="icon-arrow-l"></span></a>
-                                <a ng-class="{'btn-next':true, 'disable':etapes.count<10}" href="" ng-click="nextStep()"><span class="icon-arrow-r"></span></a>
+                                <a ng-class="{'btn-prev':true, 'disable':etapes.count<4&&widthIndicator == -1 || etapes.count<7&&widthIndicator == 0 || etapes.count<10&&widthIndicator == 1}" href="" ng-click="prevStep()"><span class="icon-arrow-l"></span></a>
+                                <a ng-class="{'btn-next':true, 'disable':etapes.count<4&&widthIndicator == -1 || etapes.count<7&&widthIndicator == 0 || etapes.count<10&&widthIndicator == 1}" href="" ng-click="nextStep()"><span class="icon-arrow-r"></span></a>
                             </div>
                         </div>
                     </div>
