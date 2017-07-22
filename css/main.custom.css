@@ -422,6 +422,10 @@
     height: 19px;
 }
 
+.padding-left-custom{
+    padding-left: 40px
+}
+
 @media all and (max-width: 1200px){
     .sm-carousel{
         width: 427px;
