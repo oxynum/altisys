@@ -321,6 +321,11 @@
 	color: white;
 }
 
+/* [NAVBAR] */
+.tools-nav {
+    margin-top:-115px;
+    padding:0;
+}
 
 /* [TIMELINE] */
 
