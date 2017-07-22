@@ -440,3 +440,16 @@
         padding: 0;
     }
 }
+
+@media all and (max-width: 991px){
+    #infos-container{
+        display: flex;
+        align-items: center;
+    }
+    #infos-container > div {
+        flex: 1;
+    }
+    #infos-container .info-box{
+        border-bottom: none;
+    }
+}
