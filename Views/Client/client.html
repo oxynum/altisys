@@ -100,7 +100,7 @@
             </div>
         </header>
         <div class="row slide" uib-collapse="isCollapsed">
-            <div class="col-md-12 actions-history" ui-view="clientActionHistoView"></div>
+            <div class="col-md-12" ui-view="clientActionHistoView"></div>
         </div>
     </section>
 
@@ -126,8 +126,8 @@
             </ul>
         </nav>
         <div class="main-holder full-container">
-            <section class="billing-block" ng-class="{'height-on-scroll': boolChangeClass}" scroll-to-client>
-                <div ng-class="{'fix-on-scroll': boolChangeClass, 'active': isCollapsed}">
+            <section class="billing-block row" ng-class="{'height-on-scroll': boolChangeClass}" scroll-to-client>
+                <div ng-class="{'fix-on-scroll': boolChangeClass, 'active': isCollapsed}" class="col-md-12">
                     <div class="col-md-9">
                         <div ui-view="clientBillingView" ng-controller="billingViewController"></div>
                         <!-- progress block -->
