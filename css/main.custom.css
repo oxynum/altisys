@@ -288,6 +288,30 @@
     }
 }
 
+@media all and (max-width: 992px){
+    .billing-block .price{
+        font-size: 14px;
+    }
+    .billing-block .boxes-wrap .box:first-child .price{
+        font-size: 14px;
+    }
+    .boxes-wrap .subtitle{
+        font-size: 11px;
+    }
+    .boxes-wrap .box.orange .price:before {
+        top: -1px;
+        width: 70px;
+        height: 70px;
+        margin: 0 0 0 -35px;
+    }
+    .billing-block .boxes-wrap .box-custom {
+        min-width: 85px;
+    }
+    .btn.btn-primary {
+        min-width: 50px;
+    }
+}
+
 /* [BUTTON BILLING VIEW] */
 .boxes-wrap .box.action button.create.btn-custom:focus{
 	color: white;
