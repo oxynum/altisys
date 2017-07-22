@@ -330,7 +330,7 @@
 
 .head.head-client-custom{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
     padding: 6px 46px;
 }
@@ -348,7 +348,7 @@
 }
 
 .mask-info-complement{
-	margin: 0 0 0 12px;
+	margin: 0;
 	padding-left: 3px;
 	border-left: 1px solid rgba(0,0,0,0.35)
 }
@@ -396,6 +396,14 @@
 
 #wrapper.active .slide-bar .right {
     padding: 0;
+    position: relative;
+    margin-top: -2px;
+}
+
+.slide-bar .right {
+    padding: 0;
+    position: relative;
+    margin-top: -2px;
 }
 
 .sm-carousel .sm-slide{
@@ -406,13 +414,8 @@
 	z-index: 2;
 }
 
-#wrapper.active .slide-bar .action-btn {
-    top: 2px
-}
-
 .slide-bar .action-btn {
-    top: 2px;
-    right: 48px;
+    position: initial;
     width: 96px;
     height: 50px;
     padding: 11px 5px 0 33px;
