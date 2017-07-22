@@ -465,6 +465,19 @@
         padding: 0;
     }
 }
+#infos-container > div , #infos-container > ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+#infos-container .textbox {
+    font-size: 12px;
+    line-height: 15px;
+    overflow: initial;
+    padding-top: 20px;
+    padding-left: 53px;
+}
 
 @media all and (max-width: 991px){
     #infos-container{
