@@ -332,7 +332,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    padding: 6px 46px;
+    padding: 6px 6px 6px 46px;
 }
 
 .slide-bar .head h2{
