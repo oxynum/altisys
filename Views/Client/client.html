@@ -104,7 +104,7 @@
         </div>
     </section>
 
-    <main id="main">
+    <main id="main" class="main-view" >
         <!-- tools nav -->
         <nav class="tools-nav">
             <ul>
@@ -125,10 +125,10 @@
                 <!--<li class="ico2"><a href="#">&nbsp;</a></li>-->
             </ul>
         </nav>
-        <div class="main-holder">
+        <div class="main-holder full-container">
             <section class="billing-block" ng-class="{'height-on-scroll': boolChangeClass}" scroll-to-client>
                 <div ng-class="{'fix-on-scroll': boolChangeClass, 'active': isCollapsed}">
-                    <div class="col">
+                    <div class="col-md-9">
                         <div ui-view="clientBillingView" ng-controller="billingViewController"></div>
                         <!-- progress block -->
                         <div class="progress-block balsmall fade-scroll" ng-controller="balanceAgeeController" ng-if="!boolChangeClass">
@@ -167,7 +167,7 @@
                             </div>
                         </div>
                     </div>
-                    <div ui-view="clientFilterView" class="col" id="client-filter-view"></div>
+                    <div ui-view="clientFilterView" class="col-md-3" id="client-filter-view"></div>
                 </div>
             </section>
             <section class="list-table client" ui-view="clientDataGridView"></section>

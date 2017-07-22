@@ -11,8 +11,8 @@
     <div class="content-wrap" ng-class="{'no-margin-on-scroll': boolChangeClass}">
         <a class="link fade-scroll" href="" ng-if="!boolChangeClass">Non échus : {{Client.NonEchu | number:2}}</a>
         <strong class="main-title fade-scroll" ng-if="!boolChangeClass"><span>ECHUS : {{Client.Echu | number:2}}</span></strong>
-        <div class="boxes-wrap" ng-class="{'min-height-on-scroll': boolChangeClass}">
-            <div ng-repeat="cpt in factureCompteurs" ng-class="{'box':cpt.Compteur == ('ALL') || cpt.Compteur == ('NQ'),'box sky-blue action':cpt.Compteur == ('PROMESSE'),'box red action':cpt.Compteur == ('LITIGE'),'box orange action':cpt.Compteur == ('ECHEANCIER'), 'box-on-scroll': boolChangeClass}">
+        <div class="boxes-wrap boxes-wrap-custom" ng-class="{'min-height-on-scroll': boolChangeClass}">
+            <div ng-repeat="cpt in factureCompteurs" ng-class="{'box':cpt.Compteur == ('ALL') || cpt.Compteur == ('NQ'),'box sky-blue action':cpt.Compteur == ('PROMESSE'),'box red action':cpt.Compteur == ('LITIGE'),'box orange action':cpt.Compteur == ('ECHEANCIER'), 'box-on-scroll': boolChangeClass}" class="box-custom">
                 <strong class="subtitle"><a href="" ng-click="selectGrid(cpt.Compteur)">{{cpt.Compteur}}</a></strong>
                 <strong class="price">{{cpt.Montant | number:2}}</strong><button class="btn btn-primary create btn-custom" ui-sref="{{cpt.Compteur.toLowerCase()}}({societe:scopsociete,numcomptable:scopnumcomptable})" >Créer</button>
                 <ul class="list fade-scroll" ng-if="!boolChangeClass">

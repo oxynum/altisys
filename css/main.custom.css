@@ -16,7 +16,7 @@
 
 /* [REINIT CLASSES] */
 .full-container {
-    width: 100%;
+    width: 100% !important;
 }
 
 .left-sidebar {
@@ -265,6 +265,14 @@
 }
 .echap-form:before{
 	content: "\002716"
+}
+.boxes-wrap-custom{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.billing-block .boxes-wrap .box-custom{
+    width: 20%;
 }
 
 
