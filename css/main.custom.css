@@ -106,7 +106,9 @@
     .search-link { 
         display: inline-block;
     }
-
+    .head-right .icon-set {
+        padding-left: 10px
+    }
     .head-right .search-block {
         position: absolute;
         background: #d6dce2;
