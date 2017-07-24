@@ -106,8 +106,11 @@
     .search-link { 
         display: inline-block;
     }
+    .head-right { 
+        padding-right: 0px;
+    }
     .head-right .icon-set {
-        padding-left: 10px
+        padding-left: 10px;
     }
     .head-right .search-block {
         position: absolute;
