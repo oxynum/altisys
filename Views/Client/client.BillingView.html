@@ -1,6 +1,6 @@
 ﻿
     <!-- head of block -->
-    <header class="head fade-scroll">
+    <header class="head fade-scroll" ng-class="{'hide-on-scroll':boolChangeClass}">
         <h2>Encours client / Opér.comptables :</h2>
         <div class="holder">
             <div class="info"><span>{{Client.NbFactures | number}}</span> Factures</div>
@@ -8,14 +8,14 @@
         </div>
     </header>
     <!-- content wrap -->
-    <div class="content-wrap">
-        <a class="link fade-scroll" href="">Non échus : {{Client.NonEchu | number:2}}</a>
-        <strong class="main-title fade-scroll"><span>ECHUS : {{Client.Echu | number:2}}</span></strong>
-        <div class="boxes-wrap boxes-wrap-custom">
+    <div class="content-wrap" ng-class="{'no-margin-padding-on-scroll':boolChangeClass}">
+        <a class="link fade-scroll" href="" ng-class="{'hide-on-scroll':boolChangeClass}">Non échus : {{Client.NonEchu | number:2}}</a>
+        <strong class="main-title fade-scroll" ng-class="{'hide-on-scroll':boolChangeClass}"><span>ECHUS : {{Client.Echu | number:2}}</span></strong>
+        <div class="boxes-wrap boxes-wrap-custom" ng-class="{'boxes-wrap-on-scroll':boolChangeClass}">
             <div ng-repeat="cpt in factureCompteurs" ng-class="{'box':cpt.Compteur == ('ALL') || cpt.Compteur == ('NQ'),'box sky-blue action':cpt.Compteur == ('PROMESSE'),'box red action':cpt.Compteur == ('LITIGE'),'box orange action':cpt.Compteur == ('ECHEANCIER')}" class="box-custom">
                 <strong class="subtitle"><a href="" ng-click="selectGrid(cpt.Compteur)">{{cpt.Compteur}}</a></strong>
                 <strong class="price">{{cpt.Montant | number:2}}</strong><button class="btn btn-primary create btn-custom" ui-sref="{{cpt.Compteur.toLowerCase()}}({societe:scopsociete,numcomptable:scopnumcomptable})" >Créer</button>
-                <ul class="list fade-scroll">
+                <ul class="list fade-scroll" ng-class="{'hide-on-scroll':boolChangeClass}">
                     <li ng-show="cpt.Compteur != 'ALL'"><span>{{cpt.NbFactures | number}}</span><a href="">Factures</a></li>
                     <li ng-show="cpt.Compteur != 'ALL' && cpt.Compteur != 'NQ'"><span>{{cpt.NbPromesses | number}}</span><a href="">{{cpt.Compteur}} en cours</a></li>
                     <li ng-show="cpt.Compteur != 'ALL' && cpt.Compteur != 'NQ'"><span class="alert" ng-class="{'alert':cpt.NbAlertes > 0,'alert opacity':cpt.NbAlertes == 0 }">{{cpt.NbAlertes | number}}</span><a href="">Alertes</a></li>

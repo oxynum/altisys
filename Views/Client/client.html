@@ -131,7 +131,7 @@
                     <div class="col-md-9">
                         <div ui-view="clientBillingView" ng-controller="billingViewController"></div>
                         <!-- progress block -->
-                        <div class="progress-block balsmall fade-scroll" ng-controller="balanceAgeeController">
+                        <div class="progress-block balsmall fade-scroll" ng-controller="balanceAgeeController" ng-class="{'hide-on-scroll':boolChangeClass}">
                             <h3>Balance âgée</h3>
                             <div class="holder">
                                 <div class="wrap">
