@@ -7,10 +7,14 @@ app.directive("scrollToClient", ['$window', '$document', function ($window, $doc
         restrict: 'A',
         link: function(scope, element, attrs) {
             angular.element($window).bind("scroll", function() {
-                if ($window.pageYOffset > $document[0].getElementById('main').offsetTop - 40) {
+                if ($window.pageYOffset > $document[0].getElementById('main').offsetTop - 143) {
 
                     if (!scope.boolChangeClass) {
                         scope.boolChangeClass = true;
+                        setTimeout(function(){
+                            $('.billing-block .fix-on-scroll').css('height', '130px');
+                            $('.billing-block .boxes-wrap .box-custom').css('height', '120px');
+                        }, 100);
                     }
                     if (!scope.boolClientFilter && !scope.btnClicked) {
                         scope.boolClientFilter = true;
@@ -20,7 +24,11 @@ app.directive("scrollToClient", ['$window', '$document', function ($window, $doc
                 else {
 
                     if (scope.boolChangeClass) {
-                        scope.boolChangeClass = false;
+                        $('.billing-block .fix-on-scroll').css('height', '465px');
+                        $('.billing-block .boxes-wrap .box-custom').css('height', '235px');
+                        setTimeout(function(){
+                            scope.boolChangeClass = false;
+                        }, 200);
                     }
                     if (scope.boolClientFilter) {
                         scope.boolClientFilter = false;
