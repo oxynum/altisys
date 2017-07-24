@@ -253,9 +253,12 @@
                       if ($(window).width() <= 1065 && !searchBlock.hasClass("unwrapped")){
                           searchBlock.addClass("wrapped");
                       }
-                      else {
-                          searchBlock.removeClass("wrapped");
+                      else if ($(window).width() > 1065) {
                           searchBlock.removeClass("unwrapped");
+                          searchBlock.removeClass("wrapped");
+                      }
+                      else {
+                          searchBlock.toggleClass("unwrapped");
                       }
                   }
   
