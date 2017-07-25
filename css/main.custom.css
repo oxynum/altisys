@@ -39,6 +39,9 @@
 /* * * * * * * * *
 	HEADER
 * * * * * * * * */
+.dropdown .drop {
+    right: -17px;
+}
 .slide-bar-custom{
 	position: initial;
 }
@@ -144,6 +147,24 @@
     width: 100%;
 }
 
+/* [DROPDOWN IN ARRAY] */
+/* .ui-grid-pinned-container-right 
+div[role="rowgroup"][class="ui-grid-viewport"][ng-style="colContainer.getViewportStyle()"][ui-grid-viewport=""] {
+    overflow: initial!important;
+} */
+.ui-grid-row .ui-grid-cell .dropdown .btn-burger {
+    top:0px;
+}
+.ui-grid-row .ui-grid-cell .dropdown {
+    top: 2px;
+}
+.dropdown .drop.in-array {
+    right: 15px;
+}
+.dropdown .drop.in-array:before {
+    right: 47px;
+}
+
 /* * * * * * * * *
   CLIENT PAGE
 * * * * * * * * */
@@ -178,7 +199,7 @@
 	position: fixed;
 	top: 143px;
 	left: 0;
-	z-index: 2;
+	z-index: 1;
 	width: 100%;
 	background-color: #eef0f3;
 	margin: 0;
@@ -249,9 +270,9 @@
 #client-filter-view > form.btn-clicked{
 	position: relative;
 	background-color: #eef0f3;
-	top: 150px;
+	top: 165px;
 	padding-left: 5px;
-	box-shadow: 0px 3px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
 	border-radius: 5px;
 }
 .form-search .button-on-scroll{
@@ -262,6 +283,13 @@
 }
 .form-search .button-on-scroll button{
 	border-radius: 0 5px 5px 0;
+}
+@media (max-height: 600px){
+    #client-filter-view > form.btn-clicked {
+        top: 40px;
+        max-height: 200px;
+        overflow: scroll;
+    }
 }
 .echap-form{
 	position: absolute;
@@ -288,6 +316,9 @@
 .billing-block .boxes-wrap.boxes-wrap-on-scroll{
     min-height: 0;
 }
+.billing-block .price {
+    line-height: 24px;
+}
 
 @media all and (max-width: 1200px){
     .form-search .button-on-scroll button{
@@ -295,6 +326,10 @@
     }
     .form-search .button-on-scroll button:after{
         left: 5px;
+    }
+    .billing-block .price {
+        font-size:1.4em;
+        line-height: initial;
     }
 }
 
@@ -321,6 +356,11 @@
 	color: white;
 }
 
+/* [NAVBAR] */
+.tools-nav {
+    margin-top:-115px;
+    padding:0;
+}
 
 /* [TIMELINE] */
 
@@ -330,9 +370,9 @@
 
 .head.head-client-custom{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-    padding: 6px 46px;
+    padding: 6px 6px 6px 46px;
 }
 
 .slide-bar .head h2{
@@ -348,7 +388,7 @@
 }
 
 .mask-info-complement{
-	margin: 0 0 0 12px;
+	margin: 0;
 	padding-left: 3px;
 	border-left: 1px solid rgba(0,0,0,0.35)
 }
@@ -375,19 +415,34 @@
     position: relative;
 }
 
-#btn-add-step > div{
+#btn-add-step .actions-dropdown::before {
+    position: absolute;
+    top: -5px;
+    right: 99px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-width: 0 3.5px 5px 3.5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+#btn-add-step .actions-dropdown{
 	width: 200px;
     padding: 5px 10px;
     position: absolute;
     left: -80px;
+    top: 42px;
     background: white;
     border-radius: 5px;
     cursor: initial;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 }
 
 #btn-add-step a {
 	font-size: 14px;
-	cursor: pointer;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 #btn-add-step hr {
@@ -396,6 +451,14 @@
 
 #wrapper.active .slide-bar .right {
     padding: 0;
+    position: relative;
+    margin-top: -2px;
+}
+
+.slide-bar .right {
+    padding: 0;
+    position: relative;
+    margin-top: -2px;
 }
 
 .sm-carousel .sm-slide{
@@ -406,13 +469,8 @@
 	z-index: 2;
 }
 
-#wrapper.active .slide-bar .action-btn {
-    top: 2px
-}
-
 .slide-bar .action-btn {
-    top: 2px;
-    right: 48px;
+    position: initial;
     width: 96px;
     height: 50px;
     padding: 11px 5px 0 33px;
@@ -447,6 +505,19 @@
         width: 35px;
         padding: 0;
     }
+}
+#infos-container > div , #infos-container > ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+#infos-container .textbox {
+    font-size: 12px;
+    line-height: 15px;
+    overflow: initial;
+    padding-top: 20px;
+    padding-left: 53px;
 }
 
 @media all and (max-width: 991px){

@@ -6,7 +6,7 @@
     app.controller('contactcontroller', ['$scope', '$http', 'uiGridConstants', 'gridConfService', '$stateParams', 'config', function ($scope, $http, uiGridConstants, gridConfService, $stateParams,config) {
        
         function cellTemplate() {
-            return '<div class="personal-drop dropdown"><a class="btn-burger"><span>&nbsp;</span></a><ul class="drop"><li><a ui-sref="contactUpdate({id:row.entity.FID})">Modifier</a></li><li><a ui-sref="deleteContact({id:row.entity.FID})">Supprimer</a></li><li><a ui-sref="Duplicate({id:row.entity.FID})">Dupliquer</a></li><li><a ui-sref="Add({societe:\'' + $stateParams.societe + '\', numcomptable:\'' + $stateParams.numcomptable + '\'})">Ajouter</a></li></ul></div>';
+            return '<div class="personal-drop dropdown"><a class="btn-burger"><span>&nbsp;</span></a><ul class="drop in-array"><li><a ui-sref="contactUpdate({id:row.entity.FID})">Modifier</a></li><li><a ui-sref="deleteContact({id:row.entity.FID})">Supprimer</a></li><li><a ui-sref="Duplicate({id:row.entity.FID})">Dupliquer</a></li><li><a ui-sref="Add({societe:\'' + $stateParams.societe + '\', numcomptable:\'' + $stateParams.numcomptable + '\'})">Ajouter</a></li></ul></div>';
         }
         $scope.cellTemplate = cellTemplate();
 

@@ -6,7 +6,7 @@
     app.controller('campagneLotDataGrid', ['$rootScope', '$scope', '$http', 'uiGridConstants', 'gridConfService', '$window', 'listClientService', '$location', 'config', 'cookieService', function ($rootScope, $scope, $http, uiGridConstants, gridConfService, $window, listClientService, $location, config, cookieService) {
         $scope.gridMode = 'CAMPAGNELOT';
         function cellTemplate() {
-            return '<div class="personal-drop dropdown"><a class="btn-burger"><span>&nbsp;</span></a><ul class="drop"><li><a ui-sref="afficheCampagne({id:row.entity.FILTER})">Voir le courrier</a></li><li><a href="" ng-click="grid.appScope.ClientRowClick(row)">Voir la fiche client</a></li><li><a href="" ng-click="grid.appScope.ValidRowClick(row)">Traiter cette relance</a></li></ul></div>';
+            return '<div class="personal-drop dropdown"><a class="btn-burger"><span>&nbsp;</span></a><ul class="drop in-array"><li><a ui-sref="afficheCampagne({id:row.entity.FILTER})">Voir le courrier</a></li><li><a href="" ng-click="grid.appScope.ClientRowClick(row)">Voir la fiche client</a></li><li><a href="" ng-click="grid.appScope.ValidRowClick(row)">Traiter cette relance</a></li></ul></div>';
         }
         $scope.cellTemplate = cellTemplate();
 
