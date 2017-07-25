@@ -1,0 +1,74 @@
+﻿<fieldset>
+    <legend>Promesse</legend>
+    <!-- main container of all the page elements -->
+    <div>
+        <form role="form" ng-submit="UpdPromesse()" ng-controller="promesseUpdateController">
+            <div class="formPopin">
+                <div class="line">
+                    <div class="col1">
+                        <div ui-view="promesseDataGridCreateView"></div>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+                <div class="line cleafix">
+                    <div class="row formInput">
+                        <div class="row">
+                            <div class="col-md-2 formLabel">
+                                <label>Date de promesse</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <input type="text" class="form-control date-control-input" ng-model="PromesseCreate.echeancier.DatePremiereEcheance" uib-datepicker-popup="{{format}}" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                                <span class="input-group-btn calendar-input">
+                                    <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                            </div>
+                            <div class="col-md-2 formLabel">
+                                <label>Montant total de la promesse</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <input type="text" id="mtp" placeholder="" ng-model="PromesseCreate.echeancier.MontantTotal">
+                                <a href="#" class="btn-cross disable"><span class="icon-cross"> </span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 formLabel">
+                                <label>Mode de paiement</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <span class="fake-select">
+                                    <select id="mdp" ng-model="PromesseCreate.echeancier.ModeReglement" ng-options="value for (key , value) in PromesseCreate.typepaiements"></select>
+                                </span>
+                            </div>
+                            <div class="col-md-2 formLabel">
+                                <label>Courrier</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <span class="fake-select">
+                                    <select id="selcourrier" ng-model="Courrier.IdModele" ng-options="key as value for (key , value) in PromesseCreate.courriers"></select>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row formInput">
+                        <div class="col-md-2 formLabel">
+                            <label>Commentaire</label>
+                        </div>
+                        <div class="col-md-10 formInput">
+                            <textarea name="Commentaire" ng-model="PromesseCreate.echeancier.commentaire" />
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+                <div class="line">
+                    <div class="col1">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" ng-click="$dismiss()">Fermer</button>
+                            <input type="submit" class="btn btn-primary" value="Modifier" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</fieldset>

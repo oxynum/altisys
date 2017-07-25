@@ -1,0 +1,198 @@
+﻿<fieldset>
+    <legend>Balance Agée Détaillée</legend>
+    <!-- main container of all the page elements -->
+    <div>
+        <form role="form" ng-controller="balanceAgeeDetailleeController">
+            <div class="formPopin">              
+                <div class="table-holder">
+                    <div class="bal">
+                        <table>
+                            <colgroup>
+                                <col style="width:110px">
+                                <col style="width:450px">
+                                <col style="width:80px">
+                                <col style="width:50px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th><a href="">Qualification</a></th>
+                                    <th><a href="">Balance âgée</a></th>
+                                    <th><a href="">Montant</a></th>
+                                    <th><a href="">%</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Promesse</td>
+                                    <td>
+                                        <div class="progress-block">
+                                            <div class="progress-bar">
+                                                <div class="progress blue" ng-style="{ 'width' : progressPromesse_0_90+'%' }"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="txt">{{balanceAgeePromesse_0_90.Montant | number:2}}</span></td>
+                                    <td><span class="txt">{{progressPromesse_0_90 | number:2}} %</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Litige</td>
+                                    <td>
+                                        <div class="progress-block">
+                                            <div class="progress-bar">
+                                                <div class="progress red" ng-style="{ 'width' : progressLitige_0_90+'%' }"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="txt">{{balanceAgeeLitige_0_90.Montant | number:2}}</span></td>
+                                    <td><span class="txt">{{progressLitige_0_90 | number:2}} %</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Echeancier</td>
+                                    <td>
+                                        <div class="progress-block">
+                                            <div class="progress-bar">
+                                                <div class="progress orange" ng-style="{ 'width' : progressEcheancier_0_90+'%' }"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="txt">{{balanceAgeeEcheancier_0_90.Montant | number:2}}</span></td>
+                                    <td><span class="txt">{{progressEcheancier_0_90 | number:2}} %</span></td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <div class="progress-block">
+                                            <ul class="points">
+                                                <li>0</li>
+                                                <li>30j</li>
+                                                <li>60j</li>
+                                                <li>90j</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Promesse</td>
+                                    <td>
+                                        <div class="progress-block">
+                                            <div class="progress-bar">
+                                                <div class="progress blue" ng-style="{ 'width' : progressPromesse_90_180+'%' }"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="txt">{{balanceAgeePromesse_90_180.Montant | number:2}}</span></td>
+                                    <td><span class="txt">{{progressPromesse_90_180 | number:2}} %</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Litige</td>
+                                    <td>
+                                        <div class="progress-block">
+                                            <div class="progress-bar">
+                                                <div class="progress red" ng-style="{ 'width' : progressLitige_90_180+'%' }"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="txt">{{balanceAgeeLitige_90_180.Montant | number:2}}</span></td>
+                                    <td><span class="txt">{{progressLitige_90_180 | number:2}} %</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Echeancier</td>
+                                    <td>
+                                        <div class="progress-block">
+                                            <div class="progress-bar">
+                                                <div class="progress orange" ng-style="{ 'width' : progressEcheancier_90_180+'%' }"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="txt">{{balanceAgeeEcheancier_90_180.Montant | number:2}}</span></td>
+                                    <td><span class="txt">{{progressEcheancier_90_180 | number:2}} %</span></td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <div class="progress-block">
+                                            <ul class="points">
+                                                <li>90</li>
+                                                <li>120j</li>
+                                                <li>150j</li>
+                                                <li>180j</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Promesse</td>
+                                    <td>
+                                        <div class="progress-block">
+                                            <div class="progress-bar">
+                                                <div class="progress blue" ng-style="{ 'width' : progressPromesse_180_10000+'%' }"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="txt">{{balanceAgeePromesse_180_10000.Montant | number:2}}</span></td>
+                                    <td><span class="txt">{{progressPromesse_180_10000 | number:2}} %</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Litige</td>
+                                    <td>
+                                        <div class="progress-block">
+                                            <div class="progress-bar">
+                                                <div class="progress red" ng-style="{ 'width' : progressLitige_180_10000+'%' }"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="txt">{{balanceAgeeLitige_180_10000.Montant | number:2}}</span></td>
+                                    <td><span class="txt">{{progressLitige_180_10000 | number:2}} %</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Echeancier</td>
+                                    <td>
+                                        <div class="progress-block">
+                                            <div class="progress-bar">
+                                                <div class="progress orange" ng-style="{ 'width' : progressEcheancier_180_10000+'%' }"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="txt">{{balanceAgeeEcheancier_180_10000.Montant | number:2}}</span></td>
+                                    <td><span class="txt">{{progressEcheancier_180_10000 | number:2}} %</span></td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <div class="progress-block">
+                                            <ul class="points">
+                                                <li>180</li>
+                                                <li>210j</li>
+                                                <li>240j</li>
+                                                <li>>270j</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Total</td>
+                                    <td>{{MontantTotal | number:2}}</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="line">
+                        <div class="col1">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" ng-click="$dismiss()">Ok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </form>
+    </div>
+</fieldset>
+

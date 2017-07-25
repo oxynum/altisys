@@ -1,0 +1,134 @@
+﻿<fieldset>
+    <legend>Echéancier</legend>
+    <!-- main container of all the page elements -->
+    <div>
+        <form role="form" ng-submit="UpdEcheancier()" ng-controller="echeancierUpdateController">
+            <div class="formPopin">
+                <div class="line">
+                    <div class="col1">
+                        <div ui-view="echeancierDataGridCreateView"></div>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+                <div class="line cleafix">
+                    <div class="row formInput">
+                        <div class="row">
+                            <div class="col-md-2 formLabel">
+                                <label>Montant total</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <label>{{EcheancierCreate.echeancier.MontantTotal}}</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 formLabel">
+                                <label>Nombre d'échéances</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <input type="text" id="inbe" placeholder="" ng-model="EcheancierCreate.echeancier.NbEcheance">
+                                <a href="#" class="btn-cross disable"><span class="icon-cross"> </span></a>
+                            </div>
+                            <div class="col-md-2 formLabel">
+                                <label>Montant des échéances</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <input type="text" id="imte" placeholder="" ng-model="EcheancierCreate.echeancier.Mensualite">
+                                <a href="#" class="btn-cross disable"><span class="icon-cross"> </span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 formLabel">
+                                <label>Période</label>
+                            </div>
+                            <div class="col-md-4 formInput"><span class="fake-select">
+    <select id="rel1" ng-model="EcheancierCreate.echeancier.IdPer" ng-options="key for (key , value) in EcheancierCreate.periodicites"></select>
+</span>
+</div>
+                            <div class="col-md-2 formLabel">
+                                <label>Date de début</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <input type="text" class="form-control date-control-input" ng-model="EcheancierCreate.echeancier.DatePremiereEcheance" uib-datepicker-popup="{{format}}" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Fermer" alt-input-formats="altInputFormats" />
+                                <span class="input-group-btn calendar-input">
+                                    <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 formLabel">
+                                <label>Acompte ou abandon de</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <input type="text" id="iaa" placeholder="" ng-model="EcheancierCreate.echeancier.Acompte">
+                                <a href="#" class="btn-cross disable"><span class="icon-cross"> </span></a>
+                            </div>
+                            <div class="col-md-2 formLabel">
+                                <label>Le</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <input type="text" class="form-control date-control-input" ng-model="EcheancierCreate.echeancier.DateAcompte" uib-datepicker-popup="{{format}}" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Fermer" alt-input-formats="altInputFormats" />
+                                <span class="input-group-btn calendar-input">
+                                    <button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 formLabel">
+                                <label>Taux annuel</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <input type="text" id="ita" placeholder="" ng-model="EcheancierCreate.echeancier.Taux">
+                                <a href="#" class="btn-cross disable"><span class="icon-cross"> </span></a>
+                            </div>
+                            <div class="col-md-2 formLabel">
+                                <label>Montant Frais</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <input type="text" id="imtf" placeholder="" ng-model="EcheancierCreate.echeancier.MontantFrais">
+                                <a href="#" class="btn-cross disable"><span class="icon-cross"> </span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 formLabel">
+                                <label>Par</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <select id="rel1">
+                                    <option>Plan</option>
+                                    <option>Date d'échéance</option>
+                                </select>
+                                <a href="#" class="btn-cross disable"><span class="icon-cross"> </span></a>
+                            </div>
+                            <div class="col-md-2 formLabel">
+                                <label>Date de frais</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <input type="text" class="form-control date-control-input" ng-model="EcheancierCreate.echeancier.DateFrais" uib-datepicker-popup="{{format}}" is-open="popup3.opened" datepicker-options="dateOptions" ng-required="true" close-text="Fermer" alt-input-formats="altInputFormats" />
+                                <span class="input-group-btn calendar-input">
+                                    <button type="button" class="btn btn-default" ng-click="open3()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 formLabel">
+                                <label>Mode de paiement</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <select id="imp" ng-model="EcheancierCreate.echeancier.ModeReglement" ng-options="key for (key , value) in EcheancierCreate.typepaiements"></select>
+                                <a href="#" class="btn-cross disable"><span class="icon-cross"> </span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="col1">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" ng-click="$dismiss()">Fermer</button>
+                                <input type="submit" class="btn btn-primary" value="Modifier" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</fieldset>

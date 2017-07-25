@@ -1,0 +1,31 @@
+﻿
+<div class="col">
+    <div class="table-holder">
+        <table>
+            <colgroup>
+                <col style="width:110px">
+                <col style="width:52px">
+                <col style="width:82px">
+                <col style="width:150px">
+                <col style="width:400px">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><a href="#">Date</a></th>
+                    <th>&nbsp;</th>
+                    <th><a href="#">Code</a></th>
+                    <th><a href="#">Qui</a></th>
+                    <th><a href="#">Commentaires</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="facture in factures">
+                    <td>{{facture.Npiece}}</td>
+                    <td>{{facture.Libelle}}</td>
+                    <td>{{facture.Montant}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

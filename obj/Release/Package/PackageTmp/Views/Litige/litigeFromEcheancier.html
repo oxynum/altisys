@@ -1,0 +1,103 @@
+﻿<fieldset>
+    <legend>Litige</legend>
+    <!-- main container of all the page elements -->
+    <div>
+        <form role="form" ng-submit="AddLitige()" ng-controller="litigeFromEcheancierController">
+            <div class="formPopin">
+                <div class="line clearfix">
+                    <div class="col1">
+                        <div ui-view="litigeDataGridCreateView"></div>
+                    </div>
+                </div>
+                <div class="line clearfix">
+                    <div class="row">
+                        <div class="col-md-2 formLabel">
+                            <label>Type litige</label>
+                        </div>
+                        <div class="col-md-4 formInput">
+                            <select ng-model="LitigeCreate.id_dispute_type"
+                                    ng-options="key as value for (key , value) in LitigeCreate.typeslitige"
+                                    required></select>
+                        </div>
+                        <div class="col-md-2 formLabel">
+                            <label>Code litige</label>
+                        </div>
+                        <div class="col-md-4 formInput">
+                            <select ng-model="LitigeCreate.idtypecom"
+                                    ng-options="key as value for (key , value) in LitigeCreate.codeslitige"
+                                    required></select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 formLabel">
+                            <label>Priorité</label>
+                        </div>
+                        <div class="col-md-4 formInput">
+                            <select ng-model="LitigeCreate.priorite"
+                                    ng-options="key as value for (key , value) in LitigeCreate.priorites"
+                                    required></select>
+                        </div>
+                        <div class="col-md-2 formLabel">
+                            <label>Montant</label>
+                        </div>
+                        <div class="col-md-4 formInput">
+                            <input type="text" name="montant" ng-model="LitigeCreate.montant" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 formLabel">
+                            <label>Commentaire</label>
+                        </div>
+                        <div class="col-md-10 formInput">
+                            <textarea name="Commentaire" ng-model="LitigeCreate.commentaire" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 formLabel">
+                            <label>Date max de résolution</label>
+                        </div>
+                        <div class="col-md-4 formInput">
+                            <input type="text" class="form-control date-control-input" ng-model="LitigeCreate.DMR" uib-datepicker-popup="{{format}}" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Fermer" alt-input-formats="altInputFormats" />
+                            <span class="input-group-btn calendar-input">
+                                <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                            </span>
+                        </div>
+                        <div class="col-md-2 formLabel">
+                            <label>Affecter à</label>
+                        </div>
+                        <div class="col-md-4 formInput">
+                            <select ng-model="LitigeCreate.interlocuteur"
+                                    ng-options="key as value for (key , value) in LitigeCreate.gestionnaires"
+                                    required></select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 formLabel">
+                            <label>Envoi Email</label>
+                        </div>
+                        <div class="col-md-10 formInput">
+                            <input type="checkbox" name="checkEmail" ng-model="LitigeCreate.checkEmail" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 formLabel">
+                            <label>Créé par</label>
+                        </div>
+                        <div class="col-md-4 formInput">
+                            <label>Admin</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <div class="col1">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" ng-click="$dismiss()">Fermer</button>
+                        <input type="submit" class="btn btn-primary" value="Modifier" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</fieldset>
+

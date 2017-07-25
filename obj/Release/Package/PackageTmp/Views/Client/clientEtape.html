@@ -1,0 +1,60 @@
+﻿<fieldset>
+    <legend>Ajout d'étapes</legend>
+    <!-- main container of all the page elements -->
+    <div>
+        <form role="form" ng-submit="AddEtape()" ng-controller="clientEtapeController">
+            <div class="line">
+                <div class="col1">
+                    <div class="row formInput clearfix">
+                        <div class="col-md-4 formLabel">
+                            <label>Nom de l'étape</label>
+                        </div>
+                        <div class="col-md-6 formInput">
+                            <input type="text" ng-model="EtapeCreate.Etape.Commentaire" />
+                        </div>
+                    </div>
+                    <div class="row formInput clearfix">
+                        <div class="col-md-4 formLabel">
+                            <label>Délai</label>
+                        </div>
+                        <div class="col-md-1 formInput">
+                            <input type="text" ng-model="EtapeCreate.Etape.Delai" />
+                        </div>
+                    </div>
+                    <div class="row formInput clearfix">
+                        <div class="col-md-4 formLabel">
+                            <label>Type action</label>
+                        </div>
+                        <div class="col-md-8 formInput">
+                            <span class="fake-select">
+                                <select ng-model="EtapeCreate.Etape.CodeAction"
+                                        ng-options="key as value for (key , value) in EtapeCreate.TypeRelances"
+                                        required></select>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row formInput clearfix">
+                        <div class="col-md-4 formLabel">
+                            <label>Ajouter après</label>
+                        </div>
+                        <div class="col-md-8 formInput">
+                            <span class="fake-select">
+                                <select ng-model="EtapeCreate.Etape.NiveauPrecedant"
+                                        ng-options="key as value for (key , value) in EtapeCreate.TypeTraitements"
+                                        required></select>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="col1">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" ng-click="$dismiss()">Annuler</button>
+                                <input type="submit" class="btn btn-primary" value="Ok" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</fieldset>

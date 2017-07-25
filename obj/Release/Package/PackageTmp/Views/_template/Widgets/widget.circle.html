@@ -1,0 +1,19 @@
+﻿
+    <style type="text/css">
+        .circle {
+            display: block;
+            position: relative;
+            -moz-border-radius: 85px;
+            -webkit-border-radius: 85px;
+            border-radius: 85px;
+        }
+        .textChart{position: relative;align-content:center;text-align:center;vertical-align:central;}
+    </style>
+    <div ng-repeat="i in data.datatable">
+        <div  ng-click="action(i.dataX)">{{i.dataX}} -  {{i.dataY}}</div>        
+    </div>
+    <div >
+        <div class="circle" ng-style="{ 'backgroundColor':'red', 'left':'30px', 'top':'50px', 'width':'111px', 'height':'111px' }"><span class="textChart">333</span></div>
+        <div class="circle" ng-style="{ 'backgroundColor':'red', 'left':'150px', 'top':'50px', 'width':'111px', 'height':'111px' }"><span class="textChart">333</span></div>
+        <div class="circle" ng-style="{ 'backgroundColor':'red', 'left':'270px', 'top':'50px', 'width':'111px', 'height':'111px' }"><span class="textChart">333</span></div>  
+     </div>

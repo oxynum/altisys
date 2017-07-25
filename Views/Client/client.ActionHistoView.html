@@ -1,0 +1,76 @@
+﻿
+        <div class="col-md-8">
+            <!-- table holder -->
+            <div class="table-holder client-table-holder" ng-controller="actionSimpleDataGridcontroller">
+                <!--<div ng-include src="'./Views/_template/GridSimpleView.html'" ng-controller="actionSimpleDataGridcontroller"></div>-->
+
+                <table>
+                    <colgroup>
+                        <col style="width:110px">
+                        <col style="width:52px">
+                        <col style="width:82px">
+                        <col style="width:150px">
+                        <col style="width:400px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th><a href="#">Date</a></th>
+                            <th>&nbsp;</th>
+                            <th><a href="#">Code</a></th>
+                            <th><a href="#">Qui</a></th>
+                            <th><a href="#">Commentaires</a></th>
+                        </tr>
+                    </thead>
+                    <tbody ng-repeat="action in actions">
+                        <tr class="ng-class:action.isFirst">
+                            <td><time datetime="2016-03-21">{{action.Dateaction | date : "shortDate"}}</time></td>
+                            <td>&nbsp;</td>
+                            <td>{{action.Codeetat}}</td>
+                            <td><span class="sm">{{action.Agentrecouvrement}}</span></td>
+                            <td><p>{{ action.Notes | limitTo:textLimit }}{{action.Notes.length > textLimit ? '...' : ''}}</p></td>
+                        </tr>    
+                    </tbody>
+                </table>
+            </div>
+            <div style="clear:both"></div>
+            <div class="controls">
+                <a href="#" class="link"
+                   modal-trigger
+                   size="'lg'"
+                   title="Actions" ui-sref="action({societe:scopsociete,numcomptable:scopnumcomptable})">
+                     Voir toutes les actions
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4" id="infos-container">
+            <!-- info box -->
+            <div class="info-box">
+                <a href="#" class="ico-link disable"><span class="ico-tel">&nbsp;</span></a>
+                <div class="textbox" ng-controller="contactSelectedController">
+                    <strong class="title">{{Contact.Name}}</strong>
+                    <span class="txt">{{Contact.Tel1}}</span>
+                    <span class="txt">{{Contact.Disponible}}</span>
+                    <div class="row">
+                        <a href="" class="link"
+                                modal-trigger
+                                size="'lg'"
+                                title="Contacts" ui-sref="contactSelect({societe:scopsociete,numcomptable:scopnumcomptable})">
+                            Autres contacts
+                        </a>
+                        <span class="bubble">{{NbContact}}</span>
+                    </div>
+                </div>
+            </div>
+            <ul class="icons-list">
+                <li>
+                    <a href="" ng-click="toggleCollapsedAction()"><span class="ico-euro">&nbsp;</span></a>
+                    <span class="txt">Opérations comptables</span>
+                </li>
+                <li>
+                    <a href="#"><span class="ico-comment" modal-trigger size="'lg'" title="Ajouter une action" ui-sref="actionAdd({societe:scopsociete,numcomptable:scopnumcomptable})">&nbsp;</span></a>
+                    <span class="txt">Ajouter une action</span>
+                </li>
+            </ul>
+            
+        </div>
+

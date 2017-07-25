@@ -1,0 +1,220 @@
+﻿<fieldset>
+    <legend>Synthèse des actions du jour</legend>
+    <div>
+        <form role="form" ng-submit="Validate()" ng-controller="validateController">
+            <div class="line">
+                <div class="col1">
+                    <div ng-switch="Qualifications.Nothing">
+                        <div ng-switch-when="1">
+                            <div class="row formInput clearfix">
+                                <div class="col-md-8 formLabel">
+                                    Aucune action n'a été réalisée ce jour.
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="col1">
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" ng-click="$dismiss()">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                <div ng-switch-default>
+                                    <div ng-if="Qualifications.Actions.length > 0">
+                                        <div class="row formInput clearfix">
+                                            <div class="col-md-6 formLabel">
+                                                <div ng-switch="Qualifications.Actions.length">
+                                                    <div ng-switch-when="1"><label>1 commentaire</label></div>
+                                                    <div ng-switch-default><label>{{Qualifications.Actions.length}} commentaires</label></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row formInput clearfix">
+                                            <div class="col-md-12 formInput">
+                                                <div class="table-holder">
+                                                    <table>
+                                                        <colgroup>
+                                                            <col style="width:110px">
+                                                            <col style="width:52px">
+                                                            <col style="width:82px">
+                                                            <col style="width:150px">
+                                                            <col style="width:400px">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th><a href="#">Action</a></th>
+                                                                <th><a href="#">Type</a></th>
+                                                                <th><a href="#">Note</a></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody ng-repeat="action in Qualifications.Actions">
+                                                            <tr>
+                                                                <td>{{action.CodeEtat}}</td>
+                                                                <td>
+                                                                    <div ng-switch="action.CodeAction">
+                                                                        <div ng-switch-when="T">
+                                                                            <div class="circle">
+                                                                                <span class="icon-tel2"> </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div ng-switch-when="M">
+                                                                            <div class="circle">
+                                                                                <span class="icon-at"> </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div ng-switch-when="L">
+                                                                            <div class="circle">
+                                                                                <span class="icon-mail"> </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div ng-switch-default>
+                                                                            <div class="circle">
+                                                                                {{action.CodeAction}}
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>{{action.Notes}}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div ng-if="Qualifications.Promesses.length > 0">
+                                        <div class="row formInput clearfix">
+                                            <div class="col-md-6 formLabel">
+                                                <div ng-switch="Qualifications.Promesses.length">
+                                                    <div ng-switch-when="1"><label>1 promesse</label></div>
+                                                    <div ng-switch-default><label>{{Qualifications.Promesses.length}} promesses</label></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 formInput">
+                                                <div class="table-holder">
+                                                    <table>
+                                                        <colgroup>
+                                                            <col style="width:110px">
+                                                            <col style="width:52px">
+                                                            <col style="width:82px">
+                                                            <col style="width:150px">
+                                                            <col style="width:400px">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th><a href="#">MontantTotal</a></th>
+                                                                <th><a href="#">DateReglement</a></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody ng-repeat="q in Qualifications.Promesses">
+                                                            <tr>
+                                                                <td>{{q.MontantTotal}}</td>
+                                                                <td>{{q.DateReglement | date:'dd/MM/yyyy'}}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div ng-if="Qualifications.Litiges.length > 0">
+                                        <div class="row formInput clearfix">
+                                            <div class="col-md-6 formLabel">
+                                                <div ng-switch="Qualifications.Litiges.length">
+                                                    <div ng-switch-when="1"><label>1 litige</label></div>
+                                                    <div ng-switch-default><label>{{Qualifications.Litiges.length}} litiges</label></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 formInput">
+                                                <div class="table-holder">
+                                                    <table>
+                                                        <colgroup>
+                                                            <col style="width:110px">
+                                                            <col style="width:52px">
+                                                            <col style="width:82px">
+                                                            <col style="width:150px">
+                                                            <col style="width:400px">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th><a href="#">Codeetat</a></th>
+                                                                <th><a href="#">Date Max</a></th>
+                                                                <th><a href="#">MontantLitige</a></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody ng-repeat="q in Qualifications.Litiges">
+                                                            <tr>
+                                                                <td>{{q.Codeetat}}</td>
+                                                                <td>{{q.DMR | date:'dd/MM/yyyy'}}</td>
+                                                                <td>{{q.MontantLitige }}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div ng-if="Qualifications.Echeanciers.length > 0">
+                                        <div class="row formInput clearfix">
+                                            <div class="col-md-6 formLabel">
+                                                <div ng-switch="Qualifications.Echeanciers.length">
+                                                    <div ng-switch-when="1"><label>1 écheancier</label></div>
+                                                    <div ng-switch-default><label>{{Qualifications.Echeanciers.length}} écheanciers</label></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 formInput">
+                                                <div class="table-holder">
+                                                    <table>
+                                                        <colgroup>
+                                                            <col style="width:110px">
+                                                            <col style="width:52px">
+                                                            <col style="width:82px">
+                                                            <col style="width:150px">
+                                                            <col style="width:400px">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th><a href="#">MontantTotal</a></th>
+                                                                <th><a href="#">DatePremiereEcheance</a></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody ng-repeat="q in Qualifications.Echeanciers">
+                                                            <tr>
+                                                                <td>{{q.MontantTotal}}</td>
+                                                                <td>{{q.DatePremiereEcheance | date:'dd/MM/yyyy'}}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row formInput clearfix">
+                                        <div class="col-md-6 formLabel">
+                                            <label>Date de prochaine action:</label>
+                                        </div>
+                                        <div class="col-md-2 formLabel">
+                                            <label ng-bind="NextDate | date:'dd/MM/yyyy'"></label>
+                                        </div>
+                                        <!--<div class="col-md-4 formInput">
+                                            <input type="text" class="form-control date-control-input" ng-model="NextDate" uib-datepicker-popup="{{format}}" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Fermer" alt-input-formats="altInputFormats" />
+                                            <span class="input-group-btn calendar-input">
+                                                <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                            </span>
+                                        </div>-->
+                                    </div>
+                                    <div class="line">
+                                        <div class="col1">
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" ng-click="$dismiss()">Annuler</button>
+                                                <input type="submit" class="btn btn-primary" value="Monter le Niveau" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </form>
+    </div>
+</fieldset>

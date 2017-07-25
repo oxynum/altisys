@@ -1,0 +1,36 @@
+﻿<section class="slide-bar">
+    <!-- header of block -->
+    <header class="head">
+        <div class="container">
+            <a href="" ng-click="toggleCollapsedAction()" class="opener">&nbsp;</a>
+            <h2>Tableau de bord</h2>
+        </div>
+    </header>
+    <!-- slide of block -->
+    <div class="slide" uib-collapse="isCollapsed">
+        <div class="container">
+            <!-- tabs block -->
+            <div class="tabs-block">
+                <div class="tab-holder">
+                    <div id="tab1" class="tab">
+
+                        <div class="boxes-wrap" ng-controller="billingManagerViewController">
+                            <a href="#" class="link">Non échus :{{nonechu | number:2}}</a>
+                            <strong class="title"><span>ECHUS : {{echu | number:2}}</span></strong>
+                            <div ng-repeat="cpt in factureCompteurs" style="display:inline-block" ng-class="{'box':cpt.Compteur == ('ALL') || cpt.Compteur == ('NQ'),'box sky-blue':cpt.Compteur == ('PROMESSE'),'box red':cpt.Compteur == ('LITIGE'),'box orange':cpt.Compteur == ('ECHEANCIER')}">
+                                <strong class="subtitle"><a href="" ng-click="selectGrid(cpt.Compteur)">{{cpt.Compteur}}</a></strong>
+                                <strong class="price">{{cpt.Montant | number:2}}</strong>
+                                <ul class="list">
+                                    <li ng-show="cpt.Compteur != 'ALL'"><span>{{cpt.NbFactures | number}}</span><a href="">Factures</a></li>
+                                    <li ng-show="cpt.Compteur != 'ALL' && cpt.Compteur != 'NQ'"><span>{{cpt.NbPromesses}}</span><a href="">{{cpt.Compteur | number}} en cours</a></li>
+                                    <li ng-show="cpt.Compteur != 'ALL' && cpt.Compteur != 'NQ'"><span class="alert" ng-class="{'alert':cpt.NbAlertes > 0,'alert opacity':cpt.NbAlertes == 0 }">{{cpt.NbAlertes | number}}</span><a href="">Alertes</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

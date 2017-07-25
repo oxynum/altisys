@@ -1,0 +1,49 @@
+﻿<div class="login">
+    <form role="form" ng-controller="loginController">
+        <div class="panel-login">
+            <!-- info content -->
+            <section class="info-content main-block active">
+                <div class="line">
+                    <div class="col1">
+                        <div class="row">
+                            <div class="col-md-8 logo" >
+                                <img class="logosoft" src="../../images/Altisys-logo-2016-228x60.png"/>
+                            </div>
+                        </div>
+                        <div class="row formInput clearfix">
+                            <div class="col-md-4 formLabel">
+                                <label>Login : </label>
+                            </div>
+                            <div class="col-md-8 formInput">
+                                <input type="text" class="form-control formInput" ng-required="true" ng-model="user.username" ng-enter="submit()" />
+                            </div>
+                        </div>
+                        <div class="row formInput clearfix">
+                            <div class="col-md-4 formLabel">
+                                <label>Password : </label>
+                            </div>
+                            <div class="col-md-8 formInput">
+                                <input type="password" class="form-control formInput" ng-required="true" ng-model="user.password" ng-enter="submit()" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="col1">
+                        <div class="formButton">
+                            <button type="button"  ng-click="submit()" class="btn-submit"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="col1">
+                        <div class="col-md-8">
+                            <a href="">mot de passe oublié</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </form>
+
+</div>

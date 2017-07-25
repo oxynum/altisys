@@ -1,0 +1,13 @@
+﻿<!-- main container of all the page elements -->
+<div id="wrapper" class="slide-panel" ng-class="{'activePortefeuille': !isCollapsed}" ng-controller="portefeuilleController">
+    <!-- header of the page -->
+    <header-bar></header-bar>
+    <div ui-view="portefeuilleTopBarView" class="topbar"></div>
+    <!-- main block -->
+    <div ui-view="portefeuilleBlockView"></div>
+    <!-- contain main informative part of the site -->
+    <main id="main">
+        <div ui-view="portefeuilleAsideFilterView"></div>
+        <div ui-view="portefeuilleDataGridView"></div>
+    </main>
+</div>

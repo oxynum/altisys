@@ -1,0 +1,105 @@
+﻿<fieldset>
+    <legend>Recherche avancée</legend>
+    <form role="form" ng-controller="advanceSearchFilterController">
+        <div style="float:left;width:600px;">
+            <div class="line">
+                <div class="row">
+                    <div class="col-md-2 formLabel">
+                        <label>Client</label>
+                    </div>
+                    <div class="col-md-4 formInput">
+                        <input type="search" ng-model="Filter.Multisearch" placeholder="Multi recherche">
+                    </div>
+                    <div class="col-md-2 formLabel">
+                        <label>Gestionnaire</label>
+                    </div>
+                    <div class="col-md-2 formInput">
+                        <span class="fake-select">
+                            <select id="Gestionnaires" ng-model="Filter.SelectedGestionnaire" ng-options="key for (key , value) in Filter.Gestionnaires"></select>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 formLabel">
+                        <label>Age</label>
+                    </div>
+                    <div class="col-md-4 formInput">
+                        <span class="fake-select">
+                            <select id="Age" ng-model="Filter.SelectedAge" ng-options="value for (key , value) in Filter.Ages"></select>
+                        </span>
+                    </div>
+                    <div class="col-md-2 formLabel">
+                        <label>Qualification</label>
+                    </div>
+                    <div class="col-md-2 formInput">
+                        <span class="fake-select">
+                            <select id="Qualification" ng-model="Filter.SelectedQualification" ng-options="value for (key , value) in Filter.Qualifications"></select>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 formLabel">
+                        <label>Critères</label>
+                    </div>
+                    <div class="col-md-4 formInput">
+                        <span class="fake-select">
+                            <select id="Qualification" ng-model="Criteres.SelectedCritere" ng-options="value for (key , value) in Criteres"></select>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 formLabel">
+                        <label>De</label>
+                    </div>
+                    <div class="col-md-4 formInput">
+                        <input type="search" ng-model="Criteres.De" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 formLabel">
+                        <label for="rel-2">A</label>
+                    </div>
+                    <div class="col-md-2 formInput">
+                        <input type="search" ng-model="Criteres.A" placeholder="">
+                    </div>
+                    <div class="col-md-1 formButton">
+                        <button type="button" ng-click="AdvanceSearchFilterClick()" class="btn btn-submit" style="margin:0 40px 0 0"></button>
+                    </div>
+                </div>
+                <!--<div class="row">
+                    <div class="col-md-2 formLabel">
+                        <label>nom de la sauvegarde</label>
+                    </div>
+                    <div class="col-md-4 formInput">
+                        <input type="search" ng-model="Filter.SaveLabel" placeholder="">
+                    </div>
+                </div>-->
+            </div>
+        </div>
+            <fieldset>
+                <legend>Sauvegarde</legend>
+                <div style="float:left;width:300px;height:200px;overflow-x:hidden; overflow-y:auto; padding:2px">
+                    <div ng-repeat="searchItem in AdvanceSearches">
+                        <div class="col2 formInput">
+                            <a href="" ng-click="ChangeFilter(searchItem)">{{searchItem.SaveLabel}}</a>
+                            <a href="" class="btn-cross enable" style="padding-left:25px" ng-click="DeleteFilter(searchItem);"><span class="icon-cross"> </span></a>
+                        </div>
+                    </div>
+                </div>
+        </fieldset>
+        <div style="clear:both"></div>
+        <div class="col1">
+            <section class="list-table" ng-controller="advanceSearchDataGrid">
+                <div ng-include src="'./Views/_template/GridSimpleViewSmall.html'"></div>
+            </section>
+        </div>
+        <div class="line">
+            <div class="col1">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" ng-click="$dismiss()">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+</fieldset>

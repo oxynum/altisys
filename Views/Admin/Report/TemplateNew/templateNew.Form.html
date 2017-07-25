@@ -1,0 +1,34 @@
+﻿            <!-- contain main informative part of the site -->
+<main id="main">
+    <section >
+        <div style="padding-top: 20px;">
+            <!-- content of the page -->
+            <div>
+                <!-- info content -->
+                <div class="admin-box">        
+                    <!-- main container of all the page elements -->
+                    <div>
+                        <div ng-controller="templateNewFormController">
+                            <div class="row">
+                                <div class="col-md-4 formLabel">
+                                    <label>Nom du template</label>
+                                </div>
+                                <div class="col-md-6 formInput">
+                                    <input type="text" name="name" size="60" ng-model="templateName" />
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="col1">
+                                    <div class="modal-footer">
+                                        <a href='#/report' title="Accueil" class="btn btn-default"><span>Retour</span></a>
+                                        <button type="button" class="btn btn-primary" ng-click="DisplayDesigner()">Valider</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,151 @@
+﻿
+    <!-- main container of all the page elements -->
+    <div id="wrapper" class="slide-panel container" ng-class="{'active': !isCollapsed}" ng-controller="clientcontroller">
+    <header-bar></header-bar>
+
+    <div ui-view="clientTopBarView" class="topbar"></div>
+    <section class="slide-bar" ng-controller="clientScenarioInfoController">
+        <header class="head">
+            <div class="container">
+                <a href="" class="opener" ng-click="toggleCollapsedAction()">&nbsp;</a>
+                <h2>Scénario &amp; actions</h2>
+                <div class="sm-carousel">
+                    <div class="row">
+                        <div ng-switch="etapes.count">
+                            <div ng-switch-when="0">
+                                <div class="row">
+                                    <a href="" class="link"
+                                       modal-trigger
+                                       size="'lg'"
+                                       title="AddRappel" ui-sref="clientRappel({societe:scopsociete,numcomptable:scopnumcomptable})">
+                                        Ajouter un rappel
+                                    </a>
+                                </div>
+                                <div class="col-md-8 formLabel">
+                                    Aucun scénario d'affecté.
+                                </div>
+                            </div>
+                            <div ng-switch-default>
+                                <div class="row">
+                                    <a href="" class="link"
+                                       modal-trigger
+                                       size="'lg'"
+                                       title="AddRappel" ui-sref="clientRappel({societe:scopsociete,numcomptable:scopnumcomptable})">
+                                        Ajouter un rappel
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a href="" class="link2"
+                                       modal-trigger
+                                       size="'lg'"
+                                       title="AddEtape" ui-sref="clientEtape({societe:scopsociete,numcomptable:scopnumcomptable})">
+                                        Ajouter une étape
+                                    </a>
+                                </div>
+                                <div class="mask">
+                                    <div class="slideset">
+                                        <div class="sm-slide" ng-repeat="etape in etapes">
+                                            <div ng-class="{'circle':true, 'etape':etape.Etape > 0,'niveau':etape.Etape == 0, 'gray':ClientScenario.Niv_relance > etape.sNiveau, 'green':ClientScenario.Niv_relance == etape.sNiveau && etape.Etape == 0 }" ng-show="etape.CodeAction == 'L'"><span class="icon-mail2"></span><em class="num"></em></div>
+                                            <div ng-class="{'circle':true, 'etape':etape.Etape > 0,'niveau':etape.Etape == 0, 'gray':ClientScenario.Niv_relance > etape.sNiveau, 'green':ClientScenario.Niv_relance == etape.sNiveau && etape.Etape == 0 }" ng-show="etape.CodeAction == 'M'"><span class="icon-at2"></span><em class="num"></em></div>
+                                            <div ng-class="{'circle':true, 'etape':etape.Etape > 0,'niveau':etape.Etape == 0, 'gray':ClientScenario.Niv_relance > etape.sNiveau, 'green':ClientScenario.Niv_relance == etape.sNiveau && etape.Etape == 0 }" ng-show="etape.CodeAction == 'F'"><span class="icon-fax"></span><em class="num"></em></div>
+                                            <div ng-class="{'circle':true, 'etape':etape.Etape > 0,'niveau':etape.Etape == 0, 'gray':ClientScenario.Niv_relance > etape.sNiveau, 'green':ClientScenario.Niv_relance == etape.sNiveau && etape.Etape == 0 }" ng-show="etape.CodeAction == 'S'"><span class="icon-textsms"></span><em class="num"></em></div>
+                                            <div ng-class="{'circle':true, 'etape':etape.Etape > 0,'niveau':etape.Etape == 0, 'gray':ClientScenario.Niv_relance > etape.sNiveau, 'green':ClientScenario.Niv_relance == etape.sNiveau && etape.Etape == 0 }" ng-show="etape.CodeAction == 'T'"><span class="icon-tel2"></span><em class="num"></em></div>
+                                            <div ng-class="{'circle':true, 'etape':etape.Etape > 0,'niveau':etape.Etape == 0, 'gray':ClientScenario.Niv_relance > etape.sNiveau, 'green':ClientScenario.Niv_relance == etape.sNiveau && etape.Etape == 0 }" ng-show="etape.CodeAction == 'A'"><span class="icon-actions2"></span><span class="icon-avatar"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mask-info-complement">
+                                    Scénario:{{ClientScenario.Scenario}} - Niveau:{{ClientScenario.Niv_relance}} - Traitement:{{ClientScenario.Codetraitement}}
+                                </div>
+                                <a ng-class="{'btn-prev':true, 'disable':etapes.count<10}" href=""><span class="icon-arrow-l"></span></a>
+                                <a ng-class="{'btn-next':true, 'disable':etapes.count<10}" href=""><span class="icon-arrow-r"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <span class="text">Action attendue</span>
+                    <span class="text">Aujourd’hui</span>
+                    <a href="" class="action-btn"
+                       modal-trigger
+                       size="'lg'"
+                       title="Valider" ui-sref="validate({societe:scopsociete,numcomptable:scopnumcomptable})">
+                        Valider l’action
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="slide" uib-collapse="isCollapsed">
+            <div class="container" ui-view="clientActionHistoView"></div>
+        </div>
+    </section>
+
+    <main id="main">
+        <!-- tools nav -->
+        <nav class="tools-nav">
+            <ul>
+                <li class="ico1"><a href="#" class="link" modal-trigger size="'lg'" title="infoFinanciere" ui-sref="infoFinanciere({societe:scopsociete,numcomptable:scopnumcomptable})">&nbsp;</a></li>
+                <li class="ico9">
+                    <a href="#" class="link" modal-trigger size="'lg'" title="Identite" ui-sref="identite({societe:scopsociete,numcomptable:scopnumcomptable})">&nbsp;</a>
+                </li>
+                <li class="ico3">
+                    <a href="#" class="link" modal-trigger size="'lg'" title="Contacts" ui-sref="contact({societe:scopsociete,numcomptable:scopnumcomptable})">&nbsp;</a>
+                </li>
+                <li class="ico4">
+                    <a href="#" class="link" modal-trigger size="'lg'" title="Action" ui-sref="action({societe:scopsociete,numcomptable:scopnumcomptable})">&nbsp;</a>
+                </li>
+                <li class="ico5"><a href="#" class="link" modal-trigger size="'lg'" title="Blocnote" ui-sref="blocnote({societe:scopsociete,numcomptable:scopnumcomptable})">&nbsp;</a></li>
+                <!--<li class="ico6"><a href="#">&nbsp;</a></li>
+                <li class="ico7"><a href="#">&nbsp;</a></li>-->
+                <li class="ico8"><a href="" class="link" modal-trigger size="'lg'" title="GED" ui-sref="ged({societe:scopsociete,numcomptable:scopnumcomptable})">&nbsp;</a></li>
+                <!--<li class="ico2"><a href="#">&nbsp;</a></li>-->
+            </ul>
+        </nav>
+        <div class="main-holder">
+            <section class="billing-block">
+                <div class="col">
+                    <div ui-view="clientBillingView" ng-controller="billingViewController"></div>
+                    <!-- progress block -->
+                    <div class="progress-block balsmall" ng-controller="balanceAgeeController">
+                        <h3>Balance âgée</h3>
+                        <div class="holder">
+                            <div class="wrap">
+                                <span class="txt">{{balanceAgeePromesse.Montant | number:2}}</span>
+                                <div class="progress-bar">
+                                    <div class="progress blue" ng-style="{ 'width' : progressPromesse+'%' }"></div>
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <span class="txt">{{balanceAgeeLitige.Montant | number:2}}</span>
+                                <div class="progress-bar">
+                                    <div class="progress red" ng-style="{ 'width' : progressLitige+'%' }"></div>
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <span class="txt">{{balanceAgeeEcheancier.Montant | number:2}}</span>
+                                <div class="progress-bar">
+                                    <div class="progress orange" ng-style="{ 'width' : progressEcheancier+'%' }"></div>
+                                </div>
+                            </div>
+                            <ul class="points">
+                                <li>0</li>
+                                <li>30j</li>
+                                <li>60j</li>
+                                <li>90j</li>
+                            </ul>
+                            <a href="" class="link"
+                               modal-trigger
+                               size="'lg'"
+                               title="balanceAgeeDetaillee" ui-sref="balanceAgeeDetaillee({societe:scopsociete,numcomptable:scopnumcomptable})">
+                                Voir balance âgée
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div ui-view="clientFilterView" class="col"></div>
+            </section>
+            <section class="list-table client" ui-view="clientDataGridView"></section>
+        </div>
+    </main>
+</div>
+ 

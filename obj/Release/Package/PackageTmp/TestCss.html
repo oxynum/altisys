@@ -1,0 +1,860 @@
+﻿<div id="wrapper" class="slide-panel">
+    <!-- header of the page -->
+    <header id="header">
+        <div class="container">
+            <!-- header left -->
+            <div class="head-left">
+                <!-- page logo -->
+                <strong class="logo">
+                    <a href="#"><img src="images/logo.png" height="28" width="79" alt="Altisys"></a>
+                </strong>
+                <!-- header links -->
+                <ul>
+                    <li class="home disable"><a href="#"><span>&nbsp;</span></a></li>
+                    <li class="agenda"><a href="#"><span>&nbsp;</span></a></li>
+                    <li class="credit"><a href="#"><span>&nbsp;</span></a></li>
+                    <li class="litigation"><a href="#"><span>&nbsp;</span></a></li>
+                    <li class="steering"><a href="#"><span>&nbsp;</span></a></li>
+                </ul>
+            </div>
+            <!-- header right -->
+            <div class="head-right">
+                <!-- header links -->
+                <ul class="icon-set">
+                    <li class="history"><a href="#"><span class="icon-forme"></span></a></li>
+                    <li class="favorite"><a href="#"><span class="icon-star"></span></a></li>
+                    <li class="notification"><a href="#"><span class="icon-bell"></span> <span class="bubble">29</span></a></li>
+                    <li class="reports"><a href="#"><span class="icon-reports"></span></a></li>
+                </ul>
+                <!-- search form -->
+                <div class="search-form">
+                    <a href="#" class="btn-burger"><span>&nbsp;</span></a>
+                    <input type="search" placeholder="Rechercher un client">
+                    <button class="btn-search"><span class="icon-search"> </span></button>
+                </div>
+                <a href="#" class="link-advance"><span class="icon-search"> </span> Avancée</a>
+                <!-- header links -->
+                <ul class="icon-set">
+                    <li class="faq"><a href="#"><span class="icon-question"></span></a></li>
+                    <li class="param"><a href="#"><span class="icon-settings"></span></a></li>
+                    <li class="user"><a href="#"><span class="icon-user"></span></a></li>
+                </ul>
+                <a href="#" class="btn-login">Login</a>
+            </div>
+        </div>
+    </header>
+    <!-- topbar of the page -->
+    <div class="topbar">
+        <div class="container">
+            <a href="#" class="btn-back"><span class="icon-arrow-l"> </span></a>
+            <h1>Nom client</h1>
+            <!-- additional links -->
+            <ul class="add-links">
+                <li class="link-icon"><a href="#">&nbsp;</a></li>
+                <li class="fav-icon"><a href="#">&nbsp;</a></li>
+                <li class="report-print"><a href="#">&nbsp;</a></li>
+                <li class="txt"><a href="#">Voir Contentieux</a></li>
+            </ul>
+            <div class="right">
+                <span class="text">Client suivant</span>
+                <a href="#" class="btn-next"><span class="icon-arrow-r"> </span></a>
+            </div>
+        </div>
+    </div>
+    <!-- main block -->
+    <section class="slide-bar">
+        <!-- header of block -->
+        <header class="head">
+            <div class="container">
+                <a href="" class="opener" ng-click="isCollapsed = !isCollapsed">testest</a>
+                <h2>Scénario &amp; actions</h2>
+                <div class="sm-carousel">
+                    <a href="#" class="link">Ajouter une étape</a>
+                    <div class="mask">
+                        <div class="slideset">
+                            <div class="sm-slide">
+                                <div class="circle">LA1</div>
+                            </div>
+                            <div class="sm-slide">
+                                <div class="circle">
+                                    <span class="icon-tel2"> </span>
+                                    <em class="num">1</em>
+                                </div>
+                            </div>
+                            <div class="sm-slide">
+                                <div class="circle">
+                                    <span class="icon-actions2"> </span>
+                                    <span class="icon-avatar"> </span>
+                                </div>
+                            </div>
+                            <div class="sm-slide">
+                                <div class="circle green">
+                                    <span class="icon-tel2"> </span>
+                                    <em class="num">2</em>
+                                </div>
+                            </div>
+                            <div class="sm-slide">
+                                <div class="circle">MED</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn-prev" href="#"><span class="icon-arrow-l"></span></a>
+                    <a class="btn-next disable" href="#"><span class="icon-arrow-r"></span></a>
+                </div>
+                <div class="right">
+                    <span class="text">Action attendue</span>
+                    <span class="text">Aujourd’hui</span>
+                    <a href="#" class="action-btn">Valider l’action</a>
+                </div>
+            </div>
+        </header>
+        <!-- slide of block -->
+        <div class="slide"  uib-collapse="isCollapsed">
+            <div class="container">
+                <div class="col">
+                    <!-- table holder -->
+                    <div class="table-holder">
+                        <table>
+                            <colgroup>
+                                <col style="width:110px">
+                                <col style="width:52px">
+                                <col style="width:82px">
+                                <col style="width:150px">
+                                <col style="width:400px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th><a href="#">Date</a></th>
+                                    <th>&nbsp;</th>
+                                    <th><a href="#">Code</a></th>
+                                    <th><a href="#">Qui</a></th>
+                                    <th><a href="#">Commentaires</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="red">
+                                    <td><time datetime="2016-03-21">21/03/2016</time></td>
+                                    <td>&nbsp;</td>
+                                    <td>LITIG</td>
+                                    <td><span class="sm">Anthony MARTIN</span></td>
+                                    <td><p>Litige sur facture, client refuse de reconnaitre sa dette</p></td>
+                                </tr>
+                                <tr>
+                                    <td><time datetime="2016-03-21">21/03/2016</time></td>
+                                    <td><span class="icon-tel2"> </span></td>
+                                    <td>PRC</td>
+                                    <td><span class="sm">CC1 Julie EUZENAT</span></td>
+                                    <td><p>Ne réponds pas, rappeler LUNDI</p></td>
+                                </tr>
+                                <tr>
+                                    <td><time datetime="2016-03-21">21/03/2016</time></td>
+                                    <td>&nbsp;</td>
+                                    <td>NRP</td>
+                                    <td><span class="sm">Anthony MARTIN</span></td>
+                                    <td><p>Promesse de règlement de 1 084 802.63 pour les factures 2014</p></td>
+                                </tr>
+                                <tr>
+                                    <td><time datetime="2016-03-21">21/03/2016</time></td>
+                                    <td><span class="icon-tel2"> </span></td>
+                                    <td>PRC</td>
+                                    <td><span class="sm">CC1 Julie EUZENAT</span></td>
+                                    <td><p>Ne réponds pas, rappeler LUNDI</p></td>
+                                </tr>
+                                <tr>
+                                    <td><time datetime="2016-03-21">21/03/2016</time></td>
+                                    <td>&nbsp;</td>
+                                    <td>DUPLI</td>
+                                    <td><span class="sm">Anthony MARTIN</span></td>
+                                    <td><p>Duplicata envoyé par fax, règlement prévu pour fin mai</p></td>
+                                </tr>
+                                <tr>
+                                    <td><time datetime="2016-03-21">21/03/2016</time></td>
+                                    <td>&nbsp;</td>
+                                    <td>DUPLI</td>
+                                    <td><span class="sm">Anthony MARTIN</span></td>
+                                    <td><p>Duplicata envoyé par fax, règlement prévu pour fin mai</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="controls">
+                        <a href="#" class="btn-prev"><span class="icon-chevron-with-circle-up"> </span></a>
+                        <a href="#" class="btn-prev disable"><span class="icon-chevron-with-circle-down"> </span></a>
+                        <a href="#" class="link">Voir toutes les actions..</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- info box -->
+                    <div class="info-box">
+                        <a href="#" class="ico-link"><span class="ico-tel">&nbsp;</span></a>
+                        <div class="textbox">
+                            <strong class="title">M.Georges DUcMOULINEAU</strong>
+                            <span class="txt">Disponible</span>
+                            <div class="row">
+                                <a href="#" class="link">Autres contacts</a>
+                                <span class="bubble">7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="icons-list">
+                        <li>
+                            <a href="#"><span class="ico-euro">&nbsp;</span></a>
+                            <span class="txt">Opération comptable</span>
+                        </li>
+                        <li>
+                            <a href="#"><span class="ico-comment">&nbsp;</span></a>
+                            <span class="txt">Commentaire</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contain main informative part of the site -->
+    <main id="main">
+        <!-- tools nav -->
+        <nav class="tools-nav">
+            <ul>
+                <li class="ico1 active"><a href="#">&nbsp;</a></li>
+                <li class="ico2"><a href="#">&nbsp;</a></li>
+                <li class="ico3"><a href="#">&nbsp;</a></li>
+                <li class="ico1"><a href="#">&nbsp;</a></li>
+            </ul>
+        </nav>
+        <div class="main-holder">
+            <!-- billing block -->
+            <section class="billing-block">
+                <div class="col">
+                    <!-- head of block -->
+                    <header class="head">
+                        <h2>Encours client / Opér.comptables :</h2>
+                        <div class="holder">
+                            <div class="info"><span>67</span> Factures</div>
+                            <div class="info"><span>44 281.02</span> € encours</div>
+                        </div>
+                    </header>
+                    <!-- content wrap -->
+                    <div class="content-wrap">
+                        <a class="link" href="#">Non échus : 4 000.00 €</a>
+                        <strong class="main-title"><span>ECHUS : 40 281.02 €</span></strong>
+                        <div class="boxes-wrap">
+                            <div class="box">
+                                <strong class="title"><a href="#">Toutes<br> les factures</a></strong>
+                                <strong class="price">44 281.02 €</strong>
+                            </div>
+                            <div class="box">
+                                <strong class="subtitle"><a href="#">Non qualifiées</a></strong>
+                                <strong class="price">21 302.25</strong>
+                                <ul class="list single">
+                                    <li><span>25</span><a href="#">Factures</a></li>
+                                </ul>
+                            </div>
+                            <div class="box sky-blue">
+                                <strong class="subtitle"><a href="#">Promesses</a></strong>
+                                <strong class="price">8 557.01</strong>
+                                <ul class="list">
+                                    <li><span>19</span><a href="#">Factures</a></li>
+                                    <li><span>6</span><a href="#">Promesses en cours</a></li>
+                                    <li><span class="alert">02</span><a href="#">Alertes</a></li>
+                                </ul>
+                            </div>
+                            <div class="box red">
+                                <strong class="subtitle"><a href="#">Litiges</a></strong>
+                                <strong class="price">4 321.81</strong>
+                                <ul class="list">
+                                    <li><span>10</span><a href="#">Factures</a></li>
+                                    <li><span>6</span><a href="#">Promesses en cours</a></li>
+                                    <li><span class="alert opacity">&nbsp;</span><a href="#">Alertes</a></li>
+                                </ul>
+                            </div>
+                            <div class="box orange">
+                                <strong class="subtitle"><a href="#">Echéanciers</a></strong>
+                                <strong class="price">10 557.99</strong>
+                                <ul class="list">
+                                    <li><span>19</span><a href="#">Factures</a></li>
+                                    <li><span>6</span><a href="#">Promesses en cours</a></li>
+                                    <li><span class="alert">02</span><a href="#">Alertes</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- progress block -->
+                    <div class="progress-block">
+                        <h3>Balance âgée</h3>
+                        <div class="holder">
+                            <div class="wrap">
+                                <span class="txt">150 241 €</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70.5%;"></div>
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <span class="txt">65 125 €</span>
+                                <div class="progress-bar">
+                                    <div class="progress orange" style="width: 48.5%;"></div>
+                                </div>
+                            </div>
+                            <ul class="points">
+                                <li>0</li>
+                                <li>30j</li>
+                                <li>60j</li>
+                                <li>90j</li>
+                            </ul>
+                            <a href="#" class="link">Voir balance âgée</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- form search -->
+                    <form class="form-search" action="#">
+                        <div class="field-row">
+                            <input type="search" placeholder="N° de la facture">
+                            <button class="btn-search" type="submit"><span class="icon-search"> </span></button>
+                        </div>
+                        <div class="field-row">
+                            <span class="fake-select">
+                                <select id="rel3">
+                                    <option>Intérêts</option>
+                                    <option>option</option>
+                                    <option>option</option>
+                                    <option>option</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="field-row">
+                            <label for="rel-1">De</label>
+                            <input id="rel-1" type="text" placeholder="Montant mini en euro">
+                        </div>
+                        <div class="field-row">
+                            <label for="rel-2">A</label>
+                            <input id="rel-2" type="text" placeholder="Montant mini en euro">
+                        </div>
+                        <button type="submit" class="btn-submit"></button>
+                    </form>
+                </div>
+            </section>
+            <section class="list-table">
+                <h2><span>Liste des xxx</span></h2>
+                <div class="table-block">
+                    <table>
+                        <tr>
+                            <th>Litige</th>
+                            <th>N°facture</th>
+                            <th>Date pièce</th>
+                            <th>Date échéance</th>
+                            <th>Montant</th>
+                            <th>Solde</th>
+                            <th>Niveau</th>
+                            <th>Intérêts</th>
+                            <th>N°Client pièce</th>
+                        </tr>
+                        <tr class="active">
+                            <td colspan="9">
+                                <table>
+                                    <tr>
+                                        <td><a href="#" class="table-opener">&nbsp;</a> 1235</td>
+                                        <td>8 549.03 €</td>
+                                        <td>8 549.03 €</td>
+                                        <td>334.58 €</td>
+                                    </tr>
+                                    <tr class="table-slide">
+                                        <td colspan="4">
+                                            <table>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Créer une action</a></li>
+                                                                <li><a href="#">Débloquer la facture</a></li>
+                                                                <li><a href="#">Réaliser une opération</a></li>
+                                                                <li><a href="#">Générer un rapport</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td colspan="9">
+                                <table>
+                                    <tr>
+                                        <td><a href="#" class="table-opener">&nbsp;</a> 1394</td>
+                                        <td>8 549.03 €</td>
+                                        <td>8 549.03 €</td>
+                                        <td>334.58 €</td>
+                                    </tr>
+                                    <tr class="table-slide">
+                                        <td colspan="4">
+                                            <table>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup up">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="9">
+                                <table>
+                                    <tr>
+                                        <td><a href="#" class="table-opener">&nbsp;</a> 1744</td>
+                                        <td>8 549.03 €</td>
+                                        <td>8 549.03 €</td>
+                                        <td>334.58 €</td>
+                                    </tr>
+                                    <tr class="table-slide">
+                                        <td colspan="4">
+                                            <table>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup up">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup up">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup up">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="9">
+                                <table>
+                                    <tr>
+                                        <td><a href="#" class="table-opener">&nbsp;</a> 0357</td>
+                                        <td>8 549.03 €</td>
+                                        <td>8 549.03 €</td>
+                                        <td>334.58 €</td>
+                                    </tr>
+                                    <tr class="table-slide">
+                                        <td colspan="4">
+                                            <table>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup up">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup up">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup up">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="9">
+                                <table>
+                                    <tr>
+                                        <td><a href="#" class="table-opener">&nbsp;</a> 3488</td>
+                                        <td>8 549.03 €</td>
+                                        <td>8 549.03 €</td>
+                                        <td>334.58 €</td>
+                                    </tr>
+                                    <tr class="table-slide">
+                                        <td colspan="4">
+                                            <table>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup up">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup up">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup up">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="9">
+                                <table>
+                                    <tr>
+                                        <td><a href="#" class="table-opener">&nbsp;</a> 1235</td>
+                                        <td>8 549.03 €</td>
+                                        <td>8 549.03 €</td>
+                                        <td>334.58 €</td>
+                                    </tr>
+                                    <tr class="table-slide">
+                                        <td colspan="4">
+                                            <table>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup up">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup up">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>320 425 656</td>
+                                                    <td>21/12/2014</td>
+                                                    <td>02/12/2014</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>2 564.98 €</td>
+                                                    <td>3</td>
+                                                    <td>145.56 €</td>
+                                                    <td>
+                                                        CV000269
+                                                        <div class="popup up">
+                                                            <a class="btn-burger" href="#"><span></span></a>
+                                                            <ul class="drop">
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum consect</a></li>
+                                                                <li><a href="#">Lorem ispum</a></li>
+                                                                <li><a href="#">Lorem ispum alea</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>

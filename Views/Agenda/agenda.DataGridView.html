@@ -1,0 +1,32 @@
+﻿<form action="#">
+    <!-- header of block -->
+    <header class="head">
+        <a class="opener" href="#">&nbsp;</a>
+        <a class="btn-burger" href=""><span>&nbsp;</span></a>
+    </header>
+    <!-- slide of block -->
+    <div class="slide" ng-controller="agendaDataGrid">
+        <!-- header of content -->
+        <section class="list-table">
+            <h2><span>Liste des clients</span></h2>
+            <div ng-include src="'./Views/_template/GridSimpleViewHigh.html'"></div>
+
+            <!--<div ui-grid="gridOptions" ui-grid-pagination ui-grid-selection class="grid" ng-show="gridMode">
+                <div class="grid-msg-overlay" ng-hide="!loadingGrid">
+                    <div class="msg">
+                        <span>
+                            Loading Data...
+                            <i class="fa fa-spinner fa-spin"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="grid-msg-overlay grid-emptydata" ng-hide="isLoading || gridOptions.data.length">
+                    <div class="msg">
+                        <span>No Data</span>
+                    </div>
+                </div>
+            </div>-->
+
+        </section>
+    </div>
+</form>

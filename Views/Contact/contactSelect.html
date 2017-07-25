@@ -1,0 +1,45 @@
+﻿<fieldset>
+    <legend>Contacts</legend>
+    <div>
+        <form ng-controller="contactSelectController">
+            <div class="formPopin">
+                <div class="table-holder">
+                    <table>
+                        <colgroup>
+                            <col style="width:110px">
+                            <col style="width:52px">
+                            <col style="width:82px">
+                            <col style="width:150px">
+                            <col style="width:400px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><a href="#">Contact</a></th>
+                                <!-- <th><a href="#">Adresse</a></th>-->
+                                <th><a href="#">Tél 1</a></th>
+                                <th><a href="#">Tél 2</a></th>
+                                <!--<th><a href="#">&nbsp;</a></th>-->
+                            </tr>
+                        </thead>
+                        <tbody ng-repeat="contact in contacts">
+                            <tr>
+                                <td>{{contact._contact}}</td>
+                                <!--<td><p>{{contact._adresse}}</p><p>{{contact._adresse_2}} {{contact._adresse_3}}</p><p>{{contact._code_postal}} {{contact._cp_ville}}</p><p>{{contact._ppays}}</p></td>-->
+                                <td>{{contact._tel1}}</td>
+                                <td>{{contact._tel2}}</td>
+                                <!--<td><a href="#" ng-click="selectContact(contact._contactId)">Appeler</a></td>-->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="line">
+                <div class="col1">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" ng-click="$dismiss()">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</fieldset>

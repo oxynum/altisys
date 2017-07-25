@@ -1,0 +1,91 @@
+﻿<fieldset>
+    <legend>Ajout d'action</legend>
+    <!-- main container of all the page elements -->
+    <div>
+        <form role="form" ng-submit="AddAction()" ng-controller="actionAddController">
+            <div class="line">
+                <div class="col1">
+                    <div class="row formInput clearfix">
+                        <div class="col-md-4 formLabel">
+                            <label>Statut(s)</label>
+                        </div>
+                        <div class="col-md-8 formInput">
+                            <span class="fake-select">
+                                <select ng-model="ActionAdd.Action.CodeEtat"
+                                        ng-options="key as value for (key , value) in ActionAdd.typeActions"
+                                        required></select>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row formInput clearfix">
+                        <div class="col-md-4 formLabel">
+                            <label>Commentaire</label>
+                        </div>
+                        <div class="col-md-8 formInput">
+                            <textarea name="Notes" style="width:500px; height:200px" ng-model="ActionAdd.Action.Notes" />
+                        </div>
+                    </div>
+                    <div class="row formInput clearfix">
+                        <div class="col-md-5 formInput">
+                            <input id="Reporter" type="radio" ng-model="ActionAdd.radiaoAction" value="Reporter" />
+                            <label for="Reporter">Reporter cette action</label>
+                        </div>
+                        <div class="col-md-5 formInput">
+                            <input id="Passer" type="radio" ng-model="ActionAdd.radiaoAction" ng-click="GetNextAction()" value="Passer" />
+                            <label for="Passer">Passer à l'action suivante</label>
+                        </div>
+                    </div>
+                    <div ng-switch="ActionAdd.radiaoAction">
+                        <div ng-switch-when="Reporter">
+                            <div class="row formInput clearfix">
+                                <div class="col-md-4 formInput">
+                                    <input type="text" class="form-control date-control-input" ng-model="ActionAdd.dateRelance" uib-datepicker-popup="{{format}}" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Fermer" alt-input-formats="altInputFormats"/>
+                                    <span class="input-group-btn calendar-input">
+                                        <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div ng-switch-when="Passer">
+                                <div class="row formInput clearfix">
+                                    <div class="col-md-4 formLabel">
+                                        <label>Action:</label>
+                                    </div>
+                                    <div class="col-md-6 formLabel">
+                                        <label>{{ActionAdd.NextAction.Libelle}}</label>
+                                    </div>
+                                </div>
+                                <div class="row formInput clearfix">
+                                    <div class="col-md-4 formLabel">
+                                        <label>Niveau/Traitement:</label>
+                                    </div>
+                                    <div class="col-md-6 formLabel">
+                                        <label>{{ActionAdd.NextAction.Niveau}} {{ActionAdd.NextAction.Traitement}}</label>
+                                    </div>
+                                </div>
+                            <div class="row formInput clearfix">
+                                <div class="col-md-4 formLabel">
+                                    <label>Date prévue:</label>
+                                </div>
+                                <div class="col-md-6 formInput">
+                                    <input type="text" class="form-control date-control-input" datetime="yyyy-MM-dd" ng-model="ActionAdd.NextAction.NextDate" uib-datepicker-popup="{{format}}" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Fermer" alt-input-formats="altInputFormats" />
+                                    <span class="input-group-btn calendar-input">
+                                        <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <div class="col1">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" ng-click="$dismiss()">Fermer</button>
+                        <input type="submit" class="btn btn-primary" value="Enregistrer" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</fieldset>

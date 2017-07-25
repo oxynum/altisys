@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html ng-app="appMain">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Altisys</title>
+    <!-- include the site stylesheet -->
+    
+
+
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.0.4/ui-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/2.1.0/toaster.css" type="text/css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" type="text/css">
+    
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link media="all" rel="stylesheet" href="css/angular-gridster.min.css">
+    <link media="all" rel="stylesheet" href="css/gridster.css">
+    <link href="./css/nv.d3.css" rel="stylesheet" type="text/css">
+    <link media="all" rel="stylesheet" href="css/main.css">
+    <link media="all" rel="stylesheet" href="css/ElementStyle.css">
+
+
+    <link media="all" rel="stylesheet" href="css/main.custom.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>-->
+    <script type="text/javascript" src="./Scripts/angular.js" ></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.5.8/i18n/angular-locale_fr-fr.js"></script>
+    <!--TODO LOAD ALL LANGUAGE PACK-->
+
+    
+    <script data-require="angular-ui-router@0.3.2" data-semver="0.3.2" src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
+    <script src="https://cdn.jsdelivr.net/angular.bootstrap/2.4.0/ui-bootstrap-tpls.min.js"></script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-touch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.0.4/ui-grid.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.11/ngStorage.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-cookies.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-validator/1.2.9/angular-validator.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-base64/2.0.5/angular-base64.min.js"></script>
+    <script src="http://cdn.rawgit.com/ManifestWebDesign/angular-gridster/master/src/angular-gridster.js"> </script>
+    <script data-require="lodash.js@*" data-semver="2.4.1" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-file-upload/2.4.1/angular-file-upload.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
+
+    <script src="./Scripts/d3.js"></script>
+    <script src="./Scripts/nv.d3.js"></script>
+    <script src="./Scripts/angularjs-nvd3-directives.js"></script>
+
+    <script src="./App/appRouteAccueil.js" defer></script>
+    <script src="./App/appRouteClient.js" defer></script>
+    <script src="./App/appRoutePortefeuille.js" defer></script>
+    <script src="./App/appPopin.js" defer></script>
+    <script src="./Scripts/menuContext.js" defer></script>
+    <script src="./App/appMain.js" defer></script>
+    <script src="./App/appMain.Environment.conf.prod.js" defer></script>
+
+    <script src="./App/Directives/headerBar.directive.js" defer></script>
+    <script src="./App/Directives/widget.directive.js" defer></script>
+    <script src="./App/Directives/loader.directive.js" defer></script>
+    <script src="./App/Directives/customGridClient.directive.js" defer></script>
+    <script src="./App/Directives/customGridManager.directive.js" defer></script>
+    <script src="./App/Directives/ngEnter.directive.js" defer></script>
+    <script src="./App/Directives/scrollToClient.directive.js" defer></script>
+    
+    <script src="./App/Factories/gridConfService.js" defer></script>
+    <script src="./App/Factories/modalService.js" defer></script>
+    <script src="./App/Factories/userService.js" defer></script>
+    <script src="./App/Factories/storageService.js" defer></script>
+    <script src="./App/Factories/notificationService.js" defer></script>
+    <script src="./App/Factories/apiService.js" defer></script>
+    <script src="./App/Factories/membershipService.js" defer></script>
+    <script src="./App/Factories/cookieService.js" defer></script>
+    <script src="./App/Factories/menuContextService.js" defer></script>
+    <script src="./App/Factories/listClientService.js" defer></script>
+    <script src="./App/Factories/widgetConfigService.js" defer></script>
+    <script src="./App/Factories/widgetFactory.js" defer></script>
+    <script src="./App/Factories/reportVarService.js" defer></script>
+    <script src="./App/Factories/reportService.js" defer></script>
+    <script src="./App/Factories/stiViewerOptionsService.js" defer></script>
+    <script src="./App/Factories/stiDesignerOptionsService.js" defer></script>
+    <script src="./App/Factories/stiDesignerTemplateOptionsService.js" defer></script>
+    
+
+    <script src="./App/Ctrl/Widgets/widget.gridActionController.js" defer></script>
+    <script src="./App/Ctrl/Widgets/widget.mesAlertesController.js" defer></script>
+    <script src="./App/Ctrl/Widgets/widget.rechercheController.js" defer></script>
+    <script src="./App/Ctrl/Widgets/widget.relanceParTypeController.js" defer></script>
+    <script src="./App/Ctrl/Widgets/widget.GetEchusController.js" defer></script>
+    <script src="./App/Ctrl/Widgets/widget.GetEchusController90.js" defer></script>
+    <script src="./App/Ctrl/Widgets/widget.GetEchusController150.js" defer></script>
+    <script src="./App/Ctrl/Widgets/widget.GetLitigesController.js" defer></script>
+    <script src="./App/Ctrl/Widgets/widget.GetPromessesController.js" defer></script>
+    <script src="./App/Ctrl/Widgets/widget.DSOController.js" defer></script>
+    
+
+    <script src="./App/Ctrl/agendacontroller.js" defer></script>
+    <script src="./App/Ctrl/agendafiltercontroller.js" defer></script>
+    <script src="./App/Ctrl/agendaDataGrid.js" defer></script>
+    <script src="./App/Ctrl/clientcontroller.js" defer></script>
+    <script src="./App/Ctrl/identitecontroller.js" defer></script>
+    <script src="./App/Ctrl/echeanciercontroller.js" defer></script>
+    <script src="./App/Ctrl/echeancierUpdateController.js" defer></script>
+    <!--SDR 2017-06-13 : DEPRECATED-->
+    <!--<script src="./App/Ctrl/promessecontroller.js" defer></script>-->
+    <script src="./App/Ctrl/promesseV2Controller.js" defer></script>
+
+    <script src="./App/Ctrl/promesseUpdateController.js" defer></script>
+    <script src="./App/Ctrl/litigecontroller.js" defer></script>
+    <script src="./App/Ctrl/contactSelectController.js" defer></script>
+    <script src="./App/Ctrl/contactcontroller.js" defer></script>
+    <script src="./App/Ctrl/clientdatagridcontroller.js" defer></script>
+    <script src="./App/Ctrl/litigeDataGridController.js" defer></script>
+    <script src="./App/Ctrl/promesseDataGridController.js" defer></script>
+    <script src="./App/Ctrl/echeancierDataGridController.js" defer></script>
+    <script src="./App/Ctrl/actionAddController.js" defer></script>
+    <script src="./App/Ctrl/scenarioBarController.js" defer></script>
+    <script src="./App/Ctrl/actionSimpleDataGridcontroller.js" defer></script>
+    <script src="./App/Ctrl/actioncontroller.js" defer></script>
+    <script src="./App/Ctrl/accueilController.js" defer></script>
+    <script src="./App/Ctrl/billingViewController.js" defer></script>
+    <script src="./App/Ctrl/clientFilterController.js" defer></script>
+    <script src="./App/Ctrl/masterController.js" defer></script>
+    <script src="./App/Ctrl/clientSuivantController.js" defer></script>
+    <script src="./App/Ctrl/portefeuilleController.js" defer></script>
+    <script src="./App/Ctrl/loginController.js" defer></script>
+    <script src="./App/Ctrl/contactSelectedController.js" defer></script>
+    <script src="./App/Ctrl/clientRappelController.js" defer></script>
+    <script src="./App/Ctrl/clientEtapeController.js" defer></script>
+    <script src="./App/Ctrl/accueilTopBarController.js" defer></script>
+    <script src="./App/Ctrl/clientScenarioInfoController.js" defer></script>
+    <script src="./App/Ctrl/fileUploadController.js" defer></script>
+    <script src="./App/Ctrl/billingManagerViewController.js" defer></script>
+    <script src="./App/Ctrl/managerDataGridController.js" defer></script>
+    <script src="./App/Ctrl/infoFinancierecontroller.js" defer></script>
+    <script src="./App/Ctrl/portefeuillefiltercontroller.js" defer></script>
+    <script src="./App/Ctrl/pageV1Controller.js" defer></script>
+    <script src="./App/Ctrl/blocNoteController.js" defer></script>
+    <script src="./App/Ctrl/advanceSearchFilterController.js" defer></script>
+    <script src="./App/Ctrl/advanceSearchDataGrid.js" defer></script>
+    <script src="./App/Ctrl/balanceAgeeController.js" defer></script>
+    <script src="./App/Ctrl/validateController.js" defer></script>  
+    <script src="./App/Ctrl/courrierController.js" defer></script>  
+    <script src="./App/Ctrl/courrierDataGridController.js" defer></script>  
+    <script src="./App/Ctrl/planController.js" defer></script>  
+    <script src="./App/Ctrl/litigeDeblocController.js" defer></script>  
+    <script src="./App/Ctrl/promesseDeleteController.js" defer></script>  
+    <script src="./App/Ctrl/echeancierDeleteController.js" defer></script>  
+    <script src="./App/Ctrl/litigeFromPromesseController.js" defer></script>  
+    <script src="./App/Ctrl/litigeFromEcheancierController.js" defer></script>
+    <script src="./App/Ctrl/echeancierFromPromesseController.js" defer></script>
+    <script src="./App/Ctrl/reaffectationDataGridController.js" defer></script>
+    <script src="./App/Ctrl/reaffectationController.js" defer></script>
+    <script src="./App/Ctrl/widgetSettingsController.js" defer></script>
+    <script src="./App/Ctrl/balanceAgeeDetailleeController.js" defer></script>
+    <script src="./App/Ctrl/courrierLotDataGrid.js" defer></script>
+    <script src="./App/Ctrl/courrierLotFilterController.js" defer></script>
+    <script src="./App/Ctrl/documentRelanceController.js" defer></script>
+    <script src="./App/Ctrl/documentsRelanceController.js" defer></script>
+    <script src="./App/Ctrl/campagneLotDataGrid.js" defer></script>
+    <script src="./App/Ctrl/campagneLotFilterController.js" defer></script>
+    <script src="./App/Ctrl/documentCampagneController.js" defer></script>
+    <script src="./App/Ctrl/courrierV2Controller.js" defer></script>
+    <script src="./App/Ctrl/reportManagementController.js" defer></script>
+    <script src="./App/Ctrl/reportNewFormController.js" defer></script>
+    <script src="./App/Ctrl/reportEditFormController.js" defer></script>
+    <script src="./App/Ctrl/templateNewFormController.js" defer></script>
+    <script src="./App/Ctrl/templateEditFormController.js" defer></script>
+
+    
+    <!---------- Stimulsoft  ------------>
+
+    <!-- Report Viewer Office2013 sdrouet style -->
+    <link rel="stylesheet" href="css/stimulsoft.viewer.office2013.whiteblue.extended.sdrouet.css">
+    <!-- Report Designer Office2013 sdrouet style -->
+    <link rel="stylesheet" href="css/stimulsoft.designer.office2013.whiteblue.extended.sdrouet.css">
+           
+
+    <!-- Stimusloft Reports.JS -->
+    <script src="scripts/stimulsoft.reports.js" type="text/javascript"></script>
+    <script src="scripts/stimulsoft.viewer.js" type="text/javascript"></script>
+    <script src="scripts/stimulsoft.designer.js" type="text/javascript"></script>
+
+
+    <!-- Controllers -->
+        <!--DEPRECATED (DEMO ONLY)-->
+    <script src="./App/Ctrl/Stimulsoft/viewerController.js" defer></script>
+    <script src="./App/Ctrl/Stimulsoft/designerController.js" defer></script>
+        <!--END DEPRECATED (DEMO ONLY)-->
+
+    <script src="./App/Ctrl/Stimulsoft/viewerV2Controller.js" defer></script>
+    <script src="./App/Ctrl/Stimulsoft/viewerV2TopBarController.js" defer></script>
+    <script src="./App/Ctrl/Stimulsoft/designerV2Controller.js" defer></script>
+    <script src="./App/Ctrl/Stimulsoft/designerV2TopBarController.js" defer></script>
+    <script src="./App/Ctrl/Stimulsoft/designerV2TemplateController.js" defer></script>
+    <!---------- END Stimulsoft  ------------>
+    
+    <script type="text/javascript" src="./Scripts/jquery.main.js" defer></script>
+    <script type="text/javascript" src="Scripts/sjcl.js" defer></script>
+    
+
+
+    <script type="text/javascript" >
+        //function refresh() {
+        //    if (new Date().getTime() - time >= 50000) {
+        //        addFrame();
+
+        //        time = new Date().getTime();
+        //        setTimeout(refresh, 2000);
+        //    }
+        //    else
+        //        setTimeout(refresh, 2000);
+        //}
+
+        //function addFrame() {
+        //    var iframe = document.getElementById("iframeItem0");
+        //    // iframe already exists, remove it before loading it back
+        //    if (iframe) {
+        //        document.getElementById("_frame").removeChild(iframe);
+        //    }
+
+        //    iframe = document.createElement("iframe");
+        //    iframe.setAttribute("src", "V1/");
+        //    iframe.setAttribute("width", "0");
+        //    iframe.setAttribute("height", "0");
+        //    iframe.setAttribute("id", "iframeItem0");
+        //    iframe.setAttribute("style", "position:absolute;left:0px;top:50px;border:0;");
+        //    document.getElementById("_frame").appendChild(iframe);
+        //}
+        //addFrame();
+        //setTimeout(refresh, 20000);
+    </script>
+</head>
+<body class="blue-bg agenda">
+    <ui-view></ui-view>
+    <!--<div id="_frame"></div>-->
+    <!--<iframe ng-src="{{urlV1}}" height="0px" width="0px" style="left:0px;top:50px;border:0;position:absolute"></iframe>-->
+</body>
+
+
+</html>

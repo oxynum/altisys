@@ -1,0 +1,15 @@
+﻿<div ui-grid="row.entity.subGridOptions" ui-grid-pagination class="nestedGrid">
+    <div class="grid-msg-overlay" ng-hide="!loadingIndicator">
+        <div class="msg">
+            <span>
+                Loading Data...
+                <i class="fa fa-spinner fa-spin"></i>
+            </span>
+        </div>
+    </div>
+    <div class="grid-msg-overlay  grid-emptydata" ng-hide="loadingIndicator || row.entity.subGridOptions.data.length">
+        <div class="msg">
+            <span>No Data</span>
+        </div>
+    </div>
+</div>

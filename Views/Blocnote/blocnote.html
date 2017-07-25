@@ -1,0 +1,96 @@
+﻿<fieldset>
+    <legend>BlocNotes</legend>
+    <!-- main container of all the page elements -->
+    <div>
+        <form role="form" ng-submit="FiltreBlocNote()" ng-controller="blocNoteController">
+            <div class="formPopin">
+                <div class="line">
+                    <div class="row formInput">
+                        <div class="row">
+                            <div class="col-md-4 formInput">
+                                <span class="fake-select">
+                                    <select id="rel1" ng-model="BlocNote.typeBlocNoteSelectedAdd" ng-options="key for (key , value) in BlocNote.TypeBlocNotesAdd"></select>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 formInput">
+                                <textarea name="Commentaire" ng-model="BlocNote.Note" />
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="col1">
+                                <button type="button" class="btn btn-primary" ng-click="AddNote()"> Ajouter une note</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 formLabel">
+                                <label>Type</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <span class="fake-select">
+                                    <select id="rel1" ng-model="BlocNote.TypeBlocNoteSelected" ng-options="key for (key , value) in BlocNote.TypeBlocNotes"></select>
+                                </span>
+                            </div>
+                            <div class="col-md-2 formLabel">
+                                <label>Utilisateur</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <span class="fake-select">
+                                    <select id="rel1" ng-model="BlocNote.UserSelected" ng-options="key for (key , value) in BlocNote.Users"></select>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 formLabel">
+                                <label>Période</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <span class="fake-select">
+                                    <select id="rel1" ng-model="BlocNote.DateSelected" ng-change="DateSelectedChanged()" ng-options="value for (key , value) in BlocNote.Dates"></select>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 formLabel">
+                                <label>Du</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <input type="text" class="form-control date-control-input" ng-model="BlocNote.DateDebutSelected" uib-datepicker-popup="{{format}}" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Fermer" alt-input-formats="altInputFormats" />
+                                <span class="input-group-btn calendar-input">
+                                    <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                            </div>
+                            <div class="col-md-2 formLabel">
+                                <label>Au</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <input type="text" class="form-control date-control-input" ng-model="BlocNote.DateFinSelected" uib-datepicker-popup="{{format}}" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Fermer" alt-input-formats="altInputFormats" />
+                                <span class="input-group-btn calendar-input">
+                                    <button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="line">
+                        <div class="col1">
+                            <div class="formButton">
+                                <button type="submit" class="btn-submit"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+                <div class="col1">
+                    <section class="list-table">
+                        <div ng-include src="'./Views/_template/GridSimpleViewSmall.html'"></div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" ng-click="$dismiss()">Fermer</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</fieldset>

@@ -1,0 +1,83 @@
+﻿<fieldset>
+    <legend>Actions</legend>
+    <!-- main container of all the page elements -->
+    <div>
+        <form role="form" ng-submit="FiltreAction()" ng-controller="actioncontroller">
+            <div class="line">
+                <div class="col1">
+                    <div class="row formInput clearfix">
+                        <div class="col-md-2 formLabel">
+                            <label>Type</label>
+                        </div>
+                        <div class="col-md-3 formInput">
+                            <span class="fake-select">
+                                <select id="rel1" ng-model="Action.TypeActionSelected" ng-change="TypeActionSelectedChanged()" ng-options="value for (key , value) in Action.typeactions"></select>
+                                <a href="#" class="btn-cross disable"></a>
+                            </span>
+                        </div>
+                        <div class="col-md-2 formLabel">
+                            <label>Code</label>
+                        </div>
+                        <div class="col-md-4 formInput">
+                            <span class="fake-select">
+                                <select id="rel1" ng-model="Action.ActionSelected" ng-show="Action.TypeActionSelected" ng-selected="Action.ActionSelected" ng-options="key for (key , value) in Action.actions"></select>
+                                <a href="#" class="btn-cross disable"></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row formInput clearfix">
+                        <div class="col-md-2 formLabel">
+                            <label>Période</label>
+                        </div>
+                        <div class="col-md-3 formInput">
+                            <span class="fake-select">
+                                <select id="rel1" ng-model="Action.DateSelected" ng-change="DateSelectedChanged()" ng-options="value for (key , value) in Action.Dates"></select>
+                                <a href="#" class="btn-cross disable"></a>
+                            </span>
+                        </div>                       
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4 formLabel">
+                                    <label>Du</label>
+                                </div>
+                                <div class="col-md-5 formInput">
+                                    <input type="text" class="form-control date-control-input" ng-model="Action.DateDebutSelected" uib-datepicker-popup="{{format}}" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Fermer" alt-input-formats="altInputFormats" />
+                                    <span class="input-group-btn calendar-input">
+                                        <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 formLabel">
+                                    <label>Au</label>
+                                </div>
+                                <div class="col-md-5 formInput">
+                                    <input type="text" class="form-control date-control-input" ng-model="Action.DateFinSelected" uib-datepicker-popup="{{format}}" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Fermer" alt-input-formats="altInputFormats" />
+                                    <span class="input-group-btn calendar-input">
+                                        <button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row formButton">
+                        <button type="submit" class="btn-submit"></button>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+                <div class="col1">
+                    <section class="list-table">
+                        <div ng-include src="'./Views/_template/GridSimpleViewSmall.html'"></div>
+                    </section>
+                </div>
+                <div class="line">
+                    <div class="col1">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" ng-click="$dismiss()">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</fieldset>

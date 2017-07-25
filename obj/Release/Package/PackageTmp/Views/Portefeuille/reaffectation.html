@@ -1,0 +1,43 @@
+﻿<fieldset>
+    <legend>Réaffectation</legend>
+    <div>
+        <form role="form" ng-submit="AddReaffectation()" ng-controller="reaffectationController">
+            <div class="formPopin">
+                <div class="line">
+                    <div class="col1">
+                        <div ui-view="reaffectationDataGridCreateView"></div>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+                        <div class="row">
+                            <div class="col-md-3 formLabel">
+                                <label>Jusqu'au (inclus)</label>
+                            </div>
+                            <div class="col-md-3 formInput">
+                                <input type="text" class="form-control date-control-input" ng-model="Filter.DateReaffectation" uib-datepicker-popup="{{format}}" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Fermer" alt-input-formats="altInputFormats" />
+                                <span class="input-group-btn calendar-input">
+                                    <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                            </div>
+                            <div class="col-md-2 formLabel">
+                                <label>Gestionnaire</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <span class="fake-select">
+                                    <select id="Gestionnaires" ng-model="Filter.SelectedGestionnaire" ng-options="key for (key , value) in Filter.Gestionnaires"></select>
+                                </span>
+                            </div>
+                        </div>
+
+                <div class="line">
+                    <div class="col1">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" ng-click="$dismiss()">Fermer</button>
+                            <input type="submit" class="btn btn-primary" value="Ok" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</fieldset>

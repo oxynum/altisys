@@ -1,0 +1,42 @@
+﻿<fieldset>
+    <legend>Courrier V2</legend>
+    <!-- main container of all the page elements -->
+    <div>
+        <form role="form" ng-submit="DisplayCourrier()" ng-controller="courrierV2Controller">
+            <div class="formPopin">
+                <div class="line">
+                    <div class="col1">
+                        <div ui-view="courrierDataGridView"></div>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+                <div class="line">
+                    <div class="col1">
+                        <div class="row formInput clearfix">
+                            <div class="col-md-4 formLabel">
+                                <label>Modèle de courrier</label>
+                            </div>
+                            <div class="col-md-4 formInput">
+                                <span class="fake-select">
+                                    <select ng-model="reports.model" ng-change="reportChange()"
+                                            ng-options="key as value for (key , value) in reports.availableOptions"
+                                            required></select>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+                <div class="line">
+                    <div class="col1">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" ng-click="$dismiss()">Annuler</button>
+                            <input type="submit" class="btn btn-primary" value="OK" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</fieldset>
