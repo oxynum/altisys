@@ -394,11 +394,24 @@
     position: relative;
 }
 
-#btn-add-step > div{
+#btn-add-step .actions-dropdown::before {
+    position: absolute;
+    top: -5px;
+    right: 99px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-width: 0 3.5px 5px 3.5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+#btn-add-step .actions-dropdown{
 	width: 200px;
     padding: 5px 10px;
     position: absolute;
     left: -80px;
+    top: 42px;
     background: white;
     border-radius: 5px;
     cursor: initial;
