@@ -39,6 +39,9 @@
 /* * * * * * * * *
 	HEADER
 * * * * * * * * */
+.dropdown .drop {
+    right: -17px;
+}
 .slide-bar-custom{
 	position: initial;
 }
@@ -142,6 +145,24 @@
 }
 .field input[type="search"].full-searchbar {
     width: 100%;
+}
+
+/* [DROPDOWN IN ARRAY] */
+/* .ui-grid-pinned-container-right 
+div[role="rowgroup"][class="ui-grid-viewport"][ng-style="colContainer.getViewportStyle()"][ui-grid-viewport=""] {
+    overflow: initial!important;
+} */
+.ui-grid-row .ui-grid-cell .dropdown .btn-burger {
+    top:0px;
+}
+.ui-grid-row .ui-grid-cell .dropdown {
+    top: 2px;
+}
+.dropdown .drop.in-array {
+    right: 15px;
+}
+.dropdown .drop.in-array:before {
+    right: 47px;
 }
 
 /* * * * * * * * *
