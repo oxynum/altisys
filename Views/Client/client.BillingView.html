@@ -14,11 +14,11 @@
         <div class="boxes-wrap boxes-wrap-custom" ng-class="{'boxes-wrap-on-scroll':boolChangeClass}">
             <div ng-repeat="cpt in factureCompteurs" ng-class="{'box':cpt.Compteur == ('ALL') || cpt.Compteur == ('NQ'),'box sky-blue action':cpt.Compteur == ('PROMESSE'),'box red action':cpt.Compteur == ('LITIGE'),'box orange action':cpt.Compteur == ('ECHEANCIER')}" class="box-custom">
                 <strong class="subtitle"><a href="" ng-click="selectGrid(cpt.Compteur)">{{cpt.Compteur}}</a></strong>
-                <strong class="price">{{cpt.Montant | number:2}}</strong><button class="btn btn-primary create btn-custom" ui-sref="{{cpt.Compteur.toLowerCase()}}({societe:scopsociete,numcomptable:scopnumcomptable})" >Créer</button>
-                <ul class="list fade-scroll" ng-class="{'hide-on-scroll':boolChangeClass}">
-                    <li ng-show="cpt.Compteur != 'ALL'"><span>{{cpt.NbFactures | number}}</span><a href="">Factures</a></li>
-                    <li ng-show="cpt.Compteur != 'ALL' && cpt.Compteur != 'NQ'"><span>{{cpt.NbPromesses | number}}</span><a href="">{{cpt.Compteur}} en cours</a></li>
-                    <li ng-show="cpt.Compteur != 'ALL' && cpt.Compteur != 'NQ'"><span class="alert" ng-class="{'alert':cpt.NbAlertes > 0,'alert opacity':cpt.NbAlertes == 0 }">{{cpt.NbAlertes | number}}</span><a href="">Alertes</a></li>
+                <strong class="price" ng-class="{'has-margin-bottom': cpt.Compteur == 'NQ' }">{{cpt.Montant | number:2}}</strong><button class="btn btn-primary create btn-custom" ui-sref="{{cpt.Compteur.toLowerCase()}}({societe:scopsociete,numcomptable:scopnumcomptable})" >Créer</button>
+                <ul class="list fade-scroll" ng-class="{'icons-on-scroll':boolChangeClass}">
+                    <li ng-show="cpt.Compteur != 'ALL'"><a href=""><span class="bill" ng-class="{'opacity':cpt.NbFactures == 0}">{{cpt.NbFactures | number}}</span><span class="detail-category">Factures</span></a></li>
+                    <li ng-show="cpt.Compteur != 'ALL' && cpt.Compteur != 'NQ'"><a href=""><span class="promise" ng-class="{'opacity':cpt.NbPromesses == 0 }">{{cpt.NbPromesses | number}}</span><span class="detail-category">{{cpt.Compteur}} en cours</span></a></li>
+                    <li ng-show="cpt.Compteur != 'ALL' && cpt.Compteur != 'NQ'"><a href=""><span class="alert" ng-class="{'alert':cpt.NbAlertes > 0,'alert opacity':cpt.NbAlertes == 0 }">{{cpt.NbAlertes | number}}</span><span class="detail-category">Alertes</span></a></li>
                 </ul>
             </div>
         </div>
