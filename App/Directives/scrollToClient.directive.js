@@ -12,8 +12,8 @@ app.directive("scrollToClient", ['$window', '$document', function ($window, $doc
                     if (!scope.boolChangeClass) {
                         scope.boolChangeClass = true;
                         setTimeout(function(){
-                            $('.billing-block .fix-on-scroll').css('height', '130px');
-                            $('.billing-block .boxes-wrap .box-custom').css('height', '120px');
+                            $('.billing-block .fix-on-scroll').css('height', '170px');
+                            $('.billing-block .boxes-wrap .box-custom').css('height', '160px');
                         }, 100);
                     }
                     if (!scope.boolClientFilter && !scope.btnClicked) {

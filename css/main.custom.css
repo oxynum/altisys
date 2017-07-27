@@ -248,6 +248,43 @@ div[role="rowgroup"][class="ui-grid-viewport"][ng-style="colContainer.getViewpor
 	margin: 0;
 	padding-left: 32px;
 }
+
+.no-margin-padding-on-scroll .price {
+    margin-bottom:0px;
+}
+.no-margin-padding-on-scroll .price.has-margin-bottom {
+    margin-bottom: 15px;
+}
+ul.icons-on-scroll {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ul.icons-on-scroll span.bill {
+    background: url(../images/ico-bil.png) no-repeat;
+}
+ul.icons-on-scroll span.promise {
+    background: url(../images/ico-arrow.png) no-repeat;
+}
+.boxes-wrap .list span.detail-category {
+    font-size: 11px;
+}
+ul.icons-on-scroll span.detail-category {
+    display: none;
+}
+ul.icons-on-scroll span:not(.detail-category) {
+    background-size: contain;
+    background-position: center;
+    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: 0px 0px 1px #ffffff;
+}
+span.promise.opacity, span.bill.opacity {
+    opacity:0.5;
+}
 .boxes-wrap .box.orange .price:before {
         top: -1px;
         width: 64px;
