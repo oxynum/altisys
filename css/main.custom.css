@@ -148,10 +148,6 @@
 }
 
 /* [DROPDOWN IN ARRAY] */
-/* .ui-grid-pinned-container-right 
-div[role="rowgroup"][class="ui-grid-viewport"][ng-style="colContainer.getViewportStyle()"][ui-grid-viewport=""] {
-    overflow: initial!important;
-} */
 .ui-grid-row .ui-grid-cell .dropdown .btn-burger {
     top:0px;
 }
@@ -170,27 +166,6 @@ div[role="rowgroup"][class="ui-grid-viewport"][ng-style="colContainer.getViewpor
 * * * * * * * * */
 
 /* [SCROLL] */
-
-@keyframes fade_out {
-  from { opacity:1; }
-  to { opacity:0; }
-}
-
-@-webkit-keyframes fade_out {
-  from { opacity:1; }
-  to { opacity:0; }
-}
-
-@keyframes fade_in {
-  from { opacity:0; }
-  to { opacity:1; }
-}
-
-@-webkit-keyframes fade_in {
-  from { opacity:0; }
-  to { opacity:1; }
-}
-
 .hide-on-scroll{
     display: none!important;
 }
@@ -415,7 +390,6 @@ span.promise.opacity, span.bill.opacity {
 }
 
 /* [TIMELINE] */
-
 .actions-title {
     display: inline-block;
 }
