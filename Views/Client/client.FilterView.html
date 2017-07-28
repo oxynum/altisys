@@ -3,16 +3,16 @@
         <div class="field-row" ng-class="{'no-margin-padding-on-scroll': boolClientFilter}">
             <input type="search" ng-model="Filter.NPiece" placeholder="N° de la facture">
         </div>
-        <div class="field-row" ng-if="!boolClientFilter">
+        <div class="field-row" ng-show="!boolClientFilter">
             <span class="fake-select">
                 <select id="Qualification" ng-model="Filter.SelectedCritere" ng-options="value for (key , value) in Filter.Criteres"></select>
             </span>
         </div>
-        <div class="field-row" ng-if="!boolClientFilter">
+        <div class="field-row" ng-show="!boolClientFilter">
             <label for="rel-1">De</label>
             <input type="search" ng-model="Filter.De" placeholder="Montant mini">
         </div>
-        <div class="field-row" ng-if="!boolClientFilter">
+        <div class="field-row" ng-show="!boolClientFilter">
             <label for="rel-2">A</label>
             <input type="search" ng-model="Filter.A" placeholder="Montant maxi">
         </div>
@@ -22,7 +22,7 @@
         <!--<div>
             <a class="btn-burger" ui-sref="courrier({societe:scopsociete,numcomptable:scopnumcomptable})"><span>&nbsp;</span></a>
         </div>-->
-        <div ng-if="!boolClientFilter">
+        <div ng-show="!boolClientFilter">
             <a class="btn-burger" ui-sref="courrierV2({societe:scopsociete,numcomptable:scopnumcomptable})"><span>&nbsp;</span></a>
         </div>
 

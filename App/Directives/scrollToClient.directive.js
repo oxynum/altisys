@@ -7,27 +7,39 @@ app.directive("scrollToClient", ['$window', '$document', function ($window, $doc
         restrict: 'A',
         link: function(scope, element, attrs) {
             angular.element($window).bind("scroll", function() {
-                if ($window.pageYOffset > $document[0].getElementById('main').offsetTop - 143) {
+                
+                //[ELEMENTS]
+                var billingContainer = $document[0].querySelector(".billing-block > div");
+                var billingBoxes = $document[0].querySelectorAll(".billing-block .boxes-wrap .box-custom");
+
+                //[SCROLL FUNCTION]
+
+                // Wrapping
+                if ($window.pageYOffset > $document[0].getElementById('main').offsetTop - 135) {
                     if (!scope.boolChangeClass) {
                         scope.boolChangeClass = true;
-                        setTimeout(function() {
-                            $('.billing-block .fix-on-scroll').css('height', '170px');
-                            $('.billing-block .boxes-wrap .box-custom').css('height', '160px');
-                        }, 100);
+                    }
+                    if( scope.boolChangeClass){
+                        billingContainer.style.height = '170px';
+                        for(var i = 0; i<billingBoxes.length; i++){
+                            billingBoxes[i].style.height = '160px';
+                        }                    
                     }
                     if (!scope.boolClientFilter && !scope.btnClicked) scope.boolClientFilter = true;
                 } 
+                // Unwrapping
                 else {
                     if (scope.boolChangeClass) {
-                        $('.billing-block .fix-on-scroll').css('height', '465px');
-                        $('.billing-block .boxes-wrap .box-custom').css('height', '235px');
-                        setTimeout(function() {
-                            scope.boolChangeClass = false;
-                        }, 10);
+                        billingContainer.style.height = '465px';
+                        for(var i = 0; i<billingBoxes.length; i++){
+                            billingBoxes[i].style.height = '235px';
+                        }
+                        scope.boolChangeClass = false;
                     }
                     if (scope.boolClientFilter) scope.boolClientFilter = false;
                     if (scope.btnClicked) scope.btnClicked = false;
                 }
+
                 scope.$apply();
             });
         }
