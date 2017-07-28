@@ -27,6 +27,6 @@
         </div>
 
         <a ng-if="boolClientFilter" ng-click="$parent.$parent.$parent.boolClientFilter = false; $parent.$parent.$parent.btnClicked=true">Voir plus de critères</a>
-        <a class="less-fields" ng-show="btnClicked" ng-click="$parent.$parent.$parent.boolClientFilter = true; $parent.$parent.$parent.btnClicked=false">Voir moins de critères</a>
+        <a class="less-fields" ng-if="btnClicked" ng-click="$parent.$parent.$parent.boolClientFilter = true; $parent.$parent.$parent.btnClicked=false">Voir moins de critères</a>
 </form>
 
