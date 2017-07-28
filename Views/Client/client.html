@@ -170,7 +170,7 @@
                     <div ui-view="clientFilterView" class="col-md-3" id="client-filter-view"></div>
                 </div>
             </section>
-            <section class="list-table client list-table-custom" ui-view="clientDataGridView"></section>
+            <section ng-class="{'up-on-scroll':boolChangeClass}" class="list-table client list-table-custom" ui-view="clientDataGridView"></section>
         </div>
     </main>
 </div>

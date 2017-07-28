@@ -226,6 +226,19 @@ div[role="rowgroup"][class="ui-grid-viewport"][ng-style="colContainer.getViewpor
 	padding: 10px 0;
 }
 
+@media (max-width:991px) {
+    .list-table-custom.up-on-scroll {
+        top:-150px;
+        margin-bottom: -150px;
+    }
+}
+@media (min-width:992px) {
+    .list-table-custom.up-on-scroll {
+        top:-100px;
+        margin-bottom: -100px;
+    }  
+}
+
 .billing-block .boxes-wrap .box-on-scroll{
 	height: 130px;
 }
